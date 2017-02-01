@@ -1,0 +1,179 @@
+<section class="forms-basic">
+  <div class="page-header">
+    <h1>
+      <i class="md md-input"></i>
+      VbsFlow form
+    </h1>
+    <p class="lead">
+      You can edit VbsFlow entity and see linked entities.
+    </p>
+  </div>
+
+<div class="row m-b-40">
+
+    <div class="col-md-3 col-md-push-9">
+      <h5>Mode</h5>
+      <p>mode: {{mode}}</p>
+    </div>
+    <div class="col-md-8 col-md-pull-3">
+      <div class="well">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Main entity</legend>          
+            <span class="help-block m-b-20">Please fill out the following form below.</span>
+
+
+		
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label"><b>FlowId</b></label>
+                          <div class="col-lg-10">
+																
+				               		<input type="text" class="form-control" id="flowId" ng-model="item.flowId" required ng-disabled="mode == 'VIEW'">
+               	            		        	</div>
+           </div>
+    
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label"><b>DateTreatment</b></label>
+                          <div class="col-lg-10">
+					<input type="text" class="form-control" id="dateTreatment" ng-model="item.dateTreatment" data-autoclose="1" bs-datepicker ng-disabled="mode == 'VIEW'">
+		        	</div>
+           </div>
+    
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label"><b>LastUpdate</b></label>
+                          <div class="col-lg-10">
+					<input type="text" class="form-control" id="lastUpdate" ng-model="item.lastUpdate" data-autoclose="1" bs-datepicker ng-disabled="mode == 'VIEW'">
+		        	</div>
+           </div>
+    
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label">SiteCd</label>
+                          <div class="col-lg-10">
+																
+				               		<input type="text" class="form-control" id="siteCd" ng-model="item.siteCd"  ng-disabled="mode == 'VIEW'">
+               	            		        	</div>
+           </div>
+    
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label">IdRoot</label>
+                          <div class="col-lg-10">
+																
+									<input type="text" class="form-control" id="idRoot" ng-model="item.idRoot"  ng-pattern="/^\d{0,18}(\.\d{1,2})?$/" ng-disabled="mode == 'VIEW'">  
+				            		        	</div>
+           </div>
+    
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label">DocNbr</label>
+                          <div class="col-lg-10">
+																
+									<input type="text" class="form-control" id="docNbr" ng-model="item.docNbr"  ng-pattern="/^\d{0,18}(\.\d{1,2})?$/" ng-disabled="mode == 'VIEW'">  
+				            		        	</div>
+           </div>
+    
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label">SplitPart</label>
+                          <div class="col-lg-10">
+																
+									<input type="text" class="form-control" id="splitPart" ng-model="item.splitPart"  ng-pattern="/^\d{0,18}(\.\d{1,2})?$/" ng-disabled="mode == 'VIEW'">  
+				            		        	</div>
+           </div>
+    
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label">SplitTotal</label>
+                          <div class="col-lg-10">
+																
+									<input type="text" class="form-control" id="splitTotal" ng-model="item.splitTotal"  ng-pattern="/^\d{0,18}(\.\d{1,2})?$/" ng-disabled="mode == 'VIEW'">  
+				            		        	</div>
+           </div>
+    
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label">Version</label>
+                          <div class="col-lg-10">
+																
+									<input type="text" class="form-control" id="version" ng-model="item.version"  ng-pattern="/^\d{0,18}(\.\d{1,2})?$/" ng-disabled="mode == 'VIEW'">  
+				            		        	</div>
+           </div>
+    
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label">Flowref</label>
+                          <div class="col-lg-10">
+																
+				               		<input type="text" class="form-control" id="flowref" ng-model="item.flowref"  ng-disabled="mode == 'VIEW'">
+               	            		        	</div>
+           </div>
+    
+
+
+          <div class="form-group">
+              <label for="id" class="col-lg-2 control-label"><b> Id</b></label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="id"  ng-disabled="true"  ng-model="item.id">
+              </div>
+         </div>
+            
+
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-2">
+              	<button type="submit" class="btn btn-primary" ui-sref="vbsflow">back to List</button>
+                <button type="reset" class="btn btn-default" ng-click="remove(item)" ng-show="mode != 'VIEW'">Delete</button>
+                <button type="submit" class="btn btn-primary" ng-click="saveItem(item)" ng-show="mode != 'VIEW'">Save</button>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<section class="tables-data">
+
+  <div class="page-header">
+    <h1>
+      <i class="md md-list"></i>
+      Linked entities
+    </h1>
+    <p class="lead">
+      Todo
+    </p>
+  </div>
+
+
+<section class="tables-data">
+
+  <div class="page-header">
+    <h1>
+      <i class="md md-list"></i>
+      Linked entities (inverse relation)
+    </h1>
+    <p class="lead">
+      Todo
+    </p>
+  </div>
+													 	 	 	 	 	 							 	 	 	 	 	 				 	 	 	 	 	 	 	 	 	 	 	 	 	 	  
+</section>
+
+
+

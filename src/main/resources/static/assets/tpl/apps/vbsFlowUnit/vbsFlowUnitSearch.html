@@ -1,0 +1,367 @@
+
+<div class="aside bs-docs-aside" tabindex="-1" role="dialog">
+  <div class="close">
+    <div class="btn btn-round btn-info" ng-click="$hide()" data-title="{{ 'CLOSE' | translate }}" bs-tooltip><i class="md md-close"></i></div>
+  </div>
+
+  <div class="aside-dialog">
+    <div class="aside-body bs-sidebar">
+
+      <form class="form-floating" novalidate="novalidate" ng-submit="startSearch(savedSearch)">
+        <fieldset>
+          <legend><span ng-bind-html="savedSearch.icon"></span> {{cmd}} {{settings.singular}} search</legend>
+
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">VbsDiffusionIdDiffusion</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.vbsDiffusionIdDiffusion">
+    	        </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">VbsFlowId</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.vbsFlowId">
+    	        </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DateTreatment</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.dateTreatment" data-autoclose="1" placeholder="{{ 'dateTreatment' | translate }}" bs-datepicker>
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">SiteCd</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.siteCd">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">ChkSum</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.chkSum">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">GenStart</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.genStart" data-autoclose="1" placeholder="{{ 'genStart' | translate }}" bs-datepicker>
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">GenEnd</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.genEnd" data-autoclose="1" placeholder="{{ 'genEnd' | translate }}" bs-datepicker>
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">AppStart</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.appStart" data-autoclose="1" placeholder="{{ 'appStart' | translate }}" bs-datepicker>
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">AppEnd</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.appEnd" data-autoclose="1" placeholder="{{ 'appEnd' | translate }}" bs-datepicker>
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">AppValidateDate</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.appValidateDate" data-autoclose="1" placeholder="{{ 'appValidateDate' | translate }}" bs-datepicker>
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">AppMode</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.appMode">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">AppStatus</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.appStatus">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">AppDsc</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.appDsc">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">AppUsrVbsId</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.appUsrVbsId">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">AppUsrNme</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.appUsrNme">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">AppUsrLstnme</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.appUsrLstnme">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocType</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.docType">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocNme</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.docNme">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocNmeOlis</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.docNmeOlis">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocNbrPage</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.docNbrPage">
+    	        </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">FundCd</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.fundCd">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">TansNbr</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.tansNbr">
+    	        </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">NavDate</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.navDate" data-autoclose="1" placeholder="{{ 'navDate' | translate }}" bs-datepicker>
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">ValStart</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.valStart" data-autoclose="1" placeholder="{{ 'valStart' | translate }}" bs-datepicker>
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">ValEnd</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.valEnd" data-autoclose="1" placeholder="{{ 'valEnd' | translate }}" bs-datepicker>
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">ExeDate</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.exeDate" data-autoclose="1" placeholder="{{ 'exeDate' | translate }}" bs-datepicker>
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">InvestorId</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.investorId">
+    	        </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">InvestorNme</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.investorNme">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DistAccId</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.distAccId">
+    	        </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DistNme</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.distNme">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">GedId</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.gedId">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocLength</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.docLength">
+    	        </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">FundNme</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.fundNme">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocDteTrade</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.docDteTrade" data-autoclose="1" placeholder="{{ 'docDteTrade' | translate }}" bs-datepicker>
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">InvestorParticipant</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.investorParticipant">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">InvestorStaGrpCde</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.investorStaGrpCde">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">InvestorLanguage</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.investorLanguage">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">InvestorCurrency</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.investorCurrency">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocHeaderValuationdate</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.docHeaderValuationdate" data-autoclose="1" placeholder="{{ 'docHeaderValuationdate' | translate }}" bs-datepicker>
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocIssueDate</label>
+                	<input type="text" class="form-control" ng-model="savedSearch.docIssueDate" data-autoclose="1" placeholder="{{ 'docIssueDate' | translate }}" bs-datepicker>
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocStaNumber</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.docStaNumber">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocContactAdd1</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.docContactAdd1">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocContactAdd2</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.docContactAdd2">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocContactAdd3</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.docContactAdd3">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocContactAdd4</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.docContactAdd4">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocContactAdd5</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.docContactAdd5">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocContactAdd6</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.docContactAdd6">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocContactAdd7</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.docContactAdd7">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocContactAdd8</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.docContactAdd8">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocRef</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.docRef">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocVbsId</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.docVbsId">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">InvestorAccId</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.investorAccId">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">DocUnitXml</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.docUnitXml">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">TrnRef</label>
+                    <input type="text" class="form-control" ng-model="savedSearch.trnRef">
+                </div>
+		
+		
+
+          <div class="form-group">
+            <button type="button" ng-click="clearSavedSearch()" class="btn btn-lg btn-primary">{{ 'CLEAR' | translate }}</button>
+            <button type="submit" class="btn btn-lg btn-primary">{{ 'SEARCH' | translate }}</button>
+          </div>
+
+        </fieldset>
+      </form>
+
+	  <form class="form-floating" novalidate="novalidate" ng-submit="startElasticSearch(savedSearch)">
+        <fieldset>
+      
+          <div class="form-group filled">
+            <label class="control-label">{{ 'QUERY' | translate }}</label>
+            <input type="text" class="form-control" ng-model="savedSearch.query" required>
+          </div>
+          
+          <div class="form-group">
+            <button type="submit" class="btn btn-lg btn-primary" >{{ 'ELASTIC_SEARCH' | translate }}</button>
+          </div>
+
+        </fieldset>
+      </form>
+          
+          
+    </div>
+  </div>
+</div>

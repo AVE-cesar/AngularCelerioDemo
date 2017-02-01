@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.jaxio.com/schema/celerio">
+  <jdbcConnectivity driver="org.h2.Driver" url="jdbc:h2:D:\Workspaces\JaxioAngular\angular-lab\target/db/angular-lab;MVCC=TRUE;FILE_LOCK=NO" user="demo" password="demo" schemaName="" tableNamePattern="%" oracleRetrieveRemarks="false" oracleRetrieveSynonyms="true" reverseIndexes="true" reverseOnlyUniqueIndexes="true" catalog="">
+    <tableTypes>
+      <tableType>TABLE</tableType>
+    </tableTypes>
+  </jdbcConnectivity>
+  <databaseInfo databaseMajorVersion="1" databaseMinorVersion="4" databaseProductName="H2" databaseProductVersion="1.4.187 (2015-04-10)" driverMajorVersion="1" driverMinorVersion="4" driverName="H2 JDBC Driver" driverVersion="1.4.187 (2015-04-10)" extraInfo=""/>
+  <tables>
+    <table name="APP_PARAMETER" type="TABLE">
+      <columns>
+        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_D7B0084D_038A_416A_BA98_D60FA096D4C0)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
+        <column name="DOMAIN" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="250" type="VARCHAR"/>
+        <column name="KEY" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="1000" type="VARCHAR"/>
+        <column name="VALUE" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="4" size="4000" type="VARCHAR"/>
+      </columns>
+      <indexes>
+        <indexe columnName="ID" indexName="PRIMARY_KEY_40" nonUnique="false"/>
+      </indexes>
+      <importedKeys/>
+      <primaryKeys>
+        <primaryKey>ID</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="APP_TRANSLATION" type="TABLE">
+      <columns>
+        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_F7B2450C_734B_4C93_B17B_27E669C0BB35)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
+        <column name="LANGUAGE" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="10" type="VARCHAR"/>
+        <column name="KEY" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="1000" type="VARCHAR"/>
+        <column name="VALUE" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="4" size="4000" type="VARCHAR"/>
+      </columns>
+      <indexes>
+        <indexe columnName="ID" indexName="PRIMARY_KEY_D" nonUnique="false"/>
+      </indexes>
+      <importedKeys/>
+      <primaryKeys>
+        <primaryKey>ID</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="AUTHOR" type="TABLE">
+      <columns>
+        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_29AF000F_4AE2_4B97_B7D9_0B11D6ADEB72)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
+        <column name="NAME" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="100" type="VARCHAR"/>
+        <column name="BIRTH_DATE" decimalDigits="10" autoIncrement="false" nullable="true" ordinalPosition="3" size="23" type="TIMESTAMP"/>
+      </columns>
+      <indexes>
+        <indexe columnName="ID" indexName="PRIMARY_KEY_7" nonUnique="false"/>
+      </indexes>
+      <importedKeys/>
+      <primaryKeys>
+        <primaryKey>ID</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="BAR_CODE" type="TABLE">
+      <columns>
+        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_1207C578_FDFC_47BD_B1D0_DD2A3FA43694)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
+        <column name="CODE" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="100" type="VARCHAR"/>
+        <column name="IMAGE" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="100" type="VARCHAR"/>
+      </columns>
+      <indexes>
+        <indexe columnName="ID" indexName="PRIMARY_KEY_C" nonUnique="false"/>
+      </indexes>
+      <importedKeys/>
+      <primaryKeys>
+        <primaryKey>ID</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="BOOK" type="TABLE">
+      <columns>
+        <column name="ID" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="1" size="36" type="CHAR"/>
+        <column name="TITLE" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="100" type="VARCHAR"/>
+        <column name="DESCRIPTION" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="255" type="VARCHAR"/>
+        <column name="PUBLICATION_DATE" decimalDigits="10" autoIncrement="false" nullable="true" ordinalPosition="4" size="23" type="TIMESTAMP"/>
+        <column name="AUTHOR_ID" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="5" size="10" type="INTEGER"/>
+        <column name="PRICE" decimalDigits="2" autoIncrement="false" nullable="false" ordinalPosition="6" size="20" type="DECIMAL"/>
+        <column name="PREVIOUSBOOKID" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="7" size="36" type="CHAR"/>
+        <column name="BARCODEID" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="8" size="10" type="INTEGER"/>
+      </columns>
+      <indexes>
+        <indexe columnName="BARCODEID" indexName="BAR_CODE_UNIQUE_INDEX_1" nonUnique="false"/>
+        <indexe columnName="ID" indexName="BOOK_FK_2_INDEX_1F" nonUnique="false"/>
+        <indexe columnName="ID" indexName="PRIMARY_KEY_1F" nonUnique="false"/>
+      </indexes>
+      <importedKeys>
+        <importedKey fkColumnName="AUTHOR_ID" fkName="BOOK_FK_1" pkColumnName="ID" pkTableName="AUTHOR"/>
+        <importedKey fkColumnName="BARCODEID" fkName="BOOK_FK_3" pkColumnName="ID" pkTableName="BAR_CODE"/>
+        <importedKey fkColumnName="PREVIOUSBOOKID" fkName="BOOK_FK_2" pkColumnName="ID" pkTableName="BOOK"/>
+      </importedKeys>
+      <primaryKeys>
+        <primaryKey>ID</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="BOOK_READER" type="TABLE">
+      <columns>
+        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_48A89924_2DC0_46F7_B315_B99B1A8528E9)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
+        <column name="BOOK_ID" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="36" type="CHAR"/>
+        <column name="READER_ID" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="10" type="INTEGER"/>
+      </columns>
+      <indexes>
+        <indexe columnName="ID" indexName="PRIMARY_KEY_2" nonUnique="false"/>
+      </indexes>
+      <importedKeys>
+        <importedKey fkColumnName="BOOK_ID" fkName="BOOK_READER_FK_1" pkColumnName="ID" pkTableName="BOOK"/>
+        <importedKey fkColumnName="READER_ID" fkName="BOOK_READER_FK_2" pkColumnName="ID" pkTableName="READER"/>
+      </importedKeys>
+      <primaryKeys>
+        <primaryKey>ID</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="BOOK_STORE" type="TABLE">
+      <columns>
+        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_3ABFB528_5A74_4C51_BF35_F8E115DA729F)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
+        <column name="BOOK_ID" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="36" type="CHAR"/>
+        <column name="STORE_ID" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="10" type="INTEGER"/>
+      </columns>
+      <indexes>
+        <indexe columnName="ID" indexName="PRIMARY_KEY_F" nonUnique="false"/>
+      </indexes>
+      <importedKeys>
+        <importedKey fkColumnName="BOOK_ID" fkName="BOOK_STORE_FK_1" pkColumnName="ID" pkTableName="BOOK"/>
+        <importedKey fkColumnName="STORE_ID" fkName="BOOK_STORE_FK_2" pkColumnName="ID" pkTableName="STORE"/>
+      </importedKeys>
+      <primaryKeys>
+        <primaryKey>ID</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="CATEGORY" type="TABLE">
+      <columns>
+        <column name="PAR_CAT_IDE" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="1" size="50" type="VARCHAR"/>
+        <column name="PAR_CAT_DES" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="255" type="VARCHAR"/>
+      </columns>
+      <indexes>
+        <indexe columnName="PAR_CAT_IDE" indexName="PRIMARY_KEY_3" nonUnique="false"/>
+      </indexes>
+      <importedKeys/>
+      <primaryKeys>
+        <primaryKey>PAR_CAT_IDE</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="PARAMETER" type="TABLE">
+      <columns>
+        <column name="PAR_CAT_IDE" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="1" size="50" type="VARCHAR"/>
+        <column name="KEY" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="50" type="VARCHAR"/>
+        <column name="VAL" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="4000" type="VARCHAR"/>
+        <column name="DESCR" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="4" size="200" type="VARCHAR"/>
+      </columns>
+      <indexes>
+        <indexe columnName="PAR_CAT_IDE" indexName="PRIMARY_KEY_1" nonUnique="false"/>
+        <indexe columnName="KEY" indexName="PRIMARY_KEY_1" nonUnique="false"/>
+      </indexes>
+      <importedKeys>
+        <importedKey fkColumnName="PAR_CAT_IDE" fkName="FK_PARAMETER_RELATIONS_CATEGORY" pkColumnName="PAR_CAT_IDE" pkTableName="CATEGORY"/>
+      </importedKeys>
+      <primaryKeys>
+        <primaryKey>KEY</primaryKey>
+        <primaryKey>PAR_CAT_IDE</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="READER" type="TABLE">
+      <columns>
+        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_0C1B4C4A_5950_4866_B954_41C28BB80AFE)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
+        <column name="FIRSTNAME" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="100" type="VARCHAR"/>
+        <column name="LASTNAME" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="100" type="VARCHAR"/>
+      </columns>
+      <indexes>
+        <indexe columnName="ID" indexName="PRIMARY_KEY_8" nonUnique="false"/>
+      </indexes>
+      <importedKeys/>
+      <primaryKeys>
+        <primaryKey>ID</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="SCR" type="TABLE">
+      <columns>
+        <column name="SCR_IDE" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="1" size="19" type="BIGINT"/>
+        <column name="SCR_CAT" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="50" type="VARCHAR"/>
+        <column name="SCR_TXT" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="2147483647" type="CLOB"/>
+        <column name="SCR_AVL" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="4" size="10" type="INTEGER"/>
+        <column name="SCR_NME" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="5" size="50" type="VARCHAR"/>
+        <column name="SCR_DESCR" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="6" size="200" type="VARCHAR"/>
+        <column name="SCR_CODE" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="7" size="50" type="VARCHAR"/>
+      </columns>
+      <indexes>
+        <indexe columnName="SCR_IDE" indexName="PRIMARY_KEY_14" nonUnique="false"/>
+      </indexes>
+      <importedKeys/>
+      <primaryKeys>
+        <primaryKey>SCR_IDE</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="STORE" type="TABLE">
+      <columns>
+        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_E4CCBAAF_1B49_4E01_AA81_47E0126CC723)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
+        <column name="NAME" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="100" type="VARCHAR"/>
+        <column name="ADDRESS" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="100" type="VARCHAR"/>
+        <column name="ZIPCODE" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="4" size="100" type="VARCHAR"/>
+        <column name="CITY" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="5" size="100" type="VARCHAR"/>
+      </columns>
+      <indexes>
+        <indexe columnName="ID" indexName="PRIMARY_KEY_4" nonUnique="false"/>
+      </indexes>
+      <importedKeys/>
+      <primaryKeys>
+        <primaryKey>ID</primaryKey>
+      </primaryKeys>
+    </table>
+  </tables>
+</metadata>

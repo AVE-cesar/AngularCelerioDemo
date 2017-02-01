@@ -1,0 +1,1 @@
+ce répertoire contient les fichiers java générés par Celerio.

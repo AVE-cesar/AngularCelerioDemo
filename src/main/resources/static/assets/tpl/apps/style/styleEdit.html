@@ -1,0 +1,121 @@
+<section class="forms-basic">
+  <div class="page-header">
+    <h1>
+      <i class="md md-input"></i>
+      Style form
+    </h1>
+    <p class="lead">
+      You can edit Style entity and see linked entities.
+    </p>
+  </div>
+
+<div class="row m-b-40">
+
+    <div class="col-md-3 col-md-push-9">
+      <h5>Mode</h5>
+      <p>mode: {{mode}}</p>
+    </div>
+    <div class="col-md-8 col-md-pull-3">
+      <div class="well">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Main entity</legend>          
+            <span class="help-block m-b-20">Please fill out the following form below.</span>
+
+
+		
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label"><b>Name</b></label>
+                          <div class="col-lg-10">
+																
+				               		<input type="text" class="form-control" id="name" ng-model="item.name" required ng-disabled="mode == 'VIEW'">
+               	            		        	</div>
+           </div>
+    
+
+
+          <div class="form-group">
+              <label for="id" class="col-lg-2 control-label"><b> Id</b></label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="id"  ng-disabled="true"  ng-model="item.id">
+              </div>
+         </div>
+            
+
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-2">
+              	<button type="submit" class="btn btn-primary" ui-sref="style">back to List</button>
+                <button type="reset" class="btn btn-default" ng-click="remove(item)" ng-show="mode != 'VIEW'">Delete</button>
+                <button type="submit" class="btn btn-primary" ng-click="saveItem(item)" ng-show="mode != 'VIEW'">Save</button>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<section class="tables-data">
+
+  <div class="page-header">
+    <h1>
+      <i class="md md-list"></i>
+      Linked entities
+    </h1>
+    <p class="lead">
+      Todo
+    </p>
+  </div>
+
+
+<section class="tables-data">
+
+  <div class="page-header">
+    <h1>
+      <i class="md md-list"></i>
+      Linked entities (inverse relation)
+    </h1>
+    <p class="lead">
+      Todo
+    </p>
+  </div>
+													 	 	 	 	 	 													-- on a une relation many-to-one (MTO/OTO/MTM) vers notre entite Style, il faudra faire une table HTML contenant la liste des AuthorStyle liés avec des liens pour y descendre
+				-- il faudra un REST sur les AuthorStyle pour lister les AuthorStyle liés à Style
+				-- Exemple: AuthorStyle.findByStyleID
+  <div class="card">
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="table-title p-20">AuthorStyle table:: inverse relation to: AuthorStyle.style ==> Style.id</h3>
+      </div>
+      <div class="col-md-6">
+        <div class="table-search">
+          <input type="text" ng-model="tableParams.filter()['search']" class="form-control" placeholder="Search data"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-responsive white">
+
+      <table ng-table="tableParams" template-pagination="assets/tpl/partials/data-table-pager.html" class="table table-full table-full-small">
+        <tr ng-repeat="row in findAuthorStyleByStyle">
+				  <td data-title="'id'" filter="{ 'id': 'text' }" sortable="'id'"><a ui-sref="editAuthorStyle({id:row.id})">{{row.id}}</a></td>
+				  <td data-title="'authorId'" filter="{ 'authorId': 'text' }" sortable="'authorId'">{{row.authorId}}</td>	
+				  <td data-title="'styleId'" filter="{ 'styleId': 'text' }" sortable="'styleId'">{{row.styleId}}</td>	
+				  <td data-title="'enable'" filter="{ 'enable': 'text' }" sortable="'enable'">{{row.enable}}</td>	
+	         </tr>		        
+      </table>
+
+    </div>
+
+  </div>		
+						 	 	 	 				 	 	 	 	  
+</section>
+
+
+

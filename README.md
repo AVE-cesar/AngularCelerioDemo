@@ -1,0 +1,69 @@
+# Generate an Angular JS Web App
+
+[![Build Status](https://travis-ci.org/jaxio/angular-lab.svg?branch=master)](https://travis-ci.org/jaxio/angular-lab)
+
+>>
+>> NOTE: This is still a work in progress, we are looking for feedbacks from Angular JS experts.
+>> 
+
+Reverse a [sample SQL schema](https://github.com/jaxio/angular-lab/blob/master/src/main/sql/h2/01-create.sql) 
+and generate a full S-CRUD SpringBoot/JPA/AngularJS Web Application.
+
+S-CRUD means: **S**earch, **C**reate, **R**ead, **U**pdate, **D**elete
+
+The code generation is done by [Celerio](http://www.jaxio.com/en/).
+
+The project uses its own code generation templates, see [src/main/celerio](https://github.com/jaxio/angular-lab/tree/master/src/main/celerio).
+
+The generated application relies on:
+
+* Springboot
+* JPA
+* Angular JS
+
+# Requirements
+
+* Java 8
+* Maven 3.1.1
+* npm
+* bower
+
+# How to run it
+
+## Step 0: Download and install npm from https://nodejs.org/en/
+
+    try npm in a window shell to validate its installation
+    
+    then install bower via: npm install -g bower
+
+## Step 1: Retrieve frontend libraries
+
+    bower install
+
+## Step 2: reverse the sample SQL schema and generate the source code
+    
+From this folder run from:
+
+    mvn -Pdb,metadata,gen
+    
+## Step 3: Run the app
+
+    mvn spring-boot:run
+
+## Step 4: access the app and play
+
+    http://localhost:8080/myApp
+
+## Extra tip: delete generated code
+
+    mvn -PcleanGen clean
+
+# Contribute
+
+You may contribute in several ways:
+
+* By using the generated app and trying to find its limits
+* By reviewing the generated code, is Spring Boot / AngularJS  properly used ?
+* By trying to generate a project using your own database schema
+
+You may of course [report issues](https://github.com/jaxio/angular-lab/issues) and/or submit pull requests.

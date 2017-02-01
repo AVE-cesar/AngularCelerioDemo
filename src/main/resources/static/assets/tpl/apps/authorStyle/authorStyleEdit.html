@@ -1,0 +1,121 @@
+<section class="forms-basic">
+  <div class="page-header">
+    <h1>
+      <i class="md md-input"></i>
+      AuthorStyle form
+    </h1>
+    <p class="lead">
+      You can edit AuthorStyle entity and see linked entities.
+    </p>
+  </div>
+
+<div class="row m-b-40">
+
+    <div class="col-md-3 col-md-push-9">
+      <h5>Mode</h5>
+      <p>mode: {{mode}}</p>
+    </div>
+    <div class="col-md-8 col-md-pull-3">
+      <div class="well">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Main entity</legend>          
+            <span class="help-block m-b-20">Please fill out the following form below.</span>
+
+
+		
+		
+		
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label"><b>Enable</b></label>
+                          <div class="col-lg-10">
+																
+									<input type="text" class="form-control" id="enable" ng-model="item.enable" required ng-pattern="/^\d{0,18}(\.\d{1,2})?$/" ng-disabled="mode == 'VIEW'">  
+				            		        	</div>
+           </div>
+    
+
+	<div class="form-group filled">
+	
+            <label class="col-lg-2 control-label">
+            <a ui-sref="editAuthor( {id:item.author.id} )">Author</a></label>
+            <div class="col-lg-10">     	
+            <ui-select ng-model="item.author" theme="select2" title="Choose an author" search-enabled="false">
+	 	                 <ui-select-match placeholder="Choose an author">{{$select.selected.name}}</ui-select-match>
+     	                <ui-select-choices repeat="itemA in authors | filter: $select.search">
+                                                  	<div ng-bind-html="itemA.name | highlight: $select.search"></div>
+                  	                  		<small ng-bind-html="itemA.id | highlight: $select.search"></small>
+                </ui-select-choices>
+             </ui-select>
+             </div>
+	</div>
+	<div class="form-group filled">
+	
+            <label class="col-lg-2 control-label">
+            <a ui-sref="editStyle( {id:item.style.id} )">Style</a></label>
+            <div class="col-lg-10">     	
+            <ui-select ng-model="item.style" theme="select2" title="Choose an style" search-enabled="false">
+	 	                 <ui-select-match placeholder="Choose an style">{{$select.selected.name}}</ui-select-match>
+     	                <ui-select-choices repeat="itemA in styles | filter: $select.search">
+                                                  	<div ng-bind-html="itemA.name | highlight: $select.search"></div>
+                  	                  		<small ng-bind-html="itemA.id | highlight: $select.search"></small>
+                </ui-select-choices>
+             </ui-select>
+             </div>
+	</div>
+
+          <div class="form-group">
+              <label for="id" class="col-lg-2 control-label"><b> Id</b></label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="id"  ng-disabled="true"  ng-model="item.id">
+              </div>
+         </div>
+            
+
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-2">
+              	<button type="submit" class="btn btn-primary" ui-sref="authorstyle">back to List</button>
+                <button type="reset" class="btn btn-default" ng-click="remove(item)" ng-show="mode != 'VIEW'">Delete</button>
+                <button type="submit" class="btn btn-primary" ng-click="saveItem(item)" ng-show="mode != 'VIEW'">Save</button>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<section class="tables-data">
+
+  <div class="page-header">
+    <h1>
+      <i class="md md-list"></i>
+      Linked entities
+    </h1>
+    <p class="lead">
+      Todo
+    </p>
+  </div>
+
+
+<section class="tables-data">
+
+  <div class="page-header">
+    <h1>
+      <i class="md md-list"></i>
+      Linked entities (inverse relation)
+    </h1>
+    <p class="lead">
+      Todo
+    </p>
+  </div>
+													 	 	 	 	 	 							 	 	 	 				 	 	 	 	  
+</section>
+
+
+
