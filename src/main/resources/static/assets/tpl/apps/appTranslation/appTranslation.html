@@ -5,45 +5,41 @@
 									
 						
 				
-<section>
-  <div class="page-header">
-    <div class="actions" >
-      <button type="button" class="btn btn-link btn-round-sm theme-secondary-text" ng-click="showInfo()" data-title="{{ 'INFO' | translate }}" bs-tooltip><span class="md md-info-outline"></span></button>
-	  <button type="button" class="btn btn-link btn-round-sm theme-secondary-text" ng-click="searchItem()" data-title="{{ 'SEARCH' | translate }}" bs-tooltip><span class="md md-search"></span></button>
-      <button type="button" class="btn btn-link btn-round-sm theme-secondary-text" ng-click="refresh()" data-title="{{ 'REFRESH_GRID' | translate }}" bs-tooltip><span class="md md-refresh"></span></button>
-      
-      <button type="button" class="btn btn-link btn-round-sm theme-secondary-text" ng-click="clear()" data-title="{{ 'CLEAR_GRID' | translate }}" bs-tooltip><span class="md md-clear"></span></button>
-      <button type="button" class="btn btn-link btn-round-sm theme-secondary-text" ng-click="index()" data-title="{{ 'INDEX_ITEMS' | translate }}" bs-tooltip><span class="md md-assessment"></span></button>
-      
-      <button type="button" class="btn btn-link btn-round-sm theme-secondary-text" ui-sref="configAppTranslation()" data-title="{{ 'CONFIG_ENTITY' | translate }}" bs-tooltip><span class="md md-assignment"></span></button>
-      
-      <button type="button" class="btn btn-link btn-round-sm theme-secondary-text" ng-csv="getCSVData()" field-separator=";" lazy-load="true" charset="utf-8" filename="appTranslationData.csv" csv-label="true" data-title="export the grid"><span class="md md-get-app"></span></button>
-      
-      <button type="button" class="btn btn-link btn-round-sm theme-secondary-text" ng-click="checkBoxValue()" data-title="test button" bs-tooltip><span class="md md-info"></span></button>
-    </div>
-
-    <h1>
-      <i class="md md-camera"></i>
-      AppTranslation entity
-    </h1>
-    <p class="lead">
-      In most applications you need basic table listings and editing capabilities.
-      With this app you can create simple admin functionality based on a json web service.
-    </p>
-  </div>
-</section>
-
-<div>
+    	<!-- Tables
+      ================================================== -->
+		<div class="bs-docs-section">
+		
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="page-header">
+						<h4 id="tables">{{data.length}} of {{pagination.totalElements}} {{settings.plural}} available</h4>
+					</div>
+				</div>
+		
+			</div> <!-- row -->
+		
+			<div class="row">
+				<div class="col-lg-8">
+				</div>
+				<div class="col-lg-4">
+					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="{{ 'INFO' | translate }}" data-original-title="{{ 'INFO' | translate }}" ng-click="showInfo()"><i class="material-icons md-18">info_outline</i></button>
+					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="{{ 'SEARCH' | translate }}" data-original-title="{{ 'SEARCH' | translate }}" ng-click="searchItem()"><i class="material-icons md-18">search</i></button>
+					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="Refresh the book grid" data-original-title="Tooltip on top" ng-click="refresh()"><i class="material-icons md-18">cached</i></button>
+					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="right" title="{{ 'CLEAR_GRID' | translate }}" data-original-title="{{ 'CLEAR_GRID' | translate }}" ng-click="clear()"><i class="material-icons md-18">clear</i></button>
+					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="right" title="Index all books via ElasticSearch" data-original-title="{{ 'CLEAR_GRID' | translate }}" ng-click="index()"><i class="material-icons md-18">find_in_page</i></button>
+					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="right" title="Go to screen settings" data-original-title="Tooltip on right" ui-sref="configBook()"><i class="material-icons md-18">settings</i></button>
+					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="right" title="Download books into a CSV file" data-original-title="Tooltip on right" ng-csv="getCSVData()" field-separator=";" lazy-load="true" charset="utf-8" filename="appTranslationData.csv" csv-label="true"><i class="material-icons md-18">file_download</i></button>
+				</div>
 
 
-    <div class="table-responsive well no-padding white no-margin">
-      <h3 class="table-title">{{data.length}} of {{pagination.totalElements}} {{settings.plural}} available</h3>
+ 			</div>
+		
+			<div class="row">
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<th><input type="checkbox" class="relative" ng-model="selectAll" ng-click="checkAll()" /></th>
 
-      <table class="table table-full m-b-60" id="table-area-1" fsm-big-data="data of data take 30">
-        <thead>
-        <tr fsm-sticky-header scroll-body="'#table-area-1'" scroll-stop="64">
-          <th><input type="checkbox" class="relative" ng-model="selectAll" ng-click="checkAll()" /></th>
-          <th>Icon</th>
 			<th fsm-sort="id">Id</th>
 				  <th fsm-sort="language" ng-show="configValue.language">Language</th>
 				  <th fsm-sort="key" ng-show="configValue.key">Key</th>
@@ -65,30 +61,27 @@
 						    <td ng-show="configValue.language">{{item.language}}</td>
 								    <td ng-show="configValue.key">{{item.key}}</td>
 								    <td ng-show="configValue.value">{{item.value}}</td>
-			            <td class="text-right" ng-click="$event.stopPropagation()">
-              <button type="button" class="btn btn-link btn-round" data-title="{{ 'EDIT_ITEM' | translate }}" ui-sref="editAppTranslation( {id:item.id} )" bs-tooltip><i class="md md-edit"></i></button>
-              <button type="button" class="btn btn-link btn-round" data-title="{{ 'VIEW_ITEM' | translate }}" ui-sref="viewAppTranslation( {id:item.id} )" bs-tooltip><i class="md md-search"></i></button>
-              <button type="button" class="btn btn-link btn-round" data-title="{{ 'DELETE_ITEM' | translate }}" ng-click="remove(item)" bs-tooltip><i class="md md-delete"></i></button>
-            </td>
+						            <td class="text-right">			            
+			            <button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="{{ 'EDIT_ITEM' | translate }}" ui-sref="editAppTranslation( {id:item.id} )"><i class="material-icons md-18">mode_edit</i></button>
+              			<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="{{ 'VIEW_ITEM' | translate }}" ui-sref="viewAppTranslation( {id:item.id} )"><i class="material-icons md-18">description</i></button>
+						<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="{{ 'DELETE_ITEM' | translate }}" ng-click="remove(item)"><i class="material-icons md-18">delete_forever</i></button>
+			</td>
           </tr>
-        </tbody>
-      </table>
-      
-      <div class="p-20">
-      	<li class="pager">
-			<button type="button" ng-click="first()" ng-disabled="pagination.first" class="btn btn-default pull-left">|&laquo; First</button>      
-      		<button type="button" ng-click="prev()" ng-disabled="pagination.first" class="btn btn-default pull-left">&laquo; Previous</button>
-      		<button type="button" ng-click="last()" ng-disabled="pagination.last" class="btn btn-default pull-right">Last &raquo;|</button>
-      		<button type="button" ng-click="next()" ng-disabled="pagination.last" class="btn btn-default pull-right">Next &raquo;</button>
-      	</li>
-      </div>
-    </div>
-
-  <br><br><br><br>
-  <div class="footer-buttons">
-    <div class="btn btn-primary btn-round btn-lg m-r-10 btn-footer" ng-show="(data|filter:{selected: true}).length" ng-click="remove()"  data-title="Remove {{(data|filter:{selected: true}).length}} item(s)" bs-tooltip><i class="md md-delete"></i></div>
-    <div class="btn btn-default btn-round btn-lg m-r-10 btn-footer" scroll-to="top" ng-hide="scroll<100" data-title="{{ 'SCROLL_TO_TOP' | translate }}" bs-tooltip><i class="md md-arrow-drop-up"></i></div>
-    <div class="btn btn-primary btn-round btn-lg" ui-sref="createAppTranslation()" data-title="New {{settings.singular}}" bs-tooltip><i class="md md-add"></i></div>
-  </div>
-
-</div>
+					</tbody>
+				</table>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-12">
+					<div>
+						<ul class="pagination pagination-sm">
+							<li class="disabled"><a href="#" data-toggle="tooltip" data-placement="top" title="Go to first page" ng-click="first()">|&laquo; First</a></li>
+							<li class="active"><a href="#" data-toggle="tooltip" data-placement="top" title="Go to previous page" ng-click="prev()">&laquo; Previous</a></li>
+							<li><a href="#" data-toggle="tooltip" data-placement="top" title="Go to next page" ng-click="next()">Next &raquo;</a></li>
+							<li><a href="#" data-toggle="tooltip" data-placement="top" title="Go to last page" ng-click="last()">Last &raquo;|</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div> <!-- bs-docs-section -->

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<celerioPack xmlns="http://www.jaxio.com/schema/celerio">
-    <packName value="angular-lab"/>
-    <packDescription value="TODO"/>
-    <packDescription2 value="TODO"/>
-    <packCommand value="mvn -Pdb,metadata,gen"/>
-    <packCommandHelp value="Then open http://localhost:8080/"/>
-    <projectLink value="TODO"/>
-</celerioPack>

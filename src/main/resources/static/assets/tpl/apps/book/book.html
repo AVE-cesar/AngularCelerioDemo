@@ -1,4 +1,14 @@
-		<!-- Tables
+
+					
+									
+									
+									
+									
+									
+									
+						
+				
+    	<!-- Tables
       ================================================== -->
 		<div class="bs-docs-section">
 		
@@ -15,13 +25,13 @@
 				<div class="col-lg-8">
 				</div>
 				<div class="col-lg-4">
-					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="Search" data-original-title="Search" ng-click="showInfo()"><i class="material-icons md-18">info_outline</i></button>
-					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="Find a book" data-original-title="Tooltip on top" ng-click="searchItem()"><i class="material-icons md-18">search</i></button>
+					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="{{ 'INFO' | translate }}" data-original-title="{{ 'INFO' | translate }}" ng-click="showInfo()"><i class="material-icons md-18">info_outline</i></button>
+					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="{{ 'SEARCH' | translate }}" data-original-title="{{ 'SEARCH' | translate }}" ng-click="searchItem()"><i class="material-icons md-18">search</i></button>
 					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="Refresh the book grid" data-original-title="Tooltip on top" ng-click="refresh()"><i class="material-icons md-18">cached</i></button>
 					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="right" title="{{ 'CLEAR_GRID' | translate }}" data-original-title="{{ 'CLEAR_GRID' | translate }}" ng-click="clear()"><i class="material-icons md-18">clear</i></button>
 					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="right" title="Index all books via ElasticSearch" data-original-title="{{ 'CLEAR_GRID' | translate }}" ng-click="index()"><i class="material-icons md-18">find_in_page</i></button>
 					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="right" title="Go to screen settings" data-original-title="Tooltip on right" ui-sref="configBook()"><i class="material-icons md-18">settings</i></button>
-					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="right" title="Download books into a CSV file" data-original-title="Tooltip on right" ng-csv="getCSVData()" field-separator=";" lazy-load="true" charset="utf-8" filename="addressData.csv" csv-label="true"><i class="material-icons md-18">file_download</i></button>
+					<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="right" title="Download books into a CSV file" data-original-title="Tooltip on right" ng-csv="getCSVData()" field-separator=";" lazy-load="true" charset="utf-8" filename="bookData.csv" csv-label="true"><i class="material-icons md-18">file_download</i></button>
 				</div>
 
 
@@ -32,7 +42,8 @@
 					<thead>
 						<tr>
 							<th><input type="checkbox" class="relative" ng-model="selectAll" ng-click="checkAll()" /></th>
-							<th fsm-sort="id">Id</th>
+
+			<th fsm-sort="id">Id</th>
 				  <th fsm-sort="title" ng-show="configValue.title">Title</th>
 				  <th fsm-sort="description" ng-show="configValue.description">Description</th>
 				  <th fsm-sort="publicationDate" ng-show="configValue.publicationDate">PublicationDate</th>
@@ -55,15 +66,15 @@
 			<td>{{item.id}}</td>
 						    <td ng-show="configValue.title">{{item.title}}</td>
 								    <td ng-show="configValue.description">{{item.description}}</td>
-									<td ng-show="configValue.publicationDate">{{item.publicationDate | date:"dd/MM/yyyy"}}</td>
+									<td  ng-show="configValue.publicationDate">{{item.publicationDate | date:"dd/MM/yyyy"}}</td>
 								    <td ng-show="configValue.authorId">{{item.authorId}}</td>
 								    <td ng-show="configValue.price">{{item.price}}</td>
 								    <td ng-show="configValue.barcodeid">{{item.barcodeid}}</td>
-			            <td class="text-right">			            
-			            <button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="Edit this book" ui-sref="editBook( {id:item.id} )"><i class="material-icons md-18">mode_edit</i></button>
-              			<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="View this book in read only mode" ui-sref="viewBook( {id:item.id} )"><i class="material-icons md-18">description</i></button>
-              			<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="Delete this book" ng-click="remove(item)"><i class="material-icons md-18">delete_forever</i></button>
-            </td>
+						            <td class="text-right">			            
+			            <button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="{{ 'EDIT_ITEM' | translate }}" ui-sref="editBook( {id:item.id} )"><i class="material-icons md-18">mode_edit</i></button>
+              			<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="{{ 'VIEW_ITEM' | translate }}" ui-sref="viewBook( {id:item.id} )"><i class="material-icons md-18">description</i></button>
+						<button type="button" class="btn btn-link btn-round btn-xs" data-toggle="tooltip" data-placement="top" title="{{ 'DELETE_ITEM' | translate }}" ng-click="remove(item)"><i class="material-icons md-18">delete_forever</i></button>
+			</td>
           </tr>
 					</tbody>
 				</table>

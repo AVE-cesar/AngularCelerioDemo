@@ -84,7 +84,7 @@ scope.refreshByPage = function (page, size, addMode) {
 
 /** Executes the search with criteria on the server side */
 scope.startSearch = function(item) {
-	log.info("startSearch, criteria: " + scope.item);
+	log.info("startSearch, criteria: " + item);
 
 	// call search on the server side and refresh the grid
 	bookRestService.search(item, function success(result){
@@ -160,8 +160,9 @@ scope.searchItem = function() {
 
 /** Executes the Elastic search on the server side */
 scope.startElasticSearch = function(item) {
+	log.info("item.query in startElasticSearch: " + item.query);
 	// get criteria
-	var query = scope.item.query;
+	var query = item.query;
 	log.info("startElasticSearch: " + query);
 	
 	scope.data = [];
@@ -174,9 +175,6 @@ scope.startElasticSearch = function(item) {
 		scope.data = result;
 		log.info("data post refresh:" + result);
 	});
-	
-	// close the search aside
-	hideForm(searchAside);
 };
 
 /** Loads only one item with its ID */

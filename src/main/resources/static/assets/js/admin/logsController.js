@@ -3,7 +3,7 @@
 // Documentation: http://www.jaxio.com/documentation/celerio/
 // Follow us on twitter: @jaxiosoft
 // Need commercial support ? Contact us: info@jaxio.com
-// Template angular-lab:angularjs/assets/js/admin/logsController.p.vm.js
+// Template angular-lab:angularjs/static/assets/js/admin/logsController.p.vm.js
 //
 
 /** main REST client for managing special Logs entity */

@@ -22,7 +22,7 @@ app.controller("BookEditController", ["$scope", "$window", "$aside",
 		// defines the success behavior inside a methode
 		var onSaveSuccess = function success(data) {
 			console.log('success, got data: ', data);
-		
+			/*
 			window.showAlert = function(){
 				
 				var userALert = alertService({
@@ -37,10 +37,14 @@ app.controller("BookEditController", ["$scope", "$window", "$aside",
 		    
 				timeoutService(function() {
 					userALert.show()
-		        	}, 1 /* timeout duration */);
+		        	}, 1);
 			};
 			
 			window.showAlert();
+			*/
+			$('#myModal').find('.modal-title').text('Book:');
+			$('#myModal').find('.modal-body').text('This book has been saved: ' + data.id);
+			$('#myModal').modal('show');
 			};
 		
 			// defines the error behavior inside a methode
@@ -76,7 +80,7 @@ app.controller("BookEditController", ["$scope", "$window", "$aside",
 
 	/** Removes one item or a list of items (selected ones) */
 	scope.remove = function(item) {
-		
+		/*
 		var r = confirm("Are you sure ?");
 		if (r == true) {
 			if (item) {				
@@ -88,7 +92,21 @@ app.controller("BookEditController", ["$scope", "$window", "$aside",
 					alert('request failed');
 				});
 			}	
-		}
+		}*/
+		
+		//$('#confirm').modal('show');
+		
+		$('#confirm').modal({ backdrop: 'static', keyboard: false })
+        .one('click', '#delete', function (e) {
+        	bookRestService.delete({id: item.id}, function success(data) {
+				scope.clear();
+				alert('item deleted');
+				
+				// que faire ensuite car le formulaire est vidé ?
+			}, function failure(err) {
+				alert('request failed');
+			});
+        });
 	};
 
 }]);

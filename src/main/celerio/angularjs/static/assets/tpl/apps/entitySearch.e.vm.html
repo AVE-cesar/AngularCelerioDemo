@@ -1,0 +1,93 @@
+$output.resource("static/assets/tpl/apps/${entity.model.var}", "${entity.model.var}Search.html")##
+<br>
+<br>
+<div class="row"></div>
+
+<!-- ElasticSearch form -->	
+<div class="panel-group">
+<form class="form-floating" ng-submit="startElasticSearch(savedSearch)">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#${entity.model.var}ElasticSearchForm">${entity.model.type} Elastic Search Form</a>
+      </h4>
+    </div>
+    <div id="${entity.model.var}ElasticSearchForm" class="panel-collapse collapse">
+      <div class="panel-body">
+          <div class="form-group filled">
+            <label class="control-label">{{ 'QUERY' | translate }}</label>
+            <input type="text" class="form-control input-sm" ng-model="savedSearch.query" required>
+          </div>
+      </div> <!-- panel body end -->
+      <div class="panel-footer">
+      	<div class="form-group">
+      			<button type="submit" class="btn btn-sm btn-primary" >{{ 'ELASTIC_SEARCH' | translate }}</button>
+        </div>
+    </div> <!-- panel footer end -->
+  </div>
+</form>
+</div>
+</div>
+
+<!-- Entity search form -->
+<div class="panel-group">
+<form class="form-floating" ng-submit="startSearch(item)">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#${entity.model.var}SearchForm">${entity.model.type} Search Form</a>
+	  </h4>
+    </div>
+    <div id="${entity.model.var}SearchForm" class="panel-collapse collapse">
+      <div class="panel-body">
+
+#foreach ($attribute in $entity.nonCpkAttributes.list)		
+	#if (!$attribute.isInPk()  && !$attribute.isInFk())
+		<div class="form-group filled">
+		    <label class="control-label">$attribute.varUp</label>
+        #if ($attribute.type == "BigDecimal" || $attribute.type == "Boolean" || $attribute.type == "Double" || $attribute.type == "Integer" || $attribute.type == "BigInteger")
+        	<input type="text" class="form-control input-sm" ng-model="savedSearch.${attribute.var}">
+    	#elseif ($attribute.type == "String")
+            <input type="text" class="form-control input-sm" ng-model="savedSearch.${attribute.var}">
+        #elseif ($attribute.type == "Date")
+        	<input type="text" class="form-control input-sm" ng-model="savedSearch.${attribute.var}" data-autoclose="1" placeholder="{{ '${attribute.name}' | translate }}" bs-datepicker>
+        #else
+        	<p>Type [$attribute.type] not implemented yet !!!!</p>
+        #end
+        </div>
+	#end
+	
+	#if ($attribute.isInFk())
+		#if ($attribute.getXToOneRelation().isManyToOne())
+			<div class="form-group filled">
+            	<label class="control-label">${attribute.getEntityIPointTo().name}</label>
+            	<ui-select ng-model="savedSearch.${attribute.var}" theme="select2" title="Choose an $attribute.getEntityIPointTo().name.toLowerCase()" search-enabled="false">
+                	<ui-select-match placeholder="Choose an $attribute.getEntityIPointTo().name.toLowerCase()">{{${dollar}select.selected.name}}</ui-select-match>
+                	<ui-select-choices repeat="item in ${attribute.getEntityIPointTo().name.toLowerCase()}s | filter: ${dollar}select.search">
+                  		<div ng-bind-html="item.name | highlight: ${dollar}select.search"></div>
+                  		#foreach ($pkAttribute in $attribute.getEntityIPointTo().getPrimaryKeyAttributes().list)
+                  			<small ng-bind-html="item.$pkAttribute.name | highlight: ${dollar}select.search"></small>
+                  		#end
+                	</ui-select-choices>
+             	</ui-select>
+		 </div>
+		#else
+			<p>Type of relation [$attribute.getXToOneRelation()] not implemented yet !!!!</p>
+		#end 
+	#end
+	
+#end
+		</div> <!-- panel body end -->
+		<div class="panel-footer">
+				<!-- Form buttons: begin -->
+                  <div class="form-group">
+                      <button type="button" ng-click="clearSavedSearch()" class="btn btn-sm btn-default">{{ 'CLEAR' | translate }}</button>
+                      <button type="submit" class="btn btn-sm btn-primary">{{ 'SEARCH' | translate }}</button>
+                  </div>
+                  <!-- Form buttons: end -->
+                  
+         </div> <!-- panel footer end -->
+  </div>
+</form>
+</div>
+</div>

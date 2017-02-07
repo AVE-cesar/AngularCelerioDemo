@@ -3,7 +3,7 @@
 // Documentation: http://www.jaxio.com/documentation/celerio/
 // Follow us on twitter: @jaxiosoft
 // Need commercial support ? Contact us: info@jaxio.com
-// Template angular-lab:angularjs/assets/js/applicationStates.p.vm.js
+// Template pack-custom:angularjs/assets/js/applicationStates.p.vm.js
 //
 
 
@@ -11,59 +11,18 @@
 app.config(function($stateProvider, $urlRouterProvider) {
 	//
 	// For any unmatched url, redirect to /dashboard
-	$urlRouterProvider.otherwise("/dashboard");
+	//$urlRouterProvider.otherwise("/dashboard");
 	//
   
-	// Now set up the states
-	$stateProvider
-    	.state('dashboard', {
-      		url: "/dashboard",
-      		templateUrl: "assets/tpl/dashboard.html"
-	});
-	
-	$stateProvider
-    	.state('settings', {
-      		url: "/settings",
-      		templateUrl: "assets/tpl/settings.html"
-    });
-    
-    $stateProvider
-    	.state('logout', {
-      		url: "/logout",
-      		templateUrl: "assets/tpl/logout.html"
-    });	
-    
-    $stateProvider
-    	.state('logLevels', {
-      		url: "/logLevels",
-      		templateUrl: "assets/tpl/logLevels.html",
-      		controller: "LogsController"
-    });
-    
-    $stateProvider
-    	.state('translation', {
-      		url: "/translation",
-      		templateUrl: "assets/tpl/apps/admin/translation.html",
-      		controller: "TranslationController"
-    });		
-    	
-					
-									
-									
-									
-									
-									
-									
-						
-					$stateProvider
-		.state('book', {
+  /* entities states */
+  /* to go to books search screen */
+  $stateProvider
+        .state('book', {
 	    	url: "/book",
-	    	templateUrl: "assets/tpl/apps/book/book.html",
-			controller: "BookController",
 			resolve: {
 				config : ['$stateParams', 'AppParameterRestService', '$log', function($stateParams, appParameterRestService, log) {
 					return appParameterRestService.getParameter({domain: 'SCREEN_CONFIG', key: 'Book'}).$promise.then (function (result) {
-					 	if (!result.value) {
+						if (!result.value) {
                    			// no data has been found inside the dabatase, we need to create a fresh one
 							return appParameterRestService.create({"domain": "SCREEN_CONFIG", "key": "Book", "value": "{ \"id\": true, \"title\": true, \"description\": true, \"publicationDate\": true, \"authorId\": true, \"price\": true, \"barcodeid\": true}"});
 						} else {
@@ -71,68 +30,26 @@ app.config(function($stateProvider, $urlRouterProvider) {
 						}
 						});
                     }]
-				} 
-	});		  
-					
-									
-									
-									
-						
-					$stateProvider
-		.state('appparameter', {
-	    	url: "/appparameter",
-	    	templateUrl: "assets/tpl/apps/appParameter/appParameter.html",
-			controller: "AppParameterController",
-			resolve: {
-				config : ['$stateParams', 'AppParameterRestService', '$log', function($stateParams, appParameterRestService, log) {
-					return appParameterRestService.getParameter({domain: 'SCREEN_CONFIG', key: 'AppParameter'}).$promise.then (function (result) {
-					 	if (!result.value) {
-                   			// no data has been found inside the dabatase, we need to create a fresh one
-							return appParameterRestService.create({"domain": "SCREEN_CONFIG", "key": "AppParameter", "value": "{ \"id\": true, \"domain\": true, \"key\": true, \"value\": true}"});
-						} else {
-							return result;
-						}
-						});
-                    }]
-				} 
-	});		  
-					
-									
-									
-									
-						
-					$stateProvider
-		.state('apptranslation', {
-	    	url: "/apptranslation",
-	    	templateUrl: "assets/tpl/apps/appTranslation/appTranslation.html",
-			controller: "AppTranslationController",
-			resolve: {
-				config : ['$stateParams', 'AppParameterRestService', '$log', function($stateParams, appParameterRestService, log) {
-					return appParameterRestService.getParameter({domain: 'SCREEN_CONFIG', key: 'AppTranslation'}).$promise.then (function (result) {
-					 	if (!result.value) {
-                   			// no data has been found inside the dabatase, we need to create a fresh one
-							return appParameterRestService.create({"domain": "SCREEN_CONFIG", "key": "AppTranslation", "value": "{ \"id\": true, \"language\": true, \"key\": true, \"value\": true}"});
-						} else {
-							return result;
-						}
-						});
-                    }]
-				} 
-	});		  
-
-					
-									
-									
-									
-									
-									
-									
-						
-					$stateProvider
+				},
+			views: {
+            	"searchView": {templateUrl: "assets/tpl/apps/book/bookSearch.html",
+            		controller: "BookController"},     
+				"mainView": {templateUrl: "assets/tpl/apps/book/book.html",
+					controller: "BookController"},
+				"footerView": {templateUrl: "assets/tpl/commons/footer.html"}
+				}
+            })	            
+     
+        /* to go in Edit mode on a book entity */
 		.state('editBook', {
 			url: "/book/{id}",
-	    	templateUrl: "assets/tpl/apps/book/bookEdit.html",
-			controller: "BookEditController",
+			views: {
+				"mainView": {
+					templateUrl: "assets/tpl/apps/book/bookEdit.html",
+					controller: "BookEditController"
+					},
+				"footerView": {templateUrl: "assets/tpl/commons/footer.html"}
+				},
 			resolve: {
 				mode : function() {
       				return "EDIT";
@@ -143,63 +60,18 @@ app.config(function($stateProvider, $urlRouterProvider) {
 						}).$promise;
                     }]
 				}
-	});
-					
-									
-									
-									
-						
-					$stateProvider
-		.state('editAppParameter', {
-			url: "/appparameter/{id}",
-	    	templateUrl: "assets/tpl/apps/appParameter/appParameterEdit.html",
-			controller: "AppParameterEditController",
-			resolve: {
-				mode : function() {
-      				return "EDIT";
-    			},
-				item : ['$stateParams', 'AppParameterRestService', '$log', function($stateParams, AppParameterRestService, log) {
-					return AppParameterRestService.get({id : $stateParams.id}, function success(result) {}, function failure(result){
-						log.info("something goes wrong !");
-						}).$promise;
-                    }]
-				}
-	});
-					
-									
-									
-									
-						
-					$stateProvider
-		.state('editAppTranslation', {
-			url: "/apptranslation/{id}",
-	    	templateUrl: "assets/tpl/apps/appTranslation/appTranslationEdit.html",
-			controller: "AppTranslationEditController",
-			resolve: {
-				mode : function() {
-      				return "EDIT";
-    			},
-				item : ['$stateParams', 'AppTranslationRestService', '$log', function($stateParams, AppTranslationRestService, log) {
-					return AppTranslationRestService.get({id : $stateParams.id}, function success(result) {}, function failure(result){
-						log.info("something goes wrong !");
-						}).$promise;
-                    }]
-				}
-	});
-
-					
-									
-									
-									
-									
-									
-									
-						
-					$stateProvider
+		})   
+		
+		/* to go in read only mode on a book entity */
 		.state('viewBook', {
-			url: "/book/view/{id}",
-	    	templateUrl: "assets/tpl/apps/book/bookEdit.html",
-			controller: "BookEditController",
+			url: "/book/view/{id}",	    			
+			views: {
+				"mainView": {
+					templateUrl: "assets/tpl/apps/book/bookEdit.html",
+					controller: "BookEditController"
+					},
+				"footerView": {templateUrl: "assets/tpl/commons/footer.html"}
+				},
 			resolve: {
 				mode : function() {
       				return "VIEW";
@@ -210,136 +82,125 @@ app.config(function($stateProvider, $urlRouterProvider) {
 						}).$promise;
                     }]
 				}
-	});
-					
-									
-									
-									
-						
-					$stateProvider
-		.state('viewAppParameter', {
-			url: "/appparameter/view/{id}",
-	    	templateUrl: "assets/tpl/apps/appParameter/appParameterEdit.html",
-			controller: "AppParameterEditController",
-			resolve: {
-				mode : function() {
-      				return "VIEW";
-    			},
-				item : ['$stateParams', 'AppParameterRestService', '$log', function($stateParams, AppParameterRestService, log) {
-					return AppParameterRestService.get({id : $stateParams.id}, function success(result) {}, function failure(result){
-						log.info("something goes wrong !");
-						}).$promise;
-                    }]
+		});
+  
+  /* common states */
+  $stateProvider
+		.state('home', {
+            url: "/",
+            views: {
+				"mainView": {templateUrl: "assets/tpl/commons/home.html"},
+				"footerView": {templateUrl: "assets/tpl/commons/footer.html"}
+				}
+            })
+		.state('form', {
+            url: "/form",
+            views: {
+				"mainView": {templateUrl: "assets/tpl/commons/form.html"},
+				"footerView": {templateUrl: "assets/tpl/commons/footer.html"}
+				}
+            })
+		.state('table', {
+            url: "/table",
+            views: {
+            	"searchView": {templateUrl: "assets/tpl/commons/search.html"},
+				"mainView": {templateUrl: "assets/tpl/commons/table.html"},
+				"footerView": {templateUrl: "assets/tpl/commons/emptyFooter.html"}
+				}
+            })
+        .state('testAlert', {
+            url: "/testAlert",
+            views: {
+				"mainView": {
+					templateUrl: "assets/tpl/commons/testAlert.html",
+					controller: "TestAlertController"},
+				"footerView": {templateUrl: "assets/tpl/commons/emptyFooter.html"}
+				}
+            })
+        .state('testIcon', {
+            url: "/testIcon",
+            views: {
+				"mainView": {
+					templateUrl: "assets/tpl/commons/testIcon.html"
+				},
+				"footerView": {templateUrl: "assets/tpl/commons/emptyFooter.html"}
+				}
+            })
+		.state('testAside', {
+            url: "/testAside",
+            views: {
+				"mainView": {
+					templateUrl: "assets/tpl/commons/testAside.html",
+					controller: "TestAsideController"
+				},
+				"footerView": {templateUrl: "assets/tpl/commons/emptyFooter.html"}
+				}
+            })
+        .state('testModal', {
+            url: "/tesModal",
+            views: {
+				"mainView": {
+					templateUrl: "assets/tpl/commons/testModal.html",
+					controller: "TestModalController"
+				},
+				"footerView": {templateUrl: "assets/tpl/commons/emptyFooter.html"}
+				}
+            });
+  
+	// Now set up the states
+	$stateProvider
+    	.state('dashboard', {
+      		url: "/dashboard",
+			views: {
+				"mainView": {
+					templateUrl: "assets/tpl/commons/dashboard.html"
+				},
+				"footerView": {templateUrl: "assets/tpl/commons/emptyFooter.html"}
 				}
 	});
-					
-									
-									
-									
-						
-					$stateProvider
-		.state('viewAppTranslation', {
-			url: "/apptranslation/view/{id}",
-	    	templateUrl: "assets/tpl/apps/appTranslation/appTranslationEdit.html",
-			controller: "AppTranslationEditController",
-			resolve: {
-				mode : function() {
-      				return "VIEW";
-    			},
-				item : ['$stateParams', 'AppTranslationRestService', '$log', function($stateParams, AppTranslationRestService, log) {
-					return AppTranslationRestService.get({id : $stateParams.id}, function success(result) {}, function failure(result){
-						log.info("something goes wrong !");
-						}).$promise;
-                    }]
+	
+	$stateProvider
+    	.state('settings', {
+      		url: "/settings",
+			views: {
+				"mainView": {
+					templateUrl: "assets/tpl/commons/settings.html"
+				},
+				"footerView": {templateUrl: "assets/tpl/commons/emptyFooter.html"}
 				}
-	});
+    });
+    
+    $stateProvider
+    	.state('logout', {
+      		url: "/logout",
+			views: {
+				"mainView": {
+					templateUrl: "assets/tpl/commons/logout.html"
+				},
+				"footerView": {templateUrl: "assets/tpl/commons/emptyFooter.html"}
+				}
+    });
+    
+    $stateProvider
+    	.state('logLevels', {
+      		url: "/logLevels",
+			views: {
+				"mainView": {
+					templateUrl: "assets/tpl/commons/logLevels.html"
+				},
+				"footerView": {templateUrl: "assets/tpl/commons/emptyFooter.html"}
+				}
+    });
+    
+    $stateProvider
+    	.state('translation', {
+      		url: "/translation",
+			views: {
+				"mainView": {
+					templateUrl: "assets/tpl/apps/admin/translation.html"
+				},
+				"footerView": {templateUrl: "assets/tpl/commons/emptyFooter.html"}
+				}
+    });
 
-	$stateProvider
-		.state('createBook', {
-			url: "/book",
-	    	templateUrl: "assets/tpl/apps/book/bookEdit.html",
-			controller: "BookCreateController",
-			resolve: {
-				mode : function() {
-      				return "CREATE";
-    			}
-    		}
-	});
-	$stateProvider
-		.state('createAppParameter', {
-			url: "/appparameter",
-	    	templateUrl: "assets/tpl/apps/appParameter/appParameterEdit.html",
-			controller: "AppParameterCreateController",
-			resolve: {
-				mode : function() {
-      				return "CREATE";
-    			}
-    		}
-	});
-	$stateProvider
-		.state('createAppTranslation', {
-			url: "/apptranslation",
-	    	templateUrl: "assets/tpl/apps/appTranslation/appTranslationEdit.html",
-			controller: "AppTranslationCreateController",
-			resolve: {
-				mode : function() {
-      				return "CREATE";
-    			}
-    		}
-	});
-
-	$stateProvider
-		.state('configBook', {
-			url: "/bookConfig",
-	    	templateUrl: "assets/tpl/apps/book/bookConfig.html",
-			controller: "BookConfigController",
-			resolve: {
-				config : ['$stateParams', 'AppParameterRestService', '$log', function($stateParams, appParameterRestService, log) {
-					return appParameterRestService.getParameter({domain: 'SCREEN_CONFIG', key: 'Book'}).$promise.then (function (result) {
-					 	if (!result.value) {
-                   			// no data has been found inside the dabatase, we need to create a fresh one
-							return appParameterRestService.create({"domain": "SCREEN_CONFIG", "key": "Book", "value": "{ \"id\": true, \"language\": true, \"key\": true, \"value\": true}"});
-						} else {
-							return result;
-						}
-						});
-                    }]
-				}
-	});
-	$stateProvider
-		.state('configAppParameter', {
-			url: "/appParameterConfig",
-	    	templateUrl: "assets/tpl/apps/appParameter/appParameterConfig.html",
-			controller: "AppParameterConfigController",
-			resolve: {
-				config : ['$stateParams', 'AppParameterRestService', '$log', function($stateParams, appParameterRestService, log) {
-					return appParameterRestService.getParameter({domain: 'SCREEN_CONFIG', key: 'AppParameter'}).$promise.then (function (result) {
-					 	if (!result.value) {
-                   			// no data has been found inside the dabatase, we need to create a fresh one
-							return appParameterRestService.create({"domain": "SCREEN_CONFIG", "key": "AppParameter", "value": "{ \"id\": true, \"language\": true, \"key\": true, \"value\": true}"});
-						} else {
-							return result;
-						}
-						});
-                    }]
-				}
-	});
-	$stateProvider
-		.state('configAppTranslation', {
-			url: "/appTranslationConfig",
-	    	templateUrl: "assets/tpl/apps/appTranslation/appTranslationConfig.html",
-			controller: "AppTranslationConfigController",
-			resolve: {
-				config : ['$stateParams', 'AppParameterRestService', '$log', function($stateParams, appParameterRestService, log) {
-					return appParameterRestService.getParameter({domain: 'SCREEN_CONFIG', key: 'AppTranslation'}).$promise.then (function (result) {
-					 	if (!result.value) {
-                   			// no data has been found inside the dabatase, we need to create a fresh one
-							return appParameterRestService.create({"domain": "SCREEN_CONFIG", "key": "AppTranslation", "value": "{ \"id\": true, \"language\": true, \"key\": true, \"value\": true}"});
-						} else {
-							return result;
-						}
-						});
-                    }]
-				}
-	});
 });

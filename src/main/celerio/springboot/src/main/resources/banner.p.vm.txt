@@ -1,3 +1,0 @@
-$output.resource("banner.txt")##
-Jaxio Angular lab banner base upon Spring Boot ${dollar}{spring-boot.version}
-

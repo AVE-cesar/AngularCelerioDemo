@@ -3,7 +3,7 @@
 // Documentation: http://www.jaxio.com/documentation/celerio/
 // Follow us on twitter: @jaxiosoft
 // Need commercial support ? Contact us: info@jaxio.com
-// Template angular-lab:angularjs/assets/js/specialConfiguration.p.vm.js
+// Template angular-lab:angularjs/static/assets/js/specialConfiguration.p.vm.js
 //
 
 /** ResourceProvider special configuration (very important !) */

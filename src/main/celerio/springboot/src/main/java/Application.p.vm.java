@@ -27,7 +27,5 @@ public class Application {
         
         log.info("\n\nAccess URLs:\n----------------------------------------------------------\n\t" +
                 "Local: \t\thttp://127.0.0.1:" + serverPort + contextPath + "\n\n");
-        log.info("\n\nAccess URLs:\n--------------------- Or ---------------------------------\n\t" + "Local: \t\thttp://127.0.0.1:" + serverPort + contextPath + "/index2.html Bootstrap version"
-                + "\n\n");
     }
 }
