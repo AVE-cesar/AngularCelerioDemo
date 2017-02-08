@@ -86,7 +86,7 @@ public class BookResource {
         }
         Book result = bookRepository.save(book);
         bookSearchRepository.save(book);
-        return ResponseEntity.ok().body(result);
+        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON_UTF8).body(result);
     }
 
     /**
