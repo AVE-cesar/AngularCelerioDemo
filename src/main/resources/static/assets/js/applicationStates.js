@@ -29,11 +29,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
 							return result;
 						}
 						});
-                    }]
+                    }],
+                savedSearch : function() {
+      				return {title: "a", query: "sodome"};
+    			}
+                    		
 				},
 			views: {
-            	"searchView": {templateUrl: "assets/tpl/apps/book/bookSearch.html",
-            		controller: "BookController"},     
+            	/*"searchView": {templateUrl: "assets/tpl/apps/book/bookSearch.html",
+            		controller: "BookController"},*/     
 				"mainView": {templateUrl: "assets/tpl/apps/book/book.html",
 					controller: "BookController"},
 				"footerView": {templateUrl: "assets/tpl/commons/footer.html"}

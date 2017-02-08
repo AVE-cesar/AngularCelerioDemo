@@ -10,14 +10,19 @@
 app.controller("BookController", ["$scope", "$window", "$aside", 
 "$log", "BookRestService", "BookRestSearchService", 
 		"BookRestIndexService", "BookRestMassDeleteService",
-									"$alert", "$timeout", "config", function(scope, window, c, log, 
+									"$alert", "$timeout", "config", "savedSearch", function(scope, window, c, log, 
 		bookRestService, bookRestSearchService, bookRestIndexService, 
 		bookRestMassDeleteService, 
-									alertService, timeoutService, config) {
+									alertService, timeoutService, config, savedSearch) {
 
 log.info("inside BookController, config.value: " + config.value);
+log.info("inside BookController, savedSearch: " + savedSearch);
 scope.configValue = angular.fromJson(config.value);
-		
+/* query holds fields value from the search form */
+scope.savedSearch = savedSearch;
+//saved search
+//scope.savedSearch = {};
+
 scope.settings = {
 		singular: "Item",
 		plural: "Items",
@@ -28,9 +33,6 @@ scope.settings = {
 scope.pagination = {};
 scope.totalElementsPerPage = 20;
 scope.busy = false;
-
-// saved search
-scope.savedSearch = {};
 
 // checkbox in the grid header
 scope.selectAll = false;

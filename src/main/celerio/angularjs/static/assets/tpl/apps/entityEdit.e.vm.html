@@ -1,4 +1,13 @@
 $output.resource("static/assets/tpl/apps/${entity.model.var}", "${entity.model.var}Edit.html")##
+
+<div class="row">
+	<!-- Breadcrumb -->
+	<ul class="breadcrumb">
+	  <li><a ui-sref="${entity.model.var}">${entity.model.type} search & result</a></li>
+	  <li class="active">${entity.model.type} detail</li>
+	</ul>
+</div>
+
 <section class="forms-basic">
   <div class="page-header">
     <h1>

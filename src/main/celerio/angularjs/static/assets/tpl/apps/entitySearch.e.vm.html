@@ -1,7 +1,12 @@
 $output.resource("static/assets/tpl/apps/${entity.model.var}", "${entity.model.var}Search.html")##
-<br>
-<br>
-<div class="row"></div>
+
+
+<div class="row">
+	<!-- Breadcrumb -->
+	<ul class="breadcrumb">
+  		<li class="active">${entity.model.type} search & result</li>
+	</ul>
+</div>
 
 <!-- ElasticSearch form -->	
 <div class="panel-group">
