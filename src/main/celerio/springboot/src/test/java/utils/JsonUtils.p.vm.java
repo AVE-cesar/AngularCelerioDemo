@@ -4,6 +4,12 @@ $output.require("java.io.IOException")##
 $output.require("com.fasterxml.jackson.annotation.JsonInclude")##
 $output.require("com.fasterxml.jackson.databind.ObjectMapper")##
 
+/**
+ * Contains various util methods around JSON.
+ * 
+ * @author bertrand
+ *
+ */
 public final class JsonUtils {
 
 	/**

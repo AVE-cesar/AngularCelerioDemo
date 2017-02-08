@@ -12,6 +12,12 @@ import java.io.IOException;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/**
+ * Contains various util methods around JSON.
+ * 
+ * @author bertrand
+ *
+ */
 public final class JsonUtils {
 
     /**
