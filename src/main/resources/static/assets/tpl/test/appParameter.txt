@@ -20,27 +20,27 @@ Entity pour laquelle on recherche les relations: AppTranslation
 true
 			attribut obligatoire
 	
-	id com.jaxio.celerio.model.Attribute@6b415f5f[
-  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@7b222230, project=com.jaxio.celerio.model.Project@364b1061[
+	id com.jaxio.celerio.model.Attribute@66749eea[
+  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@364b1061, project=com.jaxio.celerio.model.Project@50fdf44f[
   currentEntities=[Book, AppParameter, AppTranslation]
   currentEntitiesByTableName={APP_TRANSLATION=AppTranslation, BOOK=Book, APP_PARAMETER=AppParameter}
   currentEntitiesByName={APPTRANSLATION=AppTranslation, APPPARAMETER=AppParameter, BOOK=Book}
-  entities=com.jaxio.celerio.util.support.SimpleListHolder@7df6d663
-  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
-  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
-  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
-  views=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
-  tables=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
-  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
-  search=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  entities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
+  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
+  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
+  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
+  views=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
+  tables=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
+  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  search=com.jaxio.celerio.util.support.SimpleListHolder@c2df90e
   spis={}
-], celerio=com.jaxio.celerio.configuration.Celerio@50fdf44f, metadata=com.jaxio.celerio.configuration.database.Metadata@4f3faa70, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@172f4514, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
-  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@c2df90e
+], celerio=com.jaxio.celerio.configuration.Celerio@172f4514, metadata=com.jaxio.celerio.configuration.database.Metadata@4832f03b, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@7df6d663, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
+  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@41f3aaf1
   entity=AppParameter
-  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@66749eea
+  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@7135ce0a
   mappedType=M_INTEGER
-  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@7135ce0a
-  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@3c19592c
+  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@617449dd
+  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@60e1d87c
   cachedVar=id
   enumType=<null>
   labels=<null>
@@ -61,7 +61,7 @@ true
   isPassword=<null>
   xToOneRelation=<null>
   xToOneRelationSet=false
-  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@617449dd, search=com.jaxio.celerio.model.support.search.SearchAttribute@2e590b, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@42ef042a, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@1df5c7e3, values=com.jaxio.celerio.model.support.ValuesAttribute@5e0c4f21, h2=com.jaxio.celerio.model.support.h2.H2Attribute@2c18a3ea, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@166c2c17, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@25953be6, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@19dc0d32}
+  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@2e590b, search=com.jaxio.celerio.model.support.search.SearchAttribute@42ef042a, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@1df5c7e3, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@5e0c4f21, values=com.jaxio.celerio.model.support.ValuesAttribute@2c18a3ea, h2=com.jaxio.celerio.model.support.h2.H2Attribute@166c2c17, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@25953be6, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@19dc0d32, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@70b2fa10}
   var=<null>
   fullType=<null>
   packageNodes=<null>
@@ -73,33 +73,33 @@ true
   has=<null>
 ]
 	
-	PARTIE JPA: com.jaxio.celerio.model.support.jpa.JpaAttribute@7135ce0a
+	PARTIE JPA: com.jaxio.celerio.model.support.jpa.JpaAttribute@617449dd
 	
 			
 	true
 			attribut obligatoire
 	
-	domain com.jaxio.celerio.model.Attribute@7c96c85[
-  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@7b222230, project=com.jaxio.celerio.model.Project@364b1061[
+	domain com.jaxio.celerio.model.Attribute@b0f2d91[
+  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@364b1061, project=com.jaxio.celerio.model.Project@50fdf44f[
   currentEntities=[Book, AppParameter, AppTranslation]
   currentEntitiesByTableName={APP_TRANSLATION=AppTranslation, BOOK=Book, APP_PARAMETER=AppParameter}
   currentEntitiesByName={APPTRANSLATION=AppTranslation, APPPARAMETER=AppParameter, BOOK=Book}
-  entities=com.jaxio.celerio.util.support.SimpleListHolder@7df6d663
-  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
-  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
-  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
-  views=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
-  tables=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
-  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
-  search=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  entities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
+  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
+  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
+  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
+  views=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
+  tables=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
+  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  search=com.jaxio.celerio.util.support.SimpleListHolder@c2df90e
   spis={}
-], celerio=com.jaxio.celerio.configuration.Celerio@50fdf44f, metadata=com.jaxio.celerio.configuration.database.Metadata@4f3faa70, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@172f4514, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
-  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@c2df90e
+], celerio=com.jaxio.celerio.configuration.Celerio@172f4514, metadata=com.jaxio.celerio.configuration.database.Metadata@4832f03b, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@7df6d663, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
+  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@41f3aaf1
   entity=AppParameter
-  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@b0f2d91
+  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@7243145f
   mappedType=M_STRING
-  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@7243145f
-  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@3c19592c
+  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@15c6027d
+  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@60e1d87c
   cachedVar=domain
   enumType=<null>
   labels=<null>
@@ -120,7 +120,7 @@ true
   isPassword=<null>
   xToOneRelation=<null>
   xToOneRelationSet=false
-  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@15c6027d, search=com.jaxio.celerio.model.support.search.SearchAttribute@5927f904, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@2bb62414, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@413d2cd1, values=com.jaxio.celerio.model.support.ValuesAttribute@644d1b61, h2=com.jaxio.celerio.model.support.h2.H2Attribute@2443135, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@184823ed, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@30bbcf91, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@3ca14cf4}
+  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@5927f904, search=com.jaxio.celerio.model.support.search.SearchAttribute@2bb62414, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@413d2cd1, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@644d1b61, values=com.jaxio.celerio.model.support.ValuesAttribute@2443135, h2=com.jaxio.celerio.model.support.h2.H2Attribute@184823ed, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@30bbcf91, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@3ca14cf4, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@1f4f0fcc}
   var=<null>
   fullType=<null>
   packageNodes=<null>
@@ -132,33 +132,33 @@ true
   has=<null>
 ]
 	
-	PARTIE JPA: com.jaxio.celerio.model.support.jpa.JpaAttribute@7243145f
+	PARTIE JPA: com.jaxio.celerio.model.support.jpa.JpaAttribute@15c6027d
 	
 			
 	true
 			attribut obligatoire
 	
-	key com.jaxio.celerio.model.Attribute@1f4f0fcc[
-  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@7b222230, project=com.jaxio.celerio.model.Project@364b1061[
+	key com.jaxio.celerio.model.Attribute@46c10083[
+  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@364b1061, project=com.jaxio.celerio.model.Project@50fdf44f[
   currentEntities=[Book, AppParameter, AppTranslation]
   currentEntitiesByTableName={APP_TRANSLATION=AppTranslation, BOOK=Book, APP_PARAMETER=AppParameter}
   currentEntitiesByName={APPTRANSLATION=AppTranslation, APPPARAMETER=AppParameter, BOOK=Book}
-  entities=com.jaxio.celerio.util.support.SimpleListHolder@7df6d663
-  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
-  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
-  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
-  views=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
-  tables=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
-  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
-  search=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  entities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
+  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
+  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
+  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
+  views=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
+  tables=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
+  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  search=com.jaxio.celerio.util.support.SimpleListHolder@c2df90e
   spis={}
-], celerio=com.jaxio.celerio.configuration.Celerio@50fdf44f, metadata=com.jaxio.celerio.configuration.database.Metadata@4f3faa70, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@172f4514, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
-  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@c2df90e
+], celerio=com.jaxio.celerio.configuration.Celerio@172f4514, metadata=com.jaxio.celerio.configuration.database.Metadata@4832f03b, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@7df6d663, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
+  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@41f3aaf1
   entity=AppParameter
-  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@46c10083
+  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@28e8888d
   mappedType=M_STRING
-  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@28e8888d
-  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@3c19592c
+  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@1e98b788
+  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@60e1d87c
   cachedVar=key
   enumType=<null>
   labels=<null>
@@ -179,7 +179,7 @@ true
   isPassword=<null>
   xToOneRelation=<null>
   xToOneRelationSet=false
-  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@1e98b788, search=com.jaxio.celerio.model.support.search.SearchAttribute@794eeaf8, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@37c5284a, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@5b8572df, values=com.jaxio.celerio.model.support.ValuesAttribute@7aaad0, h2=com.jaxio.celerio.model.support.h2.H2Attribute@eed890d, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@10f477e2, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@6097fca9, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@35eee641}
+  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@794eeaf8, search=com.jaxio.celerio.model.support.search.SearchAttribute@37c5284a, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@5b8572df, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@7aaad0, values=com.jaxio.celerio.model.support.ValuesAttribute@eed890d, h2=com.jaxio.celerio.model.support.h2.H2Attribute@10f477e2, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@6097fca9, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@35eee641, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@5729b410}
   var=<null>
   fullType=<null>
   packageNodes=<null>
@@ -191,33 +191,33 @@ true
   has=<null>
 ]
 	
-	PARTIE JPA: com.jaxio.celerio.model.support.jpa.JpaAttribute@28e8888d
+	PARTIE JPA: com.jaxio.celerio.model.support.jpa.JpaAttribute@1e98b788
 	
 			
 	false
 			attribut NON obligatoire
 	
-	value com.jaxio.celerio.model.Attribute@5729b410[
-  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@7b222230, project=com.jaxio.celerio.model.Project@364b1061[
+	value com.jaxio.celerio.model.Attribute@64518270[
+  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@364b1061, project=com.jaxio.celerio.model.Project@50fdf44f[
   currentEntities=[Book, AppParameter, AppTranslation]
   currentEntitiesByTableName={APP_TRANSLATION=AppTranslation, BOOK=Book, APP_PARAMETER=AppParameter}
   currentEntitiesByName={APPTRANSLATION=AppTranslation, APPPARAMETER=AppParameter, BOOK=Book}
-  entities=com.jaxio.celerio.util.support.SimpleListHolder@7df6d663
-  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
-  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
-  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
-  views=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
-  tables=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
-  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
-  search=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  entities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
+  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
+  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
+  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
+  views=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
+  tables=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
+  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  search=com.jaxio.celerio.util.support.SimpleListHolder@c2df90e
   spis={}
-], celerio=com.jaxio.celerio.configuration.Celerio@50fdf44f, metadata=com.jaxio.celerio.configuration.database.Metadata@4f3faa70, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@172f4514, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
-  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@c2df90e
+], celerio=com.jaxio.celerio.configuration.Celerio@172f4514, metadata=com.jaxio.celerio.configuration.database.Metadata@4832f03b, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@7df6d663, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
+  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@41f3aaf1
   entity=AppParameter
-  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@64518270
+  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@3b7c58e7
   mappedType=M_STRING
-  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@3b7c58e7
-  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@3c19592c
+  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@79627d27
+  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@60e1d87c
   cachedVar=value
   enumType=<null>
   labels=<null>
@@ -238,7 +238,7 @@ true
   isPassword=<null>
   xToOneRelation=<null>
   xToOneRelationSet=false
-  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@79627d27, search=com.jaxio.celerio.model.support.search.SearchAttribute@6371cf2f, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@b5b9333, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@52b959df, values=com.jaxio.celerio.model.support.ValuesAttribute@38588dea, h2=com.jaxio.celerio.model.support.h2.H2Attribute@553d2579, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@2a8f6e6, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@1ac730cd, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@668cc9a2}
+  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@6371cf2f, search=com.jaxio.celerio.model.support.search.SearchAttribute@b5b9333, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@52b959df, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@38588dea, values=com.jaxio.celerio.model.support.ValuesAttribute@553d2579, h2=com.jaxio.celerio.model.support.h2.H2Attribute@2a8f6e6, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@1ac730cd, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@668cc9a2, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@5aa62ee7}
   var=<null>
   fullType=<null>
   packageNodes=<null>
@@ -250,7 +250,7 @@ true
   has=<null>
 ]
 	
-	PARTIE JPA: com.jaxio.celerio.model.support.jpa.JpaAttribute@3b7c58e7
+	PARTIE JPA: com.jaxio.celerio.model.support.jpa.JpaAttribute@79627d27
 	
 			
 	
@@ -258,27 +258,27 @@ true
 													r�sultat de la macro: 
 
 
-	id com.jaxio.celerio.model.Attribute@6b415f5f[
-  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@7b222230, project=com.jaxio.celerio.model.Project@364b1061[
+	id com.jaxio.celerio.model.Attribute@66749eea[
+  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@364b1061, project=com.jaxio.celerio.model.Project@50fdf44f[
   currentEntities=[Book, AppParameter, AppTranslation]
   currentEntitiesByTableName={APP_TRANSLATION=AppTranslation, BOOK=Book, APP_PARAMETER=AppParameter}
   currentEntitiesByName={APPTRANSLATION=AppTranslation, APPPARAMETER=AppParameter, BOOK=Book}
-  entities=com.jaxio.celerio.util.support.SimpleListHolder@7df6d663
-  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
-  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
-  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
-  views=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
-  tables=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
-  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
-  search=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  entities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
+  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
+  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
+  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
+  views=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
+  tables=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
+  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  search=com.jaxio.celerio.util.support.SimpleListHolder@c2df90e
   spis={}
-], celerio=com.jaxio.celerio.configuration.Celerio@50fdf44f, metadata=com.jaxio.celerio.configuration.database.Metadata@4f3faa70, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@172f4514, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
-  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@c2df90e
+], celerio=com.jaxio.celerio.configuration.Celerio@172f4514, metadata=com.jaxio.celerio.configuration.database.Metadata@4832f03b, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@7df6d663, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
+  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@41f3aaf1
   entity=AppParameter
-  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@66749eea
+  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@7135ce0a
   mappedType=M_INTEGER
-  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@7135ce0a
-  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@3c19592c
+  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@617449dd
+  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@60e1d87c
   cachedVar=id
   enumType=<null>
   labels=<null>
@@ -299,7 +299,7 @@ true
   isPassword=<null>
   xToOneRelation=<null>
   xToOneRelationSet=false
-  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@617449dd, search=com.jaxio.celerio.model.support.search.SearchAttribute@2e590b, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@42ef042a, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@1df5c7e3, values=com.jaxio.celerio.model.support.ValuesAttribute@5e0c4f21, h2=com.jaxio.celerio.model.support.h2.H2Attribute@2c18a3ea, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@166c2c17, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@25953be6, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@19dc0d32}
+  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@2e590b, search=com.jaxio.celerio.model.support.search.SearchAttribute@42ef042a, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@1df5c7e3, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@5e0c4f21, values=com.jaxio.celerio.model.support.ValuesAttribute@2c18a3ea, h2=com.jaxio.celerio.model.support.h2.H2Attribute@166c2c17, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@25953be6, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@19dc0d32, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@70b2fa10}
   var=<null>
   fullType=<null>
   packageNodes=<null>
@@ -310,27 +310,27 @@ true
   editer=<null>
   has=<null>
 ]
-	domain com.jaxio.celerio.model.Attribute@7c96c85[
-  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@7b222230, project=com.jaxio.celerio.model.Project@364b1061[
+	domain com.jaxio.celerio.model.Attribute@b0f2d91[
+  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@364b1061, project=com.jaxio.celerio.model.Project@50fdf44f[
   currentEntities=[Book, AppParameter, AppTranslation]
   currentEntitiesByTableName={APP_TRANSLATION=AppTranslation, BOOK=Book, APP_PARAMETER=AppParameter}
   currentEntitiesByName={APPTRANSLATION=AppTranslation, APPPARAMETER=AppParameter, BOOK=Book}
-  entities=com.jaxio.celerio.util.support.SimpleListHolder@7df6d663
-  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
-  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
-  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
-  views=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
-  tables=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
-  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
-  search=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  entities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
+  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
+  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
+  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
+  views=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
+  tables=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
+  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  search=com.jaxio.celerio.util.support.SimpleListHolder@c2df90e
   spis={}
-], celerio=com.jaxio.celerio.configuration.Celerio@50fdf44f, metadata=com.jaxio.celerio.configuration.database.Metadata@4f3faa70, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@172f4514, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
-  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@c2df90e
+], celerio=com.jaxio.celerio.configuration.Celerio@172f4514, metadata=com.jaxio.celerio.configuration.database.Metadata@4832f03b, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@7df6d663, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
+  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@41f3aaf1
   entity=AppParameter
-  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@b0f2d91
+  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@7243145f
   mappedType=M_STRING
-  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@7243145f
-  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@3c19592c
+  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@15c6027d
+  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@60e1d87c
   cachedVar=domain
   enumType=<null>
   labels=<null>
@@ -351,7 +351,7 @@ true
   isPassword=<null>
   xToOneRelation=<null>
   xToOneRelationSet=false
-  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@15c6027d, search=com.jaxio.celerio.model.support.search.SearchAttribute@5927f904, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@2bb62414, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@413d2cd1, values=com.jaxio.celerio.model.support.ValuesAttribute@644d1b61, h2=com.jaxio.celerio.model.support.h2.H2Attribute@2443135, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@184823ed, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@30bbcf91, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@3ca14cf4}
+  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@5927f904, search=com.jaxio.celerio.model.support.search.SearchAttribute@2bb62414, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@413d2cd1, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@644d1b61, values=com.jaxio.celerio.model.support.ValuesAttribute@2443135, h2=com.jaxio.celerio.model.support.h2.H2Attribute@184823ed, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@30bbcf91, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@3ca14cf4, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@1f4f0fcc}
   var=<null>
   fullType=<null>
   packageNodes=<null>
@@ -362,27 +362,27 @@ true
   editer=<null>
   has=<null>
 ]
-	key com.jaxio.celerio.model.Attribute@1f4f0fcc[
-  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@7b222230, project=com.jaxio.celerio.model.Project@364b1061[
+	key com.jaxio.celerio.model.Attribute@46c10083[
+  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@364b1061, project=com.jaxio.celerio.model.Project@50fdf44f[
   currentEntities=[Book, AppParameter, AppTranslation]
   currentEntitiesByTableName={APP_TRANSLATION=AppTranslation, BOOK=Book, APP_PARAMETER=AppParameter}
   currentEntitiesByName={APPTRANSLATION=AppTranslation, APPPARAMETER=AppParameter, BOOK=Book}
-  entities=com.jaxio.celerio.util.support.SimpleListHolder@7df6d663
-  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
-  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
-  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
-  views=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
-  tables=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
-  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
-  search=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  entities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
+  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
+  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
+  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
+  views=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
+  tables=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
+  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  search=com.jaxio.celerio.util.support.SimpleListHolder@c2df90e
   spis={}
-], celerio=com.jaxio.celerio.configuration.Celerio@50fdf44f, metadata=com.jaxio.celerio.configuration.database.Metadata@4f3faa70, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@172f4514, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
-  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@c2df90e
+], celerio=com.jaxio.celerio.configuration.Celerio@172f4514, metadata=com.jaxio.celerio.configuration.database.Metadata@4832f03b, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@7df6d663, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
+  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@41f3aaf1
   entity=AppParameter
-  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@46c10083
+  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@28e8888d
   mappedType=M_STRING
-  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@28e8888d
-  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@3c19592c
+  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@1e98b788
+  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@60e1d87c
   cachedVar=key
   enumType=<null>
   labels=<null>
@@ -403,7 +403,7 @@ true
   isPassword=<null>
   xToOneRelation=<null>
   xToOneRelationSet=false
-  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@1e98b788, search=com.jaxio.celerio.model.support.search.SearchAttribute@794eeaf8, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@37c5284a, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@5b8572df, values=com.jaxio.celerio.model.support.ValuesAttribute@7aaad0, h2=com.jaxio.celerio.model.support.h2.H2Attribute@eed890d, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@10f477e2, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@6097fca9, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@35eee641}
+  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@794eeaf8, search=com.jaxio.celerio.model.support.search.SearchAttribute@37c5284a, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@5b8572df, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@7aaad0, values=com.jaxio.celerio.model.support.ValuesAttribute@eed890d, h2=com.jaxio.celerio.model.support.h2.H2Attribute@10f477e2, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@6097fca9, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@35eee641, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@5729b410}
   var=<null>
   fullType=<null>
   packageNodes=<null>
@@ -414,27 +414,27 @@ true
   editer=<null>
   has=<null>
 ]
-	value com.jaxio.celerio.model.Attribute@5729b410[
-  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@7b222230, project=com.jaxio.celerio.model.Project@364b1061[
+	value com.jaxio.celerio.model.Attribute@64518270[
+  config=Config(outputResult=com.jaxio.celerio.output.FolderOutputResult@364b1061, project=com.jaxio.celerio.model.Project@50fdf44f[
   currentEntities=[Book, AppParameter, AppTranslation]
   currentEntitiesByTableName={APP_TRANSLATION=AppTranslation, BOOK=Book, APP_PARAMETER=AppParameter}
   currentEntitiesByName={APPTRANSLATION=AppTranslation, APPPARAMETER=AppParameter, BOOK=Book}
-  entities=com.jaxio.celerio.util.support.SimpleListHolder@7df6d663
-  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
-  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
-  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
-  views=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
-  tables=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
-  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
-  search=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  entities=com.jaxio.celerio.util.support.SimpleListHolder@13d019a4
+  rootEntities=com.jaxio.celerio.util.support.SimpleListHolder@2c30c81d
+  entitiesWithFiles=com.jaxio.celerio.util.support.SimpleListHolder@415a3f6a
+  virtuals=com.jaxio.celerio.util.support.SimpleListHolder@a54acec
+  views=com.jaxio.celerio.util.support.SimpleListHolder@19da993b
+  tables=com.jaxio.celerio.util.support.SimpleListHolder@3380ca3d
+  withoutManyToManyJoinEntities=com.jaxio.celerio.util.support.SimpleListHolder@23310248
+  search=com.jaxio.celerio.util.support.SimpleListHolder@c2df90e
   spis={}
-], celerio=com.jaxio.celerio.configuration.Celerio@50fdf44f, metadata=com.jaxio.celerio.configuration.database.Metadata@4f3faa70, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@172f4514, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
-  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@c2df90e
+], celerio=com.jaxio.celerio.configuration.Celerio@172f4514, metadata=com.jaxio.celerio.configuration.database.Metadata@4832f03b, originalMetadata=com.jaxio.celerio.configuration.database.Metadata@7df6d663, baseDir=D:\Workspaces\JaxioAngular\angular-lab, springfuseMode=false)
+  collisionUtil=com.jaxio.celerio.factory.RelationCollisionUtil@41f3aaf1
   entity=AppParameter
-  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@64518270
+  columnConfig=com.jaxio.celerio.configuration.entity.ColumnConfig@3b7c58e7
   mappedType=M_STRING
-  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@3b7c58e7
-  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@3c19592c
+  jpa=com.jaxio.celerio.model.support.jpa.JpaAttribute@79627d27
+  fwba=com.jaxio.celerio.aspects.ForbiddenWhenBuildingAspect@60e1d87c
   cachedVar=value
   enumType=<null>
   labels=<null>
@@ -455,7 +455,7 @@ true
   isPassword=<null>
   xToOneRelation=<null>
   xToOneRelationSet=false
-  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@79627d27, search=com.jaxio.celerio.model.support.search.SearchAttribute@6371cf2f, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@b5b9333, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@52b959df, values=com.jaxio.celerio.model.support.ValuesAttribute@38588dea, h2=com.jaxio.celerio.model.support.h2.H2Attribute@553d2579, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@2a8f6e6, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@1ac730cd, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@668cc9a2}
+  spis={formatter=com.jaxio.celerio.model.support.formatter.FormatterAttribute@6371cf2f, search=com.jaxio.celerio.model.support.search.SearchAttribute@b5b9333, jQuery=com.jaxio.celerio.model.support.jquery.JQueryAttribute@52b959df, custom=com.jaxio.celerio.model.support.custom.CustomAttribute@38588dea, values=com.jaxio.celerio.model.support.ValuesAttribute@553d2579, h2=com.jaxio.celerio.model.support.h2.H2Attribute@2a8f6e6, jsf=com.jaxio.celerio.model.support.jsf.JsfAttribute@1ac730cd, validation=com.jaxio.celerio.model.support.validation.ValidationAttribute@668cc9a2, springMvc=com.jaxio.celerio.model.support.springmvc.SpringMVCAttribute@5aa62ee7}
   var=<null>
   fullType=<null>
   packageNodes=<null>

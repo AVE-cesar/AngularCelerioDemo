@@ -7,3 +7,9 @@
 .container-full {
 	width: 2000px;
 }
+
+/* The "ng-cloak" class is applied to the content <div> so that dynamic content is hidden 
+	until Angular JS has had a chance to process it (this prevents "flickering" during the initial page load).*/
+[ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak {
+display: none;
+}

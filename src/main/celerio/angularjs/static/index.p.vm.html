@@ -93,6 +93,9 @@ $output.resource("index.html")##
 	<script src="assets/js/entity/appParameterCreateController.js"></script>
 	<script src="assets/js/entity/appParameterConfigController.js"></script>
   
+  	<!-- Login controller -->
+  	<script src="assets/js/loginController.js"></script>
+  
 	<!-- entities controllers -->
 ## controller for each entity    	
 #foreach ($entity in $project.entities.list)
@@ -236,7 +239,7 @@ $output.resource("index.html")##
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">test</a></li>
+            <li><a ui-sref="login">Login</a></li>
           </ul>
 
         </div>

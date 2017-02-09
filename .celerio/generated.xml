@@ -186,7 +186,7 @@
       <template>angularjs\static\assets\js\applicationStates.p.vm.js</template>
       <size>11202</size>
       <path>target\celerio-maven-plugin\collisions\src\main\resources\static\assets\js\applicationStates.js</path>
-      <lastMod>1486568264716</lastMod>
+      <lastMod>1486677681295</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -244,9 +244,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
-      <size>24477</size>
+      <size>24479</size>
       <path>src\main\resources\static\assets\tpl\test\appTranslation.txt</path>
-      <lastMod>1486568161203</lastMod>
+      <lastMod>1486674853288</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -864,9 +864,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
-      <size>42101</size>
+      <size>42098</size>
       <path>src\main\resources\static\assets\tpl\test\book.txt</path>
-      <lastMod>1486568161179</lastMod>
+      <lastMod>1486674853258</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -1146,7 +1146,7 @@
       <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
       <size>4194</size>
       <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\domain\AppTranslation.java</path>
-      <lastMod>1486568265626</lastMod>
+      <lastMod>1486677682161</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -1246,7 +1246,7 @@
       <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
       <size>4142</size>
       <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\domain\AppParameter.java</path>
-      <lastMod>1486568265607</lastMod>
+      <lastMod>1486677682147</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -2564,9 +2564,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
-      <size>24435</size>
+      <size>24437</size>
       <path>src\main\resources\static\assets\tpl\test\appParameter.txt</path>
-      <lastMod>1486568161191</lastMod>
+      <lastMod>1486674853273</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -2934,9 +2934,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\entity.e.vm.html</template>
-      <size>5420</size>
+      <size>5360</size>
       <path>src\main\resources\static\assets\tpl\apps\appTranslation\appTranslation.html</path>
-      <lastMod>1486567516623</lastMod>
+      <lastMod>1486674590407</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -3664,9 +3664,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\js\specialConfiguration.p.vm.js</template>
-      <size>544</size>
+      <size>1065</size>
       <path>src\main\resources\static\assets\js\specialConfiguration.js</path>
-      <lastMod>1486145088904</lastMod>
+      <lastMod>1486677681304</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4236,7 +4236,7 @@
       <template>springboot\src\main\java\rest\EntityResource.e.vm.java</template>
       <size>10762</size>
       <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\rest\BookResource.java</path>
-      <lastMod>1486568265736</lastMod>
+      <lastMod>1486677682260</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4717,6 +4717,16 @@
       <size>4852</size>
       <path>target\celerio-maven-plugin\collisions\src\main\webapp\assets\tpl\apps\store\storeConfig.html</path>
       <lastMod>1460918581854</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>target\celerio-maven-plugin\collisions\src\main\resources\static\assets\tpl\apps\book\book.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entity.e.vm.html</template>
+      <size>5884</size>
+      <path>target\celerio-maven-plugin\collisions\src\main\resources\static\assets\tpl\apps\book\book.html</path>
+      <lastMod>1486677681902</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -5914,9 +5924,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\entity.e.vm.html</template>
-      <size>5404</size>
+      <size>5344</size>
       <path>src\main\resources\static\assets\tpl\apps\appParameter\appParameter.html</path>
-      <lastMod>1486567516612</lastMod>
+      <lastMod>1486674590391</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -6234,9 +6244,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\index.p.vm.html</template>
-      <size>12149</size>
+      <size>12250</size>
       <path>src\main\resources\index.html</path>
-      <lastMod>1486568264751</lastMod>
+      <lastMod>1486674852539</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>

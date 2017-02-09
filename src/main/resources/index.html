@@ -92,6 +92,9 @@
 	<script src="assets/js/entity/appParameterCreateController.js"></script>
 	<script src="assets/js/entity/appParameterConfigController.js"></script>
   
+  	<!-- Login controller -->
+  	<script src="assets/js/loginController.js"></script>
+  
 	<!-- entities controllers -->
 	<!-- for Book entity --> 	
 	<script src="assets/js/entity/bookController.js"></script>
@@ -242,7 +245,7 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">test</a></li>
+            <li><a ui-sref="login">Login</a></li>
           </ul>
 
         </div>
@@ -251,7 +254,7 @@
 
  
     <div class="container">
-    <div ui-view="searchView"></div>
+    <!--div ui-view="searchView"></div-->
 	<div ui-view="mainView"></div>
     <div ui-view="footerView"></div>  
 
