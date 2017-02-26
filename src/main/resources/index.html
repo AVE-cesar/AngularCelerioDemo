@@ -36,7 +36,7 @@
     </script>
 
   </head>
-  <body   class="has-drawer">
+  <body class="has-drawer">
      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/drawer.js"></script>
@@ -54,6 +54,8 @@
     <script src="http://mgcrea.github.io/angular-strap/docs/angular-strap.docs.tpl.js" data-semver="v2.3.8"></script>
 	
 	<script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	
+	<script src="./bower_components/angular-http-auth/dist/http-auth-interceptor.min.js"></script>
 	
 	<!-- material icons from google matertial design http://google.github.io/material-design-icons/#icon-font-for-the-web -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -73,6 +75,10 @@
 	<script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
 	<script src="bower_components/ng-csv/build/ng-csv.js"></script>
 	
+	<!-- services -->
+	<script src="assets/js/services/loginServices.js"></script>
+	<!-- events -->
+	<script src="assets/js/events/event.js"></script>
 	
 	<!-- controller to test alert -->
 	<script src="assets/js/testAlertController.js"></script>
@@ -210,7 +216,7 @@
                 <li><a ui-sref="configurationappTranslation">AppTranslation configuration</a></li>
               </ul>
             </li>
-            <li class="dropdown">
+            <li ng-if="authenticated" class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Administration<span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="download">
                 <li><a ui-sref="dashboard">Dashboard</a></li>

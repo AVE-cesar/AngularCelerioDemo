@@ -1,43 +1,21 @@
+'use strict';
 
-/* Controller that hanldes login/logout */
+/* we define here all controllers */
 
-app.controller("LoginController", [
-	"$rootScope",
-	"$scope",  
-	"$log",
-	"$state",
-	"credential",
-	function(rootscope, scope, log, state, credential) {
+/* controller dedicated to login page */
+app.controller('LoginController', function ($rootScope, $scope, AuthSharedService, $log) {
 
-log.info("inside LoginController, login: " + credential.login);
-scope.credential = credential;
-
-/* global variable to persist if the user is logged or not */
-rootscope.authenticated = false;
-log.info("inside LoginController, authenticated: " + rootscope.authenticated);
-
-scope.doLogin = function(data) {
-	log.info("doLogin, password: " + data.password);
-	if ("admin" === data.password) {
-		state.go('book');
-	} else {
-		scope.credential.wrong = true;
-		log.info("wrong credential");
-	}
-}
-}]);
-
-
-/** main REST client to deal with security calls */
-app.factory('SecurityRestService', function ($resource) {
-	return $resource('api/books/bypage/?page=:page&size=:size', {}, {
-		'get': {
-			method: 'GET',
-			url: 'api/books/:id',
-			transformResponse: function (data) {
-				data = angular.fromJson(data);
-				return data;
-			}
-		}
-	});
-});
+        $scope.rememberMe = true;
+        
+        $scope.doLogin = function () {
+        	$log.info("call login on server side for: " + $scope.username);
+        	
+            $rootScope.authenticationError = false;
+            AuthSharedService.login(
+                $scope.username,
+                $scope.password,
+                $scope.rememberMe
+            );
+        }
+    })
+;

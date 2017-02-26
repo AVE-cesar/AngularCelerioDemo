@@ -10,8 +10,8 @@
 
 app.config(function($stateProvider, $urlRouterProvider) {
 	//
-	// For any unmatched url, redirect to /dashboard
-	//$urlRouterProvider.otherwise("/dashboard");
+	// For any unmatched url, redirect to homepage
+	$urlRouterProvider.otherwise("/home");
 	//
   
   /* entities states */
@@ -31,7 +31,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 						});
                     }],
                 savedSearch : function() {
-      				return {title: "a", query: "sodome"};
+      				return {title: "a", query: "test"};
     			}
                     		
 				},

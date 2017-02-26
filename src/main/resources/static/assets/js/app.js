@@ -7,11 +7,12 @@
 //
 
 var app = angular.module("mainApp", 
-		["ngResource",/* for REST WS calls */
-		 "ui.router",
+		["ngResource", /* for REST WS calls */
+		 "ui.router", /* pour découper l'appli en liens */
 		 "pascalprecht.translate", /* for label translation */
 		 "ngAnimate", 
 		 "ngSanitize", 
-		 "mgcrea.ngStrap", /* ces 3 libs pour mgcrea */
-		 "ngCsv" /* for downloading entites as CSV files, see https://github.com/asafdav/ng-csv */
+		 "mgcrea.ngStrap", /* ces 3 dernières libs pour mgcrea */
+		 "ngCsv", /* for downloading entites as CSV files, see https://github.com/asafdav/ng-csv */
+		 "http-auth-interceptor" /* permet de faciliter le login d'un user en angularjs */
 ]);
