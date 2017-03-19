@@ -11,6 +11,7 @@ app.controller('LoginController', function ($rootScope, $scope, AuthSharedServic
         	$log.info("call login on server side for: " + $scope.username);
         	
             $rootScope.authenticationError = false;
+            
             AuthSharedService.login(
                 $scope.username,
                 $scope.password,

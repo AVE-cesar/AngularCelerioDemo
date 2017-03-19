@@ -1,7 +1,9 @@
 package com.jaxio.demo.security;
 
-import com.jaxio.demo.model.User;
-import com.jaxio.demo.model.Token;
+import com.jaxio.demo.repository.AppTokenRepository;
+import com.jaxio.demo.repository.AppUserRepository;
+import com.jaxio.demo.domain.AppToken;
+import com.jaxio.demo.domain.AppUser;
 import org.apache.commons.lang3.time.DateUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,6 +18,7 @@ import org.springframework.security.web.authentication.rememberme.InvalidCookieE
 import org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationException;
 import org.springframework.stereotype.Service;
 
+import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.security.SecureRandom;
@@ -44,6 +47,12 @@ public class RememberMeServices extends
 
     private final Logger log = LoggerFactory.getLogger(RememberMeServices.class);
 
+    @Inject
+    private AppUserRepository appUserRepository;
+    
+    @Inject
+    private AppTokenRepository appTokenRepository;
+    
     // Token is valid for one month
     private static final int TOKEN_VALIDITY_DAYS = 31;
 
@@ -65,18 +74,18 @@ public class RememberMeServices extends
     @Override
     protected UserDetails processAutoLoginCookie(String[] cookieTokens, HttpServletRequest request, HttpServletResponse response) {
 
-        Token token = getPersistentToken(cookieTokens);
-        String login = token.getUserLogin();
+        AppToken appToken = getPersistentToken(cookieTokens);
+        String login = appToken.getUserLogin();
 
         // Token also matches, so login is valid. Update the token value, keeping the *same* series number.
-        log.debug("Refreshing persistent login token for user '{}', series '{}'", login, token.getSeries());
-        token.setDate(new Date());
-        token.setValue(generateTokenData());
-        token.setIpAddress(request.getRemoteAddr());
-        token.setUserAgent(request.getHeader("User-Agent"));
+        log.debug("Refreshing persistent login token for user '{}', series '{}'", login, appToken.getId());
+        appToken.setTokenCreationDate(new Date());
+        appToken.setTokenValue(generateTokenData());
+        appToken.setIpAddress(request.getRemoteAddr());
+        appToken.setUserAgent(request.getHeader("User-Agent"));
         try {
-            //tokenRepo.save(token);
-            addCookie(token, request, response);
+        	appTokenRepository.save(appToken);
+            addCookie(appToken, request, response);
         } catch (Exception e) {
             log.error("Failed to update token: ", e);
             throw new RememberMeAuthenticationException("Autologin failed due to data access problem", e);
@@ -89,17 +98,17 @@ public class RememberMeServices extends
         String login = successfulAuthentication.getName();
 
         log.debug("Creating new persistent login for user {}", login);
-        User user = UserDetailsService.findByLogin(login);
-        Token token = new Token();
-        token.setSeries(generateSeriesData());
-        token.setUserLogin(user.getLogin());
-        token.setValue(generateTokenData());
-        token.setDate(new Date());
-        token.setIpAddress(request.getRemoteAddr());
-        token.setUserAgent(request.getHeader("User-Agent"));
+        AppUser appUser = appUserRepository.findByLogin(login);
+        AppToken appToken = new AppToken();
+        appToken.setId(generateSeriesData());
+        appToken.setUserLogin(appUser.getLogin());
+        appToken.setTokenValue(generateTokenData());
+        appToken.setTokenCreationDate(new Date());
+        appToken.setIpAddress(request.getRemoteAddr());
+        appToken.setUserAgent(request.getHeader("User-Agent"));
         try {
-            //tokenRepo.save(token);
-            addCookie(token, request, response);
+            appTokenRepository.save(appToken);
+            addCookie(appToken, request, response);
         } catch (Exception e) {
             log.error("Failed to save persistent token ", e);
         }
@@ -117,8 +126,8 @@ public class RememberMeServices extends
         if (rememberMeCookie != null && rememberMeCookie.length() != 0) {
             try {
                 String[] cookieTokens = decodeCookie(rememberMeCookie);
-                Token token = getPersistentToken(cookieTokens);
-                //tokenRepo.delete(token.getSeries());
+                AppToken appToken = getPersistentToken(cookieTokens);
+                appTokenRepository.delete(appToken.getId());
             } catch (InvalidCookieException ice) {
                 log.info("Invalid cookie, no persistent token could be deleted");
             } catch (RememberMeAuthenticationException rmae) {
@@ -131,7 +140,7 @@ public class RememberMeServices extends
     /**
      * Validate the token and return it.
      */
-    private Token getPersistentToken(String[] cookieTokens) {
+    private AppToken getPersistentToken(String[] cookieTokens) {
         if (cookieTokens.length != 2) {
             throw new InvalidCookieException("Cookie token did not contain " + 2 +
                     " tokens, but contained '" + Arrays.asList(cookieTokens) + "'");
@@ -140,31 +149,31 @@ public class RememberMeServices extends
         final String presentedSeries = cookieTokens[0];
         final String presentedToken = cookieTokens[1];
 
-        Token token = null;
+        AppToken appToken = null;
         try {
-            //token = tokenRepo.findOne(presentedSeries);
+        	appToken = appTokenRepository.findOne(presentedSeries);
         } catch (Exception e) {
             log.error("Error to access database", e );
         }
 
-        if (token == null) {
+        if (appToken == null) {
             // No series match, so we can't authenticate using this cookie
             throw new RememberMeAuthenticationException("No persistent token found for series id: " + presentedSeries);
         }
 
         // We have a match for this user/series combination
-        log.info("presentedToken={} / tokenValue={}", presentedToken, token.getValue());
-        if (!presentedToken.equals(token.getValue())) {
+        log.info("presentedToken={} / tokenValue={}", presentedToken, appToken.getTokenValue());
+        if (!presentedToken.equals(appToken.getTokenValue())) {
             // Token doesn't match series value. Delete this session and throw an exception.
-            //tokenRepo.delete(token.getSeries());
+        	appTokenRepository.delete(appToken.getId());
             throw new CookieTheftException("Invalid remember-me token (Series/token) mismatch. Implies previous cookie theft attack.");
         }
 
-        if (DateUtils.addDays(token.getDate(), TOKEN_VALIDITY_DAYS).before(new Date())) {
-            //tokenRepo.delete(token.getSeries());
+        if (DateUtils.addDays(appToken.getTokenCreationDate(), TOKEN_VALIDITY_DAYS).before(new Date())) {
+        	appTokenRepository.delete(appToken.getId());
             throw new RememberMeAuthenticationException("Remember-me login has expired");
         }
-        return token;
+        return appToken;
     }
 
     private String generateSeriesData() {
@@ -179,9 +188,9 @@ public class RememberMeServices extends
         return new String(Base64.encode(newToken));
     }
 
-    private void addCookie(Token token, HttpServletRequest request, HttpServletResponse response) {
+    private void addCookie(AppToken appToken, HttpServletRequest request, HttpServletResponse response) {
         setCookie(
-                new String[]{token.getSeries(), token.getValue()},
+                new String[]{appToken.getId(), appToken.getTokenValue()},
                 TOKEN_VALIDITY_SECONDS, request, response);
     }
 }

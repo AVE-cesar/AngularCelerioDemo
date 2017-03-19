@@ -76,7 +76,7 @@ public class AppParameter implements Identifiable<Integer>, Serializable {
 
     @NotEmpty
     @Size(max = 250)
-    @Column(name = "DOMAIN", nullable = false, length = 250)
+    @Column(name = "domain", nullable = false, length = 250)
     public String getDomain() {
         return domain;
     }
@@ -94,7 +94,7 @@ public class AppParameter implements Identifiable<Integer>, Serializable {
 
     @NotEmpty
     @Size(max = 1000)
-    @Column(name = "KEY", nullable = false, length = 1000)
+    @Column(name = "key", nullable = false, length = 1000)
     public String getKey() {
         return key;
     }
@@ -111,7 +111,7 @@ public class AppParameter implements Identifiable<Integer>, Serializable {
     // -- [value] ------------------------
 
     @Size(max = 4000)
-    @Column(name = "VALUE", length = 4000)
+    @Column(name = "value", length = 4000)
     public String getValue() {
         return value;
     }

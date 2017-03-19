@@ -6,8 +6,10 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;
 
-import com.jaxio.demo.model.User;
+import com.jaxio.demo.domain.AppUser;
+import com.jaxio.demo.repository.AppUserRepository;
 
+import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -21,6 +23,9 @@ public class RestAuthenticationSuccessHandler extends SimpleUrlAuthenticationSuc
 
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
 	
+    @Inject
+    private AppUserRepository appUserRepository;
+    
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
                                         Authentication authentication)
@@ -29,9 +34,9 @@ public class RestAuthenticationSuccessHandler extends SimpleUrlAuthenticationSuc
     	log.info("dans RestAuthenticationSuccessHandler.onAuthenticationSuccess");
     	
     	// try to find a corresponding user with a login
-    	User user = UserDetailsService.findByLogin(authentication.getName());
+    	AppUser appUser = appUserRepository.findByLogin(authentication.getName());
         
     	// send this user back to the browser 
-        SecurityUtils.sendResponse(response, HttpServletResponse.SC_OK, user);
+        SecurityUtils.sendResponse(response, HttpServletResponse.SC_OK, appUser);
     }
 }

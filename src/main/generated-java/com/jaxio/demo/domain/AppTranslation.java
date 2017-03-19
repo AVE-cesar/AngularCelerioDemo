@@ -76,7 +76,7 @@ public class AppTranslation implements Identifiable<Integer>, Serializable {
 
     @NotEmpty
     @Size(max = 10)
-    @Column(name = "LANGUAGE", nullable = false, length = 10)
+    @Column(name = "\"LANGUAGE\"", nullable = false, length = 10)
     public String getLanguage() {
         return language;
     }
@@ -94,7 +94,7 @@ public class AppTranslation implements Identifiable<Integer>, Serializable {
 
     @NotEmpty
     @Size(max = 1000)
-    @Column(name = "KEY", nullable = false, length = 1000)
+    @Column(name = "\"KEY\"", nullable = false, length = 1000)
     public String getKey() {
         return key;
     }
@@ -111,7 +111,7 @@ public class AppTranslation implements Identifiable<Integer>, Serializable {
     // -- [value] ------------------------
 
     @Size(max = 4000)
-    @Column(name = "VALUE", length = 4000)
+    @Column(name = "\"VALUE\"", length = 4000)
     public String getValue() {
         return value;
     }

@@ -1,0 +1,134 @@
+
+<div class="row">
+	<!-- Breadcrumb -->
+	<ul class="breadcrumb">
+	  <li><a ui-sref="appAuthority">AppAuthority search & result</a></li>
+	  <li class="active">AppAuthority detail</li>
+	</ul>
+</div>
+
+<section class="forms-basic">
+  <div class="page-header">
+    <h1>
+      <i class="md md-input"></i>
+      AppAuthority form
+    </h1>
+    <p class="lead">
+      You can edit AppAuthority entity and see linked entities.
+    </p>
+  </div>
+
+<div class="row m-b-40">
+
+    <div class="col-md-3 col-md-push-9">
+      <h5>Mode</h5>
+      <p>mode: {{mode}}</p>
+    </div>
+    <div class="col-md-8 col-md-pull-3">
+      <div class="well">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Main entity</legend>          
+            <span class="help-block m-b-20">Please fill out the following form below.</span>
+
+
+		
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label"><b>Name</b></label>
+                          <div class="col-lg-10">
+																
+				               		<input type="text" class="form-control" id="name" ng-model="item.name" required ng-disabled="mode == 'VIEW'">
+               	            		        	</div>
+           </div>
+    
+
+
+          <div class="form-group">
+              <label for="id" class="col-lg-2 control-label"><b> Id</b></label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="id"  ng-disabled="true"  ng-model="item.id">
+              </div>
+         </div>
+            
+
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-2">
+              	<button type="submit" class="btn btn-primary" ui-sref="appauthority">back to List</button>
+                <button type="reset" class="btn btn-default" ng-click="remove(item)" ng-show="mode != 'VIEW'">Delete</button>
+                <button type="submit" class="btn btn-primary" ng-click="saveItem(item)" ng-show="mode != 'VIEW'">Save</button>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<section class="tables-data">
+
+  <div class="page-header">
+    <h1>
+      <i class="md md-list"></i>
+      Linked entities
+    </h1>
+    <p class="lead">
+      Todo
+    </p>
+  </div>
+
+
+<section class="tables-data">
+
+  <div class="page-header">
+    <h1>
+      <i class="md md-list"></i>
+      Linked entities (inverse relation)
+    </h1>
+    <p class="lead">
+      Todo
+    </p>
+  </div>
+	 	 	 	 	 										-- on a une relation many-to-many (MTO/OTO/MTM) vers notre entite AppAuthority, il faudra faire une table HTML contenant la liste des AppUser li�s avec des liens pour y descendre
+				-- il faudra un REST sur les AppUser pour lister les AppUser li�s � AppAuthority
+				-- Exemple: AppUser.findByAppAuthorityID
+  <div class="card">
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="table-title p-20">AppUser table:: inverse relation to: APP_USER <== APP_USER_AUTHORITY ==> APP_AUTHORITY</h3>
+      </div>
+      <div class="col-md-6">
+        <div class="table-search">
+          <input type="text" ng-model="tableParams.filter()['search']" class="form-control" placeholder="Search data"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-responsive white">
+
+      <table ng-table="tableParams" template-pagination="assets/tpl/partials/data-table-pager.html" class="table table-full table-full-small">
+        <tr ng-repeat="row in findAppUserByAppAuthority">
+				  <td data-title="'id'" filter="{ 'id': 'text' }" sortable="'id'"><a ui-sref="editAppUser({id:row.id})">{{row.id}}</a></td>
+				  <td data-title="'firstName'" filter="{ 'firstName': 'text' }" sortable="'firstName'">{{row.firstName}}</td>	
+				  <td data-title="'lastName'" filter="{ 'lastName': 'text' }" sortable="'lastName'">{{row.lastName}}</td>	
+				  <td data-title="'email'" filter="{ 'email': 'text' }" sortable="'email'">{{row.email}}</td>	
+				  <td data-title="'language'" filter="{ 'language': 'text' }" sortable="'language'">{{row.language}}</td>	
+				  <td data-title="'login'" filter="{ 'login': 'text' }" sortable="'login'">{{row.login}}</td>	
+				  <td data-title="'password'" filter="{ 'password': 'text' }" sortable="'password'">{{row.password}}</td>	
+				  <td data-title="'enabled'" filter="{ 'enabled': 'text' }" sortable="'enabled'">{{row.enabled}}</td>	
+	         </tr>		        
+      </table>
+
+    </div>
+
+  </div>		
+						 	  
+</section>
+
+
+

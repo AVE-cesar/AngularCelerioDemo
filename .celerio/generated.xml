@@ -110,6 +110,26 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appUserAuthority\appUserAuthorityEdit.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entityEdit.e.vm.html</template>
+      <size>3142</size>
+      <path>src\main\resources\static\assets\tpl\apps\appUserAuthority\appUserAuthorityEdit.html</path>
+      <lastMod>1488136806348</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\webapp\assets\js\entity\appUserAuthorityConfigController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityConfigController.e.vm.js</template>
+      <size>2635</size>
+      <path>src\main\webapp\assets\js\entity\appUserAuthorityConfigController.js</path>
+      <lastMod>1488136805721</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\resources\logback-spring.xml</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
@@ -176,7 +196,7 @@
       <template>springboot\src\test\java\ApplicationTests.p.vm.java</template>
       <size>2051</size>
       <path>src\test\generated-java\com\jaxio\demo\ApplicationTests.java</path>
-      <lastMod>1486559561564</lastMod>
+      <lastMod>1488100588458</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -184,9 +204,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\js\applicationStates.p.vm.js</template>
-      <size>11202</size>
+      <size>24525</size>
       <path>target\celerio-maven-plugin\collisions\src\main\resources\static\assets\js\applicationStates.js</path>
-      <lastMod>1486677681295</lastMod>
+      <lastMod>1489846517627</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -220,6 +240,26 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\webapp\assets\js\entity\appUserAuthorityCreateController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityCreateController.e.vm.js</template>
+      <size>3072</size>
+      <path>src\main\webapp\assets\js\entity\appUserAuthorityCreateController.js</path>
+      <lastMod>1488136805983</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\webapp\assets\js\entity\appUserAuthorityEditController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityEditController.e.vm.js</template>
+      <size>3464</size>
+      <path>src\main\webapp\assets\js\entity\appUserAuthorityEditController.js</path>
+      <lastMod>1488136806096</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\tpl\dashboard.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
@@ -244,9 +284,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
-      <size>24479</size>
+      <size>27091</size>
       <path>src\main\resources\static\assets\tpl\test\appTranslation.txt</path>
-      <lastMod>1486674853288</lastMod>
+      <lastMod>1489846518803</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -367,6 +407,16 @@
       <size>2489</size>
       <path>target\celerio-maven-plugin\collisions\src\main\webapp\assets\tpl\apps\store\storeSearch.html</path>
       <lastMod>1461872249392</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appToken\appTokenSearch.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entitySearch.e.vm.html</template>
+      <size>3382</size>
+      <path>src\main\resources\static\assets\tpl\apps\appToken\appTokenSearch.html</path>
+      <lastMod>1489696925003</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -494,9 +544,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\js\entity\EntityController.e.vm.js</template>
-      <size>14268</size>
+      <size>14272</size>
       <path>src\main\webapp\assets\js\entity\appTranslationController.js</path>
-      <lastMod>1486163718606</lastMod>
+      <lastMod>1488138996775</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -617,6 +667,16 @@
       <size>37779</size>
       <path>src\main\webapp\assets\tpl\test\accounts.txt</path>
       <lastMod>1463603230555</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appUserAuthority\appUserAuthoritySearch.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entitySearch.e.vm.html</template>
+      <size>2658</size>
+      <path>src\main\resources\static\assets\tpl\apps\appUserAuthority\appUserAuthoritySearch.html</path>
+      <lastMod>1488136806389</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -784,9 +844,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\js\entity\EntityEditController.e.vm.js</template>
-      <size>3449</size>
+      <size>3453</size>
       <path>src\main\webapp\assets\js\entity\appTranslationEditController.js</path>
-      <lastMod>1486163718683</lastMod>
+      <lastMod>1488138996944</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -864,9 +924,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
-      <size>42098</size>
+      <size>46241</size>
       <path>src\main\resources\static\assets\tpl\test\book.txt</path>
-      <lastMod>1486674853258</lastMod>
+      <lastMod>1489846370504</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -874,9 +934,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\js\admin\translations.p.vm.js</template>
-      <size>2422</size>
+      <size>2742</size>
       <path>src\main\resources\static\assets\js\admin\translations.js</path>
-      <lastMod>1486164308839</lastMod>
+      <lastMod>1488138995961</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -936,7 +996,7 @@
       <template>angularjs\static\assets\tpl\apps\entitySearch.e.vm.html</template>
       <size>2850</size>
       <path>src\main\resources\static\assets\tpl\apps\appTranslation\appTranslationSearch.html</path>
-      <lastMod>1486567903436</lastMod>
+      <lastMod>1489846518736</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -950,6 +1010,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\generated-java\com\jaxio\demo\domain\AppAuthority.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
+      <size>3235</size>
+      <path>src\main\generated-java\com\jaxio\demo\domain\AppAuthority.java</path>
+      <lastMod>1488103043982</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\tpl\test\book.txt</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
@@ -957,6 +1027,16 @@
       <size>42076</size>
       <path>src\main\webapp\assets\tpl\test\book.txt</path>
       <lastMod>1486164093710</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\domain\AppToken.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
+      <size>5554</size>
+      <path>src\main\generated-java\com\jaxio\demo\domain\AppToken.java</path>
+      <lastMod>1489696925168</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -1144,9 +1224,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
-      <size>4194</size>
+      <size>4200</size>
       <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\domain\AppTranslation.java</path>
-      <lastMod>1486677682161</lastMod>
+      <lastMod>1489090607334</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -1177,6 +1257,16 @@
       <size>11718</size>
       <path>src\main\generated-java\com\jaxio\demo\rest\ActorResource.java</path>
       <lastMod>1463759220705</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\domain\AppUser.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
+      <size>8536</size>
+      <path>src\main\generated-java\com\jaxio\demo\domain\AppUser.java</path>
+      <lastMod>1488137852286</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -1244,9 +1334,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
-      <size>4142</size>
+      <size>4148</size>
       <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\domain\AppParameter.java</path>
-      <lastMod>1486677682147</lastMod>
+      <lastMod>1489090819235</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -1414,9 +1504,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\js\entity\EntityController.e.vm.js</template>
-      <size>14354</size>
+      <size>14358</size>
       <path>src\main\webapp\assets\js\entity\appParameterController.js</path>
-      <lastMod>1486163718582</lastMod>
+      <lastMod>1488138996724</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -1437,6 +1527,16 @@
       <size>3951</size>
       <path>src\main\webapp\assets\tpl\apps\category\categoryEdit.html</path>
       <lastMod>1485034276218</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appToken\appTokenEdit.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entityEdit.e.vm.html</template>
+      <size>4259</size>
+      <path>src\main\resources\static\assets\tpl\apps\appToken\appTokenEdit.html</path>
+      <lastMod>1489696924957</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -1477,6 +1577,16 @@
       <size>10657</size>
       <path>src\main\generated-java\com\jaxio\demo\rest\ScrResource.java</path>
       <lastMod>1463759222090</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\repository\AppTokenRepository.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\repository\EntityRepository.e.vm.java</template>
+      <size>601</size>
+      <path>src\main\generated-java\com\jaxio\demo\repository\AppTokenRepository.java</path>
+      <lastMod>1489522047287</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -1620,6 +1730,26 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>target\celerio-maven-plugin\collisions\src\main\resources\static\assets\js\app.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\app.p.vm.js</template>
+      <size>620</size>
+      <path>target\celerio-maven-plugin\collisions\src\main\resources\static\assets\js\app.js</path>
+      <lastMod>1489846517575</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\repository\search\AppUserAuthoritySearchRepository.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\repository\search\EntitySearchRepository.e.vm.java</template>
+      <size>708</size>
+      <path>src\main\generated-java\com\jaxio\demo\repository\search\AppUserAuthoritySearchRepository.java</path>
+      <lastMod>1488136806807</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\img\icons\ballicons\calculator.svg</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
@@ -1717,6 +1847,16 @@
       <size>4870</size>
       <path>src\main\webapp\assets\tpl\apps\accounts\accountsConfig.html</path>
       <lastMod>1463603227951</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\repository\search\AppTokenSearchRepository.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\repository\search\EntitySearchRepository.e.vm.java</template>
+      <size>675</size>
+      <path>src\main\generated-java\com\jaxio\demo\repository\search\AppTokenSearchRepository.java</path>
+      <lastMod>1489522047326</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -1876,7 +2016,27 @@
       <template>angularjs\static\assets\tpl\apps\entityConfig.e.vm.html</template>
       <size>4271</size>
       <path>src\main\resources\static\assets\tpl\apps\appTranslation\appTranslationConfig.html</path>
-      <lastMod>1486164241184</lastMod>
+      <lastMod>1489846518511</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\repository\search\AppAuthoritySearchRepository.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\repository\search\EntitySearchRepository.e.vm.java</template>
+      <size>692</size>
+      <path>src\main\generated-java\com\jaxio\demo\repository\search\AppAuthoritySearchRepository.java</path>
+      <lastMod>1488100589900</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\domain\AppToken_.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\domain\EntityMeta_.e.vm.java</template>
+      <size>1015</size>
+      <path>src\main\generated-java\com\jaxio\demo\domain\AppToken_.java</path>
+      <lastMod>1489696925257</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -1960,6 +2120,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appUserAuthority\appUserAuthority.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entity.e.vm.html</template>
+      <size>5284</size>
+      <path>src\main\resources\static\assets\tpl\apps\appUserAuthority\appUserAuthority.html</path>
+      <lastMod>1488136806145</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\fonts\Roboto-Regular.ttf</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
@@ -1977,6 +2147,26 @@
       <size>23855</size>
       <path>src\main\webapp\assets\tpl\apps\vbsFlowUnit\vbsFlowUnitEdit.html</path>
       <lastMod>1463681996674</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\resources\static\assets\tpl\test\appUserAuthority.txt</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
+      <size>20282</size>
+      <path>src\main\resources\static\assets\tpl\test\appUserAuthority.txt</path>
+      <lastMod>1488136806478</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\rest\AppTokenResource.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\rest\EntityResource.e.vm.java</template>
+      <size>11153</size>
+      <path>src\main\generated-java\com\jaxio\demo\rest\AppTokenResource.java</path>
+      <lastMod>1489696925457</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -2040,6 +2230,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appUser\appUser.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entity.e.vm.html</template>
+      <size>5977</size>
+      <path>src\main\resources\static\assets\tpl\apps\appUser\appUser.html</path>
+      <lastMod>1489846518470</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\tpl\apps\transactions\transactions.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -2100,6 +2300,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\generated-java\com\jaxio\demo\domain\AppUser_.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\domain\EntityMeta_.e.vm.java</template>
+      <size>1266</size>
+      <path>src\main\generated-java\com\jaxio\demo\domain\AppUser_.java</path>
+      <lastMod>1489846519006</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\generated-java\com\jaxio\demo\domain\Reader_.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -2114,9 +2324,19 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\js\entity\EntityEditController.e.vm.js</template>
-      <size>3425</size>
+      <size>3429</size>
       <path>src\main\webapp\assets\js\entity\appParameterEditController.js</path>
-      <lastMod>1486163718675</lastMod>
+      <lastMod>1488138996906</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\webapp\assets\js\entity\appTokenConfigController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityConfigController.e.vm.js</template>
+      <size>2611</size>
+      <path>src\main\webapp\assets\js\entity\appTokenConfigController.js</path>
+      <lastMod>1488138996643</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -2130,6 +2350,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\webapp\assets\js\entity\appTokenCreateController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityCreateController.e.vm.js</template>
+      <size>3006</size>
+      <path>src\main\webapp\assets\js\entity\appTokenCreateController.js</path>
+      <lastMod>1489522045770</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\tpl\apps\store\storeSearch.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -2137,6 +2367,16 @@
       <size>2349</size>
       <path>src\main\webapp\assets\tpl\apps\store\storeSearch.html</path>
       <lastMod>1462086227995</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\webapp\assets\js\entity\appTokenEditController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityEditController.e.vm.js</template>
+      <size>3405</size>
+      <path>src\main\webapp\assets\js\entity\appTokenEditController.js</path>
+      <lastMod>1489522046272</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -2220,6 +2460,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\generated-java\com\jaxio\demo\domain\AppUserAuthority.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
+      <size>3999</size>
+      <path>src\main\generated-java\com\jaxio\demo\domain\AppUserAuthority.java</path>
+      <lastMod>1488136852452</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>springboot\src\main\resources\mails\welcomeEmail.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -2296,7 +2546,7 @@
       <template>springboot\src\main\java\domain\EntityMeta_.e.vm.java</template>
       <size>858</size>
       <path>src\main\generated-java\com\jaxio\demo\domain\AppTranslation_.java</path>
-      <lastMod>1485549871268</lastMod>
+      <lastMod>1489846518993</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -2324,9 +2574,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\entityEdit.e.vm.html</template>
-      <size>3431</size>
+      <size>3442</size>
       <path>src\main\resources\static\assets\tpl\apps\appParameter\appParameterEdit.html</path>
-      <lastMod>1486567903385</lastMod>
+      <lastMod>1489846518565</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -2347,6 +2597,16 @@
       <size>3049</size>
       <path>src\main\webapp\assets\tpl\apps\style\styleConfig.html</path>
       <lastMod>1462086224217</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\repository\AppUserAuthorityRepository.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\repository\EntityRepository.e.vm.java</template>
+      <size>634</size>
+      <path>src\main\generated-java\com\jaxio\demo\repository\AppUserAuthorityRepository.java</path>
+      <lastMod>1488136806749</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -2470,6 +2730,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\generated-java\com\jaxio\demo\repository\search\AppUserSearchRepository.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\repository\search\EntitySearchRepository.e.vm.java</template>
+      <size>672</size>
+      <path>src\main\generated-java\com\jaxio\demo\repository\search\AppUserSearchRepository.java</path>
+      <lastMod>1488100589929</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\js\entity\styleCreateController.js</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -2564,9 +2834,19 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
-      <size>24437</size>
+      <size>27060</size>
       <path>src\main\resources\static\assets\tpl\test\appParameter.txt</path>
-      <lastMod>1486674853273</lastMod>
+      <lastMod>1489846518784</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\webapp\assets\js\entity\appUserConfigController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityConfigController.e.vm.js</template>
+      <size>2608</size>
+      <path>src\main\webapp\assets\js\entity\appUserConfigController.js</path>
+      <lastMod>1488100588645</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -2597,6 +2877,16 @@
       <size>2613</size>
       <path>src\main\webapp\assets\js\entity\authorStyleConfigController.js</path>
       <lastMod>1462086214738</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\webapp\assets\js\entity\appTokenController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityController.e.vm.js</template>
+      <size>13980</size>
+      <path>src\main\webapp\assets\js\entity\appTokenController.js</path>
+      <lastMod>1489522045563</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -2730,6 +3020,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\webapp\assets\js\entity\appUserEditController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityEditController.e.vm.js</template>
+      <size>3417</size>
+      <path>src\main\webapp\assets\js\entity\appUserEditController.js</path>
+      <lastMod>1488138996957</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\tpl\apps\test\vbsFlowUnit.txt</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -2807,6 +3107,16 @@
       <size>2984</size>
       <path>src\main\webapp\assets\js\entity\actorCreateController.js</path>
       <lastMod>1462121869729</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\webapp\assets\js\entity\appAuthorityConfigController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityConfigController.e.vm.js</template>
+      <size>2623</size>
+      <path>src\main\webapp\assets\js\entity\appAuthorityConfigController.js</path>
+      <lastMod>1488100588601</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -2936,7 +3246,7 @@
       <template>angularjs\static\assets\tpl\apps\entity.e.vm.html</template>
       <size>5360</size>
       <path>src\main\resources\static\assets\tpl\apps\appTranslation\appTranslation.html</path>
-      <lastMod>1486674590407</lastMod>
+      <lastMod>1489846518460</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -3204,9 +3514,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\entityEdit.e.vm.html</template>
-      <size>4667</size>
+      <size>4678</size>
       <path>src\main\resources\static\assets\tpl\apps\book\bookEdit.html</path>
-      <lastMod>1486567903371</lastMod>
+      <lastMod>1488138997146</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -3217,6 +3527,16 @@
       <size>4780</size>
       <path>src\main\generated-java\com\jaxio\demo\domain\Store.java</path>
       <lastMod>1463759217229</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appToken\appToken.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entity.e.vm.html</template>
+      <size>5784</size>
+      <path>src\main\resources\static\assets\tpl\apps\appToken\appToken.html</path>
+      <lastMod>1489696924846</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -3247,6 +3567,16 @@
       <size>3478</size>
       <path>src\main\webapp\assets\js\entity\vbsStatusEditController.js</path>
       <lastMod>1463681991563</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\domain\AppUserAuthority_.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\domain\EntityMeta_.e.vm.java</template>
+      <size>805</size>
+      <path>src\main\generated-java\com\jaxio\demo\domain\AppUserAuthority_.java</path>
+      <lastMod>1488136852509</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -3430,6 +3760,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\resources\static\assets\tpl\test\appAuthority.txt</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
+      <size>14591</size>
+      <path>src\main\resources\static\assets\tpl\test\appAuthority.txt</path>
+      <lastMod>1489846370514</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\img\photos\10.jpg</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
@@ -3544,9 +3884,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\entityEdit.e.vm.html</template>
-      <size>3449</size>
+      <size>3460</size>
       <path>src\main\resources\static\assets\tpl\apps\appTranslation\appTranslationEdit.html</path>
-      <lastMod>1486567903399</lastMod>
+      <lastMod>1489846518678</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -3670,6 +4010,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\webapp\assets\js\entity\appAuthorityEditController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityEditController.e.vm.js</template>
+      <size>3662</size>
+      <path>src\main\webapp\assets\js\entity\appAuthorityEditController.js</path>
+      <lastMod>1488138996889</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\tpl\apps\author\authorConfig.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -3736,7 +4086,7 @@
       <template>springboot\src\main\java\domain\EntityMeta_.e.vm.java</template>
       <size>844</size>
       <path>src\main\generated-java\com\jaxio\demo\domain\AppParameter_.java</path>
-      <lastMod>1485549871254</lastMod>
+      <lastMod>1489846518976</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -3790,13 +4140,23 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appToken\appTokenConfig.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entityConfig.e.vm.html</template>
+      <size>5567</size>
+      <path>src\main\resources\static\assets\tpl\apps\appToken\appTokenConfig.html</path>
+      <lastMod>1489696924896</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\generated-java\com\jaxio\demo\rest\AppParameterResource.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>springboot\src\main\java\rest\EntityResource.e.vm.java</template>
       <size>11657</size>
       <path>src\main\generated-java\com\jaxio\demo\rest\AppParameterResource.java</path>
-      <lastMod>1485549811393</lastMod>
+      <lastMod>1489846519189</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -3814,9 +4174,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\js\entity\EntityEditController.e.vm.js</template>
-      <size>3365</size>
+      <size>3369</size>
       <path>src\main\webapp\assets\js\entity\bookEditController.js</path>
-      <lastMod>1486163718667</lastMod>
+      <lastMod>1488138996868</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -3827,6 +4187,16 @@
       <size>14840</size>
       <path>src\main\webapp\assets\js\entity\transactionsController.js</path>
       <lastMod>1463603225019</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\rest\AppUserResource.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\rest\EntityResource.e.vm.java</template>
+      <size>11451</size>
+      <path>src\main\generated-java\com\jaxio\demo\rest\AppUserResource.java</path>
+      <lastMod>1489846519263</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -3920,6 +4290,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\resources\static\assets\tpl\test\appToken.txt</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
+      <size>39920</size>
+      <path>src\main\resources\static\assets\tpl\test\appToken.txt</path>
+      <lastMod>1489846370544</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\js\entity\documentConfigController.js</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -3937,6 +4317,16 @@
       <size>1605</size>
       <path>src\main\webapp\assets\img\icons\ballicons\switcher.svg</path>
       <lastMod>1486141977023</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appUser\appUserConfig.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entityConfig.e.vm.html</template>
+      <size>6699</size>
+      <path>src\main\resources\static\assets\tpl\apps\appUser\appUserConfig.html</path>
+      <lastMod>1489846518522</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -3967,6 +4357,16 @@
       <size>89208</size>
       <path>src\main\webapp\assets\fonts\Roboto-Bold.woff</path>
       <lastMod>1486141976703</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appAuthority\appAuthorityEdit.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entityEdit.e.vm.html</template>
+      <size>4630</size>
+      <path>src\main\resources\static\assets\tpl\apps\appAuthority\appAuthorityEdit.html</path>
+      <lastMod>1489846518549</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4020,6 +4420,26 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\resources\static\assets\tpl\test\appUser.txt</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
+      <size>52596</size>
+      <path>src\main\resources\static\assets\tpl\test\appUser.txt</path>
+      <lastMod>1489846518816</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\webapp\assets\js\entity\appUserAuthorityController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityController.e.vm.js</template>
+      <size>14373</size>
+      <path>src\main\webapp\assets\js\entity\appUserAuthorityController.js</path>
+      <lastMod>1488136805885</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\generated-java\com\jaxio\demo\domain\VbsFlowUnit.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -4040,6 +4460,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appAuthority\appAuthoritySearch.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entitySearch.e.vm.html</template>
+      <size>2396</size>
+      <path>src\main\resources\static\assets\tpl\apps\appAuthority\appAuthoritySearch.html</path>
+      <lastMod>1488100589384</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\js\admin\translations.js</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
@@ -4057,6 +4487,16 @@
       <size>1538</size>
       <path>src\main\generated-java\com\jaxio\demo\config\SwaggerConfiguration.java</path>
       <lastMod>1485453476916</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\repository\AppUserRepository.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\repository\EntityRepository.e.vm.java</template>
+      <size>598</size>
+      <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\repository\AppUserRepository.java</path>
+      <lastMod>1489846519058</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4164,9 +4604,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\js\entity\EntityController.e.vm.js</template>
-      <size>13777</size>
+      <size>13781</size>
       <path>src\main\webapp\assets\js\entity\bookController.js</path>
-      <lastMod>1486163718563</lastMod>
+      <lastMod>1488138996676</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4216,7 +4656,7 @@
       <template>springboot\src\main\java\rest\EntityResource.e.vm.java</template>
       <size>11278</size>
       <path>src\main\generated-java\com\jaxio\demo\rest\AppTranslationResource.java</path>
-      <lastMod>1485549811415</lastMod>
+      <lastMod>1489846519239</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4236,7 +4676,7 @@
       <template>springboot\src\main\java\rest\EntityResource.e.vm.java</template>
       <size>10762</size>
       <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\rest\BookResource.java</path>
-      <lastMod>1486677682260</lastMod>
+      <lastMod>1489846519139</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4323,10 +4763,10 @@
     <string>target\celerio-maven-plugin\collisions\src\main\resources\index.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
-      <template>springboot\src\main\resources\static\index.p.vm.html</template>
-      <size>11088</size>
+      <template>angularjs\static\index.p.vm.html</template>
+      <size>14153</size>
       <path>target\celerio-maven-plugin\collisions\src\main\resources\index.html</path>
-      <lastMod>1486163590160</lastMod>
+      <lastMod>1489846517679</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4570,6 +5010,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\webapp\assets\js\entity\appAuthorityCreateController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityCreateController.e.vm.js</template>
+      <size>3034</size>
+      <path>src\main\webapp\assets\js\entity\appAuthorityCreateController.js</path>
+      <lastMod>1488100588935</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\generated-java\com\jaxio\demo\rest\dto\LoggerDTO.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
@@ -4617,6 +5067,16 @@
       <size>14751</size>
       <path>src\main\generated-java\com\jaxio\demo\rest\VbsFlowUnitSubFndResource.java</path>
       <lastMod>1462819199212</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\webapp\assets\js\entity\appUserCreateController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityCreateController.e.vm.js</template>
+      <size>3001</size>
+      <path>src\main\webapp\assets\js\entity\appUserCreateController.js</path>
+      <lastMod>1488100588979</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4726,7 +5186,17 @@
       <template>angularjs\static\assets\tpl\apps\entity.e.vm.html</template>
       <size>5884</size>
       <path>target\celerio-maven-plugin\collisions\src\main\resources\static\assets\tpl\apps\book\book.html</path>
-      <lastMod>1486677681902</lastMod>
+      <lastMod>1489846518415</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\rest\AppUserAuthorityResource.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\rest\EntityResource.e.vm.java</template>
+      <size>11289</size>
+      <path>src\main\generated-java\com\jaxio\demo\rest\AppUserAuthorityResource.java</path>
+      <lastMod>1488136806954</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4840,6 +5310,26 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appUser\appUserEdit.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entityEdit.e.vm.html</template>
+      <size>6073</size>
+      <path>src\main\resources\static\assets\tpl\apps\appUser\appUserEdit.html</path>
+      <lastMod>1489846518694</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\repository\AppUserRepository.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\repository\EntityRepository.e.vm.java</template>
+      <size>598</size>
+      <path>src\main\generated-java\com\jaxio\demo\repository\AppUserRepository.java</path>
+      <lastMod>1488100589869</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\img\icons\ballicons\tower.svg</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
@@ -4847,6 +5337,16 @@
       <size>2513</size>
       <path>src\main\webapp\assets\img\icons\ballicons\tower.svg</path>
       <lastMod>1486141977045</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\repository\AppAuthorityRepository.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\repository\EntityRepository.e.vm.java</template>
+      <size>618</size>
+      <path>src\main\generated-java\com\jaxio\demo\repository\AppAuthorityRepository.java</path>
+      <lastMod>1488100589838</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4872,11 +5372,11 @@
   <entry>
     <string>target\celerio-maven-plugin\collisions\src\main\resources\application.yml</string>
     <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
+      <pack>angular-lab</pack>
       <template>springboot\src\main\resources\application.p.vm.yml</template>
-      <size>2162</size>
+      <size>2211</size>
       <path>target\celerio-maven-plugin\collisions\src\main\resources\application.yml</path>
-      <lastMod>1485201330811</lastMod>
+      <lastMod>1489846518167</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -5100,6 +5600,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appUser\appUserSearch.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entitySearch.e.vm.html</template>
+      <size>3695</size>
+      <path>src\main\resources\static\assets\tpl\apps\appUser\appUserSearch.html</path>
+      <lastMod>1489846518746</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\tpl\apps\test\appliParameters.txt</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -5220,6 +5730,26 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\domain\AppUser.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
+      <size>8540</size>
+      <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\domain\AppUser.java</path>
+      <lastMod>1489846518952</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\domain\AppAuthority_.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\domain\EntityMeta_.e.vm.java</template>
+      <size>694</size>
+      <path>src\main\generated-java\com\jaxio\demo\domain\AppAuthority_.java</path>
+      <lastMod>1488103044076</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\img\photos\4.jpg</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
@@ -5266,7 +5796,7 @@
       <template>angularjs\static\assets\tpl\apps\entityConfig.e.vm.html</template>
       <size>4259</size>
       <path>src\main\resources\static\assets\tpl\apps\appParameter\appParameterConfig.html</path>
-      <lastMod>1486164241176</lastMod>
+      <lastMod>1489846518490</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -5420,6 +5950,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appAuthority\appAuthority.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entity.e.vm.html</template>
+      <size>5060</size>
+      <path>src\main\resources\static\assets\tpl\apps\appAuthority\appAuthority.html</path>
+      <lastMod>1488100589112</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\fonts\Material-Design-Iconic-Font.woff</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
@@ -5427,6 +5967,16 @@
       <size>143628</size>
       <path>src\main\webapp\assets\fonts\Material-Design-Iconic-Font.woff</path>
       <lastMod>1486141976680</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appUserAuthority\appUserAuthorityConfig.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entityConfig.e.vm.html</template>
+      <size>3724</size>
+      <path>src\main\resources\static\assets\tpl\apps\appUserAuthority\appUserAuthorityConfig.html</path>
+      <lastMod>1488136806262</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -5477,6 +6027,16 @@
       <size>13930</size>
       <path>src\main\webapp\assets\js\entity\readerController.js</path>
       <lastMod>1485034275569</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\resources\static\assets\tpl\apps\appAuthority\appAuthorityConfig.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\tpl\apps\entityConfig.e.vm.html</template>
+      <size>3063</size>
+      <path>src\main\resources\static\assets\tpl\apps\appAuthority\appAuthorityConfig.html</path>
+      <lastMod>1488100589155</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -5554,9 +6114,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
-      <size>4194</size>
+      <size>4200</size>
       <path>src\main\generated-java\com\jaxio\demo\domain\AppTranslation.java</path>
-      <lastMod>1485549871230</lastMod>
+      <lastMod>1489846518926</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -5884,9 +6444,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
-      <size>4142</size>
+      <size>4148</size>
       <path>src\main\generated-java\com\jaxio\demo\domain\AppParameter.java</path>
-      <lastMod>1485549871207</lastMod>
+      <lastMod>1489846518877</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -5926,7 +6486,7 @@
       <template>angularjs\static\assets\tpl\apps\entity.e.vm.html</template>
       <size>5344</size>
       <path>src\main\resources\static\assets\tpl\apps\appParameter\appParameter.html</path>
-      <lastMod>1486674590391</lastMod>
+      <lastMod>1489846518438</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -5996,7 +6556,7 @@
       <template>angularjs\static\assets\tpl\apps\entitySearch.e.vm.html</template>
       <size>2832</size>
       <path>src\main\resources\static\assets\tpl\apps\appParameter\appParameterSearch.html</path>
-      <lastMod>1486567903424</lastMod>
+      <lastMod>1489846518720</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -6110,6 +6670,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\generated-java\com\jaxio\demo\rest\AppAuthorityResource.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\rest\EntityResource.e.vm.java</template>
+      <size>10683</size>
+      <path>src\main\generated-java\com\jaxio\demo\rest\AppAuthorityResource.java</path>
+      <lastMod>1488100590060</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\generated-java\com\jaxio\demo\repository\search\AuthorSearchRepository.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -6157,6 +6727,16 @@
       <size>1401</size>
       <path>src\main\generated-java\com\jaxio\demo\domain\VbsFlow_.java</path>
       <lastMod>1462086232291</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\webapp\assets\js\entity\appUserController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityController.e.vm.js</template>
+      <size>14370</size>
+      <path>src\main\webapp\assets\js\entity\appUserController.js</path>
+      <lastMod>1488138996799</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -6267,6 +6847,16 @@
       <size>48941</size>
       <path>src\main\webapp\assets\tpl\test\scr.txt</path>
       <lastMod>1485118677564</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\webapp\assets\js\entity\appAuthorityController.js</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>angularjs\static\assets\js\entity\EntityController.e.vm.js</template>
+      <size>14264</size>
+      <path>src\main\webapp\assets\js\entity\appAuthorityController.js</path>
+      <lastMod>1488138996699</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>

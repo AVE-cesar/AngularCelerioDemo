@@ -1,0 +1,185 @@
+
+<div class="row">
+	<!-- Breadcrumb -->
+	<ul class="breadcrumb">
+	  <li><a ui-sref="appUser">AppUser search & result</a></li>
+	  <li class="active">AppUser detail</li>
+	</ul>
+</div>
+
+<section class="forms-basic">
+  <div class="page-header">
+    <h1>
+      <i class="md md-input"></i>
+      AppUser form
+    </h1>
+    <p class="lead">
+      You can edit AppUser entity and see linked entities.
+    </p>
+  </div>
+
+<div class="row m-b-40">
+
+    <div class="col-md-3 col-md-push-9">
+      <h5>Mode</h5>
+      <p>mode: {{mode}}</p>
+    </div>
+    <div class="col-md-8 col-md-pull-3">
+      <div class="well">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Main entity</legend>          
+            <span class="help-block m-b-20">Please fill out the following form below.</span>
+
+
+		
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label"><b>FirstName</b></label>
+                          <div class="col-lg-10">
+																
+				               		<input type="text" class="form-control" id="firstName" ng-model="item.firstName" required ng-disabled="mode == 'VIEW'">
+               	            		        	</div>
+           </div>
+    
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label"><b>LastName</b></label>
+                          <div class="col-lg-10">
+																
+				               		<input type="text" class="form-control" id="lastName" ng-model="item.lastName" required ng-disabled="mode == 'VIEW'">
+               	            		        	</div>
+           </div>
+    
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label"><b>Email</b></label>
+                          <div class="col-lg-10">
+																
+				               		<input type="text" class="form-control" id="email" ng-model="item.email" required ng-disabled="mode == 'VIEW'">
+               	            		        	</div>
+           </div>
+    
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label"><b>Language</b></label>
+                          <div class="col-lg-10">
+																
+				               		<input type="text" class="form-control" id="language" ng-model="item.language" required ng-disabled="mode == 'VIEW'">
+               	            		        	</div>
+           </div>
+    
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label"><b>Login</b></label>
+                          <div class="col-lg-10">
+																
+				               		<input type="text" class="form-control" id="login" ng-model="item.login" required ng-disabled="mode == 'VIEW'">
+               	            		        	</div>
+           </div>
+    
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label"><b>Password</b></label>
+                          <div class="col-lg-10">
+																
+				               		<input type="text" class="form-control" id="password" ng-model="item.password" required ng-disabled="mode == 'VIEW'">
+               	            		        	</div>
+           </div>
+    
+			
+										
+			<div class="form-group">
+			            	<label for="name" class="col-lg-2 control-label"><b>Enabled</b></label>
+                          <div class="col-lg-10">
+																
+									<input type="text" class="form-control" id="enabled" ng-model="item.enabled" required ng-pattern="/^\d{0,18}(\.\d{1,2})?$/" ng-disabled="mode == 'VIEW'">  
+				            		        	</div>
+           </div>
+    
+
+
+          <div class="form-group">
+              <label for="id" class="col-lg-2 control-label"><b> Id</b></label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="id"  ng-disabled="true"  ng-model="item.id">
+              </div>
+         </div>
+            
+
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-2">
+              	<button type="submit" class="btn btn-primary" ui-sref="appuser">back to List</button>
+                <button type="reset" class="btn btn-default" ng-click="remove(item)" ng-show="mode != 'VIEW'">Delete</button>
+                <button type="submit" class="btn btn-primary" ng-click="saveItem(item)" ng-show="mode != 'VIEW'">Save</button>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<section class="tables-data">
+
+  <div class="page-header">
+    <h1>
+      <i class="md md-list"></i>
+      Linked entities
+    </h1>
+    <p class="lead">
+      Todo
+    </p>
+  </div>
+
+  <div class="card">
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="table-title p-20">AppAuthority: {{item.appAuthoritys.length}} rows</h3>
+      </div>
+      <div class="col-md-6">
+        <div class="table-search">
+          <input type="text" ng-model="tableParams.filter()['search']" class="form-control" placeholder="Search data"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-responsive white">
+
+      <table ng-table="tableParams" template-pagination="assets/tpl/partials/data-table-pager.html" class="table table-full table-full-small">
+        <tr ng-repeat="item in item.appAuthoritys">
+					  <td data-title="'id'" filter="{ 'id': 'text' }" sortable="'id'"><a ui-sref="editAppAuthority({id:item.id})">{{item.id}}</a></td>
+						  <td data-title="'name'" filter="{ 'name': 'text' }" sortable="'name'">{{item.name}}</td>	
+		        </tr>
+      </table>
+
+    </div>
+
+  </div>
+
+<section class="tables-data">
+
+  <div class="page-header">
+    <h1>
+      <i class="md md-list"></i>
+      Linked entities (inverse relation)
+    </h1>
+    <p class="lead">
+      Todo
+    </p>
+  </div>
+	 	 	 	 	 				 	  
+</section>
+
+
+

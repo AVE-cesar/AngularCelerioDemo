@@ -76,6 +76,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 /* you must be a member of admin group to go to pages below */
                 .antMatchers("/v2/api-docs").hasAnyAuthority("admin")
                 .antMatchers("/users/**").hasAnyAuthority("admin")
+                .antMatchers("/h2-console/**").hasAnyAuthority("admin")
                 /* you must be authenticated for other pages */
                 .anyRequest().authenticated()
             .and()

@@ -11,10 +11,18 @@ app.config(['$translateProvider', function ($translateProvider) {
 	
 		  'BOOK_TITLE': 'Book',
 		  'BOOK_MENU': 'Book',
+		  'APPAUTHORITY_TITLE': 'AppAuthority',
+		  'APPAUTHORITY_MENU': 'AppAuthority',
 		  'APPPARAMETER_TITLE': 'AppParameter',
 		  'APPPARAMETER_MENU': 'AppParameter',
+		  'APPTOKEN_TITLE': 'AppToken',
+		  'APPTOKEN_MENU': 'AppToken',
 		  'APPTRANSLATION_TITLE': 'AppTranslation',
 		  'APPTRANSLATION_MENU': 'AppTranslation',
+		  'APPUSER_TITLE': 'AppUser',
+		  'APPUSER_MENU': 'AppUser',
+		  'APPUSERAUTHORITY_TITLE': 'AppUserAuthority',
+		  'APPUSERAUTHORITY_MENU': 'AppUserAuthority',
 	
     	'ENTITY_DESCRIPTION': 'Use this page to manage book entities. You will be able to search, view, edit and delete items.',
     

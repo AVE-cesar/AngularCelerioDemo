@@ -27,7 +27,7 @@ app.controller("BookEditController", ["$scope", "$window", "$aside",
 	scope.item = item;
 
 								
-     
+         
 	/** Clear item */
 	scope.clear = function () {
 			scope.item = null;

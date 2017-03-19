@@ -47,6 +47,7 @@ app.run(function ($rootScope, $location, $http, AuthSharedService, Session, USER
 
     // Call when the 401 response is returned by the server
     $rootScope.$on('event:auth-loginRequired', function (event, data) {
+    	console.log('event:auth-loginRequired received: ' + data);
         if ($rootScope.loadingAccount && data.status !== 401) {
             $rootScope.requestedUrl = $location.path()
             $location.path('/loading');
@@ -60,6 +61,7 @@ app.run(function ($rootScope, $location, $http, AuthSharedService, Session, USER
 
     // Call when the 403 response is returned by the server
     $rootScope.$on('event:auth-forbidden', function (rejection) {
+    	console.log('event:auth-forbidden received');
         $rootScope.$evalAsync(function () {
             $location.path('/error/403').replace();
         });
@@ -67,6 +69,7 @@ app.run(function ($rootScope, $location, $http, AuthSharedService, Session, USER
 
     // Call when the user logs out
     $rootScope.$on('event:auth-loginCancelled', function () {
+    	console.log('event:auth-loginCancelled received');
         $location.path('/login').replace();
     });
 

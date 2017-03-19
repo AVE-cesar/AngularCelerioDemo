@@ -9,16 +9,16 @@ CREATE SEQUENCE hibernate_sequence START WITH 1000;
 
 
 CREATE TABLE BOOK (
-    id                          char(36) not null,
-    title                       varchar(100) not null,
-    description                 varchar(255) not null,
-    publication_date            timestamp,
-    author_id                   int,
-    price                       decimal(20, 2) not null,
+    ID                          char(36) not null,
+    TITLE                       varchar(100) not null,
+    DESCRIPTION                 varchar(255) not null,
+    PUBLICATION_DATE            timestamp,
+    AUTHOR_ID                   int,
+    PRICE                       decimal(20, 2) not null,
 --	previousBookId				char(36),  ce champ génère un pb, il ajoute un tag @FixedLength qu'on ne sait pas où trouver
-	barCodeId					int,
+	BARCODEID					int,
 	
-    primary key (id)
+    primary key (ID)
 );
 
 INSERT INTO BOOK  VALUES ('serial_1', 'Les misérables', 'histoire de cozette', null, 3, 12.25, /*null,*/ null);

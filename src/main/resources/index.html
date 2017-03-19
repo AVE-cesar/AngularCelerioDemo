@@ -37,7 +37,7 @@
 
   </head>
   <body class="has-drawer">
-     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+     <script src="./bower_components/jquery/dist/jquery.min.js"></script>
     <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/drawer.js"></script>
     <script src="./assets/js/custom.js"></script>
@@ -98,8 +98,9 @@
 	<script src="assets/js/entity/appParameterCreateController.js"></script>
 	<script src="assets/js/entity/appParameterConfigController.js"></script>
   
-  	<!-- Login controller -->
+  	<!-- Login/logout controller -->
   	<script src="assets/js/loginController.js"></script>
+  	<script src="assets/js/logoutController.js"></script>
   
 	<!-- entities controllers -->
 	<!-- for Book entity --> 	
@@ -186,7 +187,8 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-            <li class="dropdown">
+<!-- Menu for Entities -->          
+            <li  ng-show="authenticated" class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Entities<span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="themes">
                 <li><a ui-sref="book">Book</a></li>
@@ -194,7 +196,8 @@
                 <li><a ui-sref="appTranslation">AppTranslation</a></li>
               </ul>
             </li>
-			<li>
+<!-- Menu for demonstration -->            
+			<li ng-show="authenticated">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="demo">Demo<span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="demo">
 				<li><a ui-sref="form">Form</a></li>
@@ -208,7 +211,8 @@
 				<li><a ui-sref="testIcon">Icons</a></li>
               </ul>
             </li>
-            <li>
+<!-- Menu for Entites' configuration -->            
+            <li ng-show="authenticated">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="configuration">Configuration<span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="configuration">
                 <li><a ui-sref="configurationbook">Book configuration</a></li>
@@ -216,7 +220,8 @@
                 <li><a ui-sref="configurationappTranslation">AppTranslation configuration</a></li>
               </ul>
             </li>
-            <li ng-if="authenticated" class="dropdown">
+<!-- Menu for site administration -->            
+            <li ng-show="authenticated" class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Administration<span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="download">
                 <li><a ui-sref="dashboard">Dashboard</a></li>
@@ -234,9 +239,11 @@
                 <li><a ui-sref="logout">Logout</a></li>
               </ul>
             </li>
+<!-- Help menu -->            
             <li>
               <a href="#">Help</a>
             </li>
+<!-- Usefull links -->            
             <li>
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="other">Other sites<span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="other">
@@ -249,9 +256,10 @@
               </ul>
             </li>
           </ul>
-
+<!-- login/logout -->
           <ul class="nav navbar-nav navbar-right">
-            <li><a ui-sref="login">Login</a></li>
+            <li ng-show="!authenticated"><a ui-sref="login">Login</a></li>
+            <li ng-show="authenticated"><a ui-sref="logout">Logout</a></li>
           </ul>
 
         </div>

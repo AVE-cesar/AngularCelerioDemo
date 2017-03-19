@@ -472,5 +472,5 @@ app.factory('BookRestInvRelationService', function ($resource) {
 	return $resource('api/void/:id', {}, {
 		'void': { method: 'GET'} /* dummy method, to be sure to have at least one */
 
-     	});
+         	});
 });

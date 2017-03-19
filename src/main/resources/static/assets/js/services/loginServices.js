@@ -44,11 +44,14 @@ app.service('AuthSharedService', function ($rootScope, $http, $resource, $log, a
                 rememberme: rememberMe
             }), config)
                 .success(function (data, status, headers, config) {
-                	$log.info("onSuccess login");
+                	$log.info("login successful");
                     authService.loginConfirmed(data);
+                    $rootScope.authenticated= true;
                 })
                 .error(function (data, status, headers, config) {
+                	$log.info("login failed !");
                     $rootScope.authenticationError = true;
+                    
                     Session.invalidate();
                 });
         },
@@ -84,6 +87,7 @@ app.service('AuthSharedService', function ($rootScope, $http, $resource, $log, a
             $rootScope.account = null;
             $http.get('logout');
             Session.invalidate();
+            /* send event name:  event:auth-loginCancelled*/
             authService.loginCancelled();
         }
     };

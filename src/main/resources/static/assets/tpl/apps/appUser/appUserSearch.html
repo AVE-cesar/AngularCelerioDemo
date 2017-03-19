@@ -1,0 +1,105 @@
+
+
+<div class="row">
+	<!-- Breadcrumb -->
+	<ul class="breadcrumb">
+  		<li class="active">AppUser search & result</li>
+	</ul>
+</div>
+
+<!-- ElasticSearch form -->	
+<div class="panel-group">
+<form class="form-floating" ng-submit="startElasticSearch(savedSearch)">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#appUserElasticSearchForm">AppUser Elastic Search Form</a>
+      </h4>
+    </div>
+    <div id="appUserElasticSearchForm" class="panel-collapse collapse">
+      <div class="panel-body">
+          <div class="form-group filled">
+            <label class="control-label">{{ 'QUERY' | translate }}</label>
+            <input type="text" class="form-control input-sm" ng-model="savedSearch.query" required>
+          </div>
+      </div> <!-- panel body end -->
+      <div class="panel-footer">
+      	<div class="form-group">
+      			<button type="submit" class="btn btn-sm btn-primary" >{{ 'ELASTIC_SEARCH' | translate }}</button>
+        </div>
+    </div> <!-- panel footer end -->
+  </div>
+</form>
+</div>
+</div>
+
+<!-- Entity search form -->
+<div class="panel-group">
+<form class="form-floating" ng-submit="startSearch(item)">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#appUserSearchForm">AppUser Search Form</a>
+	  </h4>
+    </div>
+    <div id="appUserSearchForm" class="panel-collapse collapse">
+      <div class="panel-body">
+
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">FirstName</label>
+                    <input type="text" class="form-control input-sm" ng-model="savedSearch.firstName">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">LastName</label>
+                    <input type="text" class="form-control input-sm" ng-model="savedSearch.lastName">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">Email</label>
+                    <input type="text" class="form-control input-sm" ng-model="savedSearch.email">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">Language</label>
+                    <input type="text" class="form-control input-sm" ng-model="savedSearch.language">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">Login</label>
+                    <input type="text" class="form-control input-sm" ng-model="savedSearch.login">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">Password</label>
+                    <input type="text" class="form-control input-sm" ng-model="savedSearch.password">
+                </div>
+		
+		
+			<div class="form-group filled">
+		    <label class="control-label">Enabled</label>
+                	<input type="text" class="form-control input-sm" ng-model="savedSearch.enabled">
+    	        </div>
+		
+		
+		</div> <!-- panel body end -->
+		<div class="panel-footer">
+				<!-- Form buttons: begin -->
+                  <div class="form-group">
+                      <button type="button" ng-click="clearSavedSearch()" class="btn btn-sm btn-default">{{ 'CLEAR' | translate }}</button>
+                      <button type="submit" class="btn btn-sm btn-primary">{{ 'SEARCH' | translate }}</button>
+                  </div>
+                  <!-- Form buttons: end -->
+                  
+         </div> <!-- panel footer end -->
+  </div>
+</form>
+</div>
+</div>

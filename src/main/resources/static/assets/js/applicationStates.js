@@ -196,6 +196,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
 				}
     });
     
+    
+    
+    
+    /*
+     * 
+     * Authentication part of the application: login, logout
+     * 
+     */
+    
     /* to redirect users to the login page */
     $stateProvider
 		.state('login', {
@@ -220,7 +229,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	  		url: "/logout",
 			views: {
 				"mainView": {
-					templateUrl: "assets/tpl/commons/logout.html"
+					templateUrl: "assets/tpl/commons/logout.html",
+					controller: "LogoutController"
 				},
 				"footerView": {templateUrl: "assets/tpl/commons/emptyFooter.html"}
 				}
