@@ -14,6 +14,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 import javax.validation.constraints.Size;
@@ -28,6 +30,9 @@ import com.jaxio.jpa.querybyexample.Identifiable;
 @Table(name = "APP_PARAMETER")
 // elastic search index must be lowercase
 @org.springframework.data.elasticsearch.annotations.Document(indexName = "appparameter")
+@NamedQueries(value = {
+	    @NamedQuery(name = "AppParameter.getAll", query = "SELECT ap FROM AppParameter ap")
+	})
 public class AppParameter implements Identifiable<Integer>, Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -94,7 +99,7 @@ public class AppParameter implements Identifiable<Integer>, Serializable {
 
     @NotEmpty
     @Size(max = 1000)
-    @Column(name = "key", nullable = false, length = 1000)
+    @Column(name = "\"KEY\"", nullable = false, length = 1000)
     public String getKey() {
         return key;
     }

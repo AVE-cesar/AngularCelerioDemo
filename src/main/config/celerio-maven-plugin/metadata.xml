@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata xmlns="http://www.jaxio.com/schema/celerio">
-  <jdbcConnectivity driver="org.h2.Driver" url="jdbc:h2:D:\Workspaces\JaxioAngular\angular-lab\target/db/angular-lab;MVCC=TRUE;FILE_LOCK=NO" user="demo" password="demo" schemaName="" tableNamePattern="%" oracleRetrieveRemarks="false" oracleRetrieveSynonyms="true" reverseIndexes="true" reverseOnlyUniqueIndexes="true" catalog="">
+  <jdbcConnectivity driver="org.h2.Driver" url="jdbc:h2:D:\Workspaces\JaxioAngular\angular-lab\target/db/angular-lab;MVCC=TRUE;FILE_LOCK=NO;IGNORECASE=TRUE" user="demo" password="demo" schemaName="" tableNamePattern="%" oracleRetrieveRemarks="false" oracleRetrieveSynonyms="true" reverseIndexes="true" reverseOnlyUniqueIndexes="true" catalog="">
     <tableTypes>
       <tableType>TABLE</tableType>
     </tableTypes>
@@ -9,7 +9,7 @@
   <tables>
     <table name="APP_AUTHORITY" type="TABLE">
       <columns>
-        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_44348D79_1CFD_4607_A752_E0AD13E585D4)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
+        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_04431B6E_ECDA_46CF_8323_1E7DC03F3091)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
         <column name="NAME" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="250" type="VARCHAR"/>
       </columns>
       <indexes>
@@ -22,7 +22,7 @@
     </table>
     <table name="APP_PARAMETER" type="TABLE">
       <columns>
-        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_6E605394_FA09_45D3_B673_2BD42D38ACCB)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
+        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_89FC3622_760E_4EEE_A821_CD2B1E58DD85)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
         <column name="DOMAIN" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="250" type="VARCHAR"/>
         <column name="KEY" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="1000" type="VARCHAR"/>
         <column name="VALUE" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="4" size="4000" type="VARCHAR"/>
@@ -37,7 +37,7 @@
     </table>
     <table name="APP_TOKEN" type="TABLE">
       <columns>
-        <column name="SERIES" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_9BC5CAC3_B0D3_4805_8248_FA3A5B3CACDB)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="50" type="VARCHAR"/>
+        <column name="SERIES" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_38F024AC_A9B5_4523_B92C_9BD6283871B8)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="50" type="VARCHAR"/>
         <column name="TOKEN_VALUE" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="50" type="VARCHAR"/>
         <column name="TOKEN_CREATION_DATE" decimalDigits="10" autoIncrement="false" nullable="true" ordinalPosition="3" size="23" type="TIMESTAMP"/>
         <column name="IP_ADDRESS" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="4" size="250" type="VARCHAR"/>
@@ -54,7 +54,7 @@
     </table>
     <table name="APP_TRANSLATION" type="TABLE">
       <columns>
-        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_091B591F_C349_42DB_A4A0_F5859C8452E4)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
+        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_371D6D0A_8031_4212_B221_665DEDF4B14C)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
         <column name="LANGUAGE" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="10" type="VARCHAR"/>
         <column name="KEY" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="1000" type="VARCHAR"/>
         <column name="VALUE" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="4" size="4000" type="VARCHAR"/>
@@ -69,7 +69,7 @@
     </table>
     <table name="APP_USER" type="TABLE">
       <columns>
-        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_B40D1AC4_02B0_4CB8_BB96_5A949BFF60A5)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
+        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_C3911F94_E8A7_40E2_BB2A_23D3102F95BE)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
         <column name="FIRST_NAME" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="250" type="VARCHAR"/>
         <column name="LAST_NAME" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="250" type="VARCHAR"/>
         <column name="EMAIL" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="4" size="250" type="VARCHAR"/>
@@ -88,7 +88,7 @@
     </table>
     <table name="APP_USER_AUTHORITY" type="TABLE">
       <columns>
-        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_B5F55716_50E2_449F_B88E_F66C22191894)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
+        <column name="ID" columnDef="(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_359809B1_1B0D_4098_9855_B8789786AF6B)" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER"/>
         <column name="APP_USER_ID" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="10" type="INTEGER"/>
         <column name="APP_AUTHORITY_ID" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="10" type="INTEGER"/>
       </columns>
