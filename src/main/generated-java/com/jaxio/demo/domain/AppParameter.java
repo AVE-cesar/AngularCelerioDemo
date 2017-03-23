@@ -30,9 +30,6 @@ import com.jaxio.jpa.querybyexample.Identifiable;
 @Table(name = "APP_PARAMETER")
 // elastic search index must be lowercase
 @org.springframework.data.elasticsearch.annotations.Document(indexName = "appparameter")
-@NamedQueries(value = {
-	    @NamedQuery(name = "AppParameter.getAll", query = "SELECT ap FROM AppParameter ap")
-	})
 public class AppParameter implements Identifiable<Integer>, Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -116,7 +113,7 @@ public class AppParameter implements Identifiable<Integer>, Serializable {
     // -- [value] ------------------------
 
     @Size(max = 4000)
-    @Column(name = "value", length = 4000)
+    @Column(name = "\"VALUE\"", length = 4000)
     public String getValue() {
         return value;
     }
