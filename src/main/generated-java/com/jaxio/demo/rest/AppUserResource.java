@@ -43,7 +43,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.jaxio.demo.domain.AppUser;
 import com.jaxio.demo.repository.AppUserRepository;
-import com.jaxio.demo.repository.search.AppUserSearchRepository;
+import com.jaxio.demo.searchrepository.AppUserSearchRepository;
 
 @RestController
 @RequestMapping("/api/appUsers")

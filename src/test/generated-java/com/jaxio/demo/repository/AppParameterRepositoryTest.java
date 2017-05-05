@@ -10,12 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.jaxio.demo.config.ElasticSearchConfiguration;
 import com.jaxio.demo.domain.AppParameter;
 import com.jaxio.demo.repository.AppParameterRepository;
 import com.jaxio.demo.rest.AppParameterResource;
@@ -23,9 +20,7 @@ import com.jaxio.demo.rest.AppParameterResource;
 @RunWith(SpringRunner.class)
 @DataJpaTest
 @ActiveProfiles(profiles="TEST")
-@ContextConfiguration(classes=ElasticSearchConfiguration.class)
 @EntityScan("com.jaxio.demo.domain")
-@EnableJpaRepositories("com.jaxio.demo.repository.search")
 public class AppParameterRepositoryTest {
 
 	private final Logger log = LoggerFactory.getLogger(AppParameterResource.class);
@@ -37,16 +32,16 @@ public class AppParameterRepositoryTest {
 	private AppParameterRepository repository;
 	
     @Test
-    public void should_find_no_AppParamaters_if_repository_is_empty() {
+    public void should_find_no_AppParameter_if_repository_is_empty() {
         Iterable<AppParameter> appParameters = repository.findAll();
  
         log.info("appParameters: " + appParameters);
         
         assertThat(appParameters).isEmpty();
     }
-    /*
+    
     @Test
-    public void should_store_a_customer() {
+    public void should_store_a_AppParameter() {
     	AppParameter param = new AppParameter();
         param.setDomain("UNITTEST");
         param.setKey("KEY");
@@ -59,7 +54,7 @@ public class AppParameterRepositoryTest {
     }
  
     @Test
-    public void should_delete_all_customer() {
+    public void should_delete_all_AppParameters() {
     	AppParameter param1 = new AppParameter();
         param1.setDomain("UNITTEST");
         param1.setKey("KEY_1");
@@ -80,7 +75,7 @@ public class AppParameterRepositoryTest {
     }
  
     @Test
-    public void should_find_all_customers() {
+    public void should_find_all_AppParameters() {
         AppParameter param1 = new AppParameter();
         param1.setDomain("UNITTEST");
         param1.setKey("KEY_1");
@@ -109,7 +104,7 @@ public class AppParameterRepositoryTest {
     }
  
     @Test
-    public void should_find_customer_by_id() {
+    public void should_find_AppParameter_by_id() {
     	AppParameter param = new AppParameter();
         param.setDomain("UNITTEST");
         param.setKey("KEY");
@@ -120,5 +115,5 @@ public class AppParameterRepositoryTest {
         AppParameter foundAppParameter = repository.findOne(param.getId());
  
         assertThat(foundAppParameter).isEqualTo(param);
-    }*/
+    }
 }

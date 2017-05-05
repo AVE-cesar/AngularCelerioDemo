@@ -43,7 +43,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.jaxio.demo.domain.AppToken;
 import com.jaxio.demo.repository.AppTokenRepository;
-import com.jaxio.demo.repository.search.AppTokenSearchRepository;
+import com.jaxio.demo.searchrepository.AppTokenSearchRepository;
 
 @RestController
 @RequestMapping("/api/appTokens")

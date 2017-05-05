@@ -5,14 +5,14 @@
  * Need commercial support ? Contact us: info@jaxio.com
  * Template angular-lab:springboot/src/main/java/repository/search/EntitySearchRepository.e.vm.java
  */
-package com.jaxio.demo.repository.search;
+package com.jaxio.demo.searchrepository;
 
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 
-import com.jaxio.demo.domain.AppAuthority;
+import com.jaxio.demo.domain.AppToken;
 
 /**
- * Spring Data ElasticSearch repository for the entity named: AppAuthority.
+ * Spring Data ElasticSearch repository for the entity named: AppToken.
  */
-public interface AppAuthoritySearchRepository extends ElasticsearchRepository<AppAuthority, Integer> {
+public interface AppTokenSearchRepository extends ElasticsearchRepository<AppToken, String> {
 }

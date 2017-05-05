@@ -43,7 +43,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.jaxio.demo.domain.AppAuthority;
 import com.jaxio.demo.repository.AppAuthorityRepository;
-import com.jaxio.demo.repository.search.AppAuthoritySearchRepository;
+import com.jaxio.demo.searchrepository.AppAuthoritySearchRepository;
 
 @RestController
 @RequestMapping("/api/appAuthorities")

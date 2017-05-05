@@ -12,7 +12,7 @@
 ## See the License for the specific language governing permissions and
 ## limitations under the License.
 ##
-$output.java("com.jaxio.demo.repository.search", "${entity.model.type}SearchRepository")##
+$output.java("com.jaxio.demo.searchrepository", "${entity.model.type}SearchRepository")##
 
 #if ($entity.hasSimplePk())
 $output.require($entity.model)##

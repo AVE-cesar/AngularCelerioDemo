@@ -43,7 +43,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.jaxio.demo.domain.AppParameter;
 import com.jaxio.demo.repository.AppParameterRepository;
-import com.jaxio.demo.repository.search.AppParameterSearchRepository;
+import com.jaxio.demo.searchrepository.AppParameterSearchRepository;
 
 @RestController
 @RequestMapping("/api/appParameters")

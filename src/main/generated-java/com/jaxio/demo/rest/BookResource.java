@@ -43,7 +43,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.jaxio.demo.domain.Book;
 import com.jaxio.demo.repository.BookRepository;
-import com.jaxio.demo.repository.search.BookSearchRepository;
+import com.jaxio.demo.searchrepository.BookSearchRepository;
 
 import io.swagger.annotations.ApiOperation;
 

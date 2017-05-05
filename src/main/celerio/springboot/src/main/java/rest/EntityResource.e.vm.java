@@ -14,7 +14,7 @@ $output.require($enumAttribute)##
 
 $output.require($entity.repository)##
 #if (($entity.hasSimplePk()))
-$output.require("com.jaxio.demo.repository.search.${entity.model.type}SearchRepository")##
+$output.require("com.jaxio.demo.searchrepository.${entity.model.type}SearchRepository")##
 #end
 $output.require("java.util.List")##
 $output.require("java.util.stream.Stream")##

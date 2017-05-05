@@ -43,7 +43,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.jaxio.demo.domain.AppTranslation;
 import com.jaxio.demo.repository.AppTranslationRepository;
-import com.jaxio.demo.repository.search.AppTranslationSearchRepository;
+import com.jaxio.demo.searchrepository.AppTranslationSearchRepository;
 
 @RestController
 @RequestMapping("/api/appTranslations")
