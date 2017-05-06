@@ -3,7 +3,7 @@
  * Documentation: http://www.jaxio.com/documentation/celerio/
  * Follow us on twitter: @jaxiosoft
  * Need commercial support ? Contact us: info@jaxio.com
- * Template angular-lab:springboot/src/main/java/repository/search/EntitySearchRepository.e.vm.java
+ * Template angular-lab:springboot/src/main/java/searchrepository/EntitySearchRepository.e.vm.java
  */
 package com.jaxio.demo.searchrepository;
 

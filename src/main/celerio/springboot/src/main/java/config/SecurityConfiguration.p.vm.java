@@ -1,37 +1,36 @@
-package com.jaxio.demo.config;
+$output.java("${configuration.rootPackage}.config", "SecurityConfiguration")##
 
-import com.jaxio.demo.security.RestUnauthorizedEntryPoint;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
-import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.builders.WebSecurity;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.web.access.AccessDeniedHandler;
-import org.springframework.security.web.authentication.AuthenticationFailureHandler;
-import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
-import org.springframework.security.web.authentication.RememberMeServices;
-import org.springframework.security.web.authentication.logout.HttpStatusReturningLogoutSuccessHandler;
+$output.require("com.jaxio.demo.config.Constants")##
+$output.require("com.jaxio.demo.security.RestUnauthorizedEntryPoint")##
+$output.require("org.slf4j.Logger")##
+$output.require("org.slf4j.LoggerFactory")##
+$output.require("org.springframework.beans.factory.annotation.Autowired")##
+$output.require("org.springframework.context.annotation.ComponentScan")##
+$output.require("org.springframework.context.annotation.Configuration")##
+$output.require("org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder")##
+$output.require("org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity")##
+$output.require("org.springframework.security.config.annotation.web.builders.HttpSecurity")##
+$output.require("org.springframework.security.config.annotation.web.builders.WebSecurity")##
+$output.require("org.springframework.security.config.annotation.web.configuration.EnableWebSecurity")##
+$output.require("org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter")##
+$output.require("org.springframework.security.core.userdetails.UserDetailsService")##
+$output.require("org.springframework.security.web.access.AccessDeniedHandler")##
+$output.require("org.springframework.security.web.authentication.AuthenticationFailureHandler")##
+$output.require("org.springframework.security.web.authentication.AuthenticationSuccessHandler")##
+$output.require("org.springframework.security.web.authentication.RememberMeServices")##
+$output.require("org.springframework.security.web.authentication.logout.HttpStatusReturningLogoutSuccessHandler")##
 
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 @ComponentScan(basePackages = {"com.jaxio.demo.security"})
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    public static final String REMEMBER_ME_KEY = "rememberme_key";
-
-    public SecurityConfig() {
+    public SecurityConfiguration() {
         super();
-        logger.info("loading SecurityConfig ................................................ ");
+        logger.info("loading SecurityConfiguration ................................................ ");
     }
 
     @Autowired
@@ -102,6 +101,6 @@ Spring HttpStatusReturningLogoutSuccessHandler class  implements logout handler 
                 .and()
             .rememberMe()
                 .rememberMeServices(rememberMeServices)
-                .key(REMEMBER_ME_KEY);
+                .key(Constants.REMEMBER_ME_KEY);
     }
 }

@@ -20,6 +20,11 @@ public final class Constants {
     // Role for ADMIN features
     public static final String ADMIN = "ADMIN";
 
+    // Cookie name
+    public static final String REMEMBER_ME_KEY = "rememberme_key";
+
+    public static final String CONTENT_TYPE = "application/json;charset=UTF-8";
+
     private Constants() {
     }
 }

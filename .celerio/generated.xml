@@ -103,10 +103,10 @@
     <string>src\main\generated-java\com\jaxio\demo\searchrepository\AppAuthoritySearchRepository.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
-      <template>springboot\src\main\java\repository\search\EntitySearchRepository.e.vm.java</template>
-      <size>691</size>
+      <template>springboot\src\main\java\searchrepository\EntitySearchRepository.e.vm.java</template>
+      <size>690</size>
       <path>src\main\generated-java\com\jaxio\demo\searchrepository\AppAuthoritySearchRepository.java</path>
-      <lastMod>1494005690405</lastMod>
+      <lastMod>1494056271829</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -127,6 +127,16 @@
       <size>3142</size>
       <path>src\main\resources\static\assets\tpl\apps\appUserAuthority\appUserAuthorityEdit.html</path>
       <lastMod>1488136806348</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\security\RememberMeServices.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\security\RememberMeServices.p.vm.java</template>
+      <size>8888</size>
+      <path>src\main\generated-java\com\jaxio\demo\security\RememberMeServices.java</path>
+      <lastMod>1494063380354</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -216,7 +226,7 @@
       <template>angularjs\static\assets\js\applicationStates.p.vm.js</template>
       <size>24525</size>
       <path>target\celerio-maven-plugin\collisions\src\main\resources\static\assets\js\applicationStates.js</path>
-      <lastMod>1494005685687</lastMod>
+      <lastMod>1494063379740</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -294,9 +304,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
-      <size>27091</size>
+      <size>27095</size>
       <path>src\main\resources\static\assets\tpl\test\appTranslation.txt</path>
-      <lastMod>1493630921526</lastMod>
+      <lastMod>1494063381260</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -337,6 +347,16 @@
       <size>2731</size>
       <path>src\main\generated-java\com\jaxio\demo\async\ExceptionHandlingAsyncTaskExecutor.java</path>
       <lastMod>1485453476621</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\security\RestAuthenticationFailureHandler.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\security\RestAuthenticationFailureHandler.p.vm.java</template>
+      <size>1548</size>
+      <path>src\main\generated-java\com\jaxio\demo\security\RestAuthenticationFailureHandler.java</path>
+      <lastMod>1494063380408</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -433,10 +453,10 @@
     <string>src\main\generated-java\com\jaxio\demo\searchrepository\AppTokenSearchRepository.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
-      <template>springboot\src\main\java\repository\search\EntitySearchRepository.e.vm.java</template>
-      <size>674</size>
+      <template>springboot\src\main\java\searchrepository\EntitySearchRepository.e.vm.java</template>
+      <size>673</size>
       <path>src\main\generated-java\com\jaxio\demo\searchrepository\AppTokenSearchRepository.java</path>
-      <lastMod>1494005690463</lastMod>
+      <lastMod>1494056271857</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -880,6 +900,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\generated-java\com\jaxio\demo\rest\error\MyErrorController.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\rest\error\MyErrorController.p.vm.java</template>
+      <size>913</size>
+      <path>src\main\generated-java\com\jaxio\demo\rest\error\MyErrorController.java</path>
+      <lastMod>1494057827734</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\generated-java\com\jaxio\demo\repository\search\AddressSearchRepository.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -946,7 +976,7 @@
       <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
       <size>46241</size>
       <path>src\main\resources\static\assets\tpl\test\book.txt</path>
-      <lastMod>1493630921448</lastMod>
+      <lastMod>1494063381200</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -1097,6 +1127,26 @@
       <size>4166</size>
       <path>src\main\webapp\assets\tpl\apps\actor\actorSearch.html</path>
       <lastMod>1462122429066</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\rest\security\SecurityRest.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\rest\security\SecurityRest.p.vm.java</template>
+      <size>667</size>
+      <path>src\main\generated-java\com\jaxio\demo\rest\security\SecurityRest.java</path>
+      <lastMod>1494057827743</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\model\Error.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\model\Error.p.vm.java</template>
+      <size>840</size>
+      <path>src\main\generated-java\com\jaxio\demo\model\Error.java</path>
+      <lastMod>1494057085316</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -1356,7 +1406,7 @@
       <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
       <size>4148</size>
       <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\domain\AppParameter.java</path>
-      <lastMod>1494005689712</lastMod>
+      <lastMod>1494063381350</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -1660,6 +1710,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\generated-java\com\jaxio\demo\config\SecurityConfiguration.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\config\SecurityConfiguration.p.vm.java</template>
+      <size>4672</size>
+      <path>src\main\generated-java\com\jaxio\demo\config\SecurityConfiguration.java</path>
+      <lastMod>1494056596070</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\generated-java\com\jaxio\demo\domain\VbsDiffusion.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -1756,7 +1816,7 @@
       <template>angularjs\static\assets\js\app.p.vm.js</template>
       <size>620</size>
       <path>target\celerio-maven-plugin\collisions\src\main\resources\static\assets\js\app.js</path>
-      <lastMod>1494005685526</lastMod>
+      <lastMod>1494063379701</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -2854,9 +2914,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
-      <size>27060</size>
+      <size>27063</size>
       <path>src\main\resources\static\assets\tpl\test\appParameter.txt</path>
-      <lastMod>1493630921487</lastMod>
+      <lastMod>1494063381233</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -3540,6 +3600,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\generated-java\com\jaxio\demo\security\RestUnauthorizedEntryPoint.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\security\RestUnauthorizedEntryPoint.p.vm.java</template>
+      <size>1740</size>
+      <path>src\main\generated-java\com\jaxio\demo\security\RestUnauthorizedEntryPoint.java</path>
+      <lastMod>1494063380436</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\generated-java\com\jaxio\demo\domain\Store.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -3644,9 +3714,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>springboot\src\main\java\config\Constants.p.vm.java</template>
-      <size>783</size>
+      <size>956</size>
       <path>src\main\generated-java\com\jaxio\demo\config\Constants.java</path>
-      <lastMod>1485453476724</lastMod>
+      <lastMod>1494062923963</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -3760,6 +3830,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\generated-java\com\jaxio\demo\model\Response.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\model\Response.p.vm.java</template>
+      <size>1029</size>
+      <path>src\main\generated-java\com\jaxio\demo\model\Response.java</path>
+      <lastMod>1494057085333</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\tpl\apps\test\scr.txt</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -3784,9 +3864,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
-      <size>14591</size>
+      <size>14595</size>
       <path>src\main\resources\static\assets\tpl\test\appAuthority.txt</path>
-      <lastMod>1493630921468</lastMod>
+      <lastMod>1494063381219</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4314,9 +4394,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
-      <size>39920</size>
+      <size>39922</size>
       <path>src\main\resources\static\assets\tpl\test\appToken.txt</path>
-      <lastMod>1493630921507</lastMod>
+      <lastMod>1494063381246</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4444,9 +4524,9 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>angularjs\static\assets\tpl\apps\test\test.e.vm.html</template>
-      <size>52596</size>
+      <size>52591</size>
       <path>src\main\resources\static\assets\tpl\test\appUser.txt</path>
-      <lastMod>1493630921542</lastMod>
+      <lastMod>1494063381277</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4504,9 +4584,19 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
       <template>springboot\src\main\java\config\SwaggerConfiguration.p.vm.java</template>
-      <size>1538</size>
+      <size>1536</size>
       <path>src\main\generated-java\com\jaxio\demo\config\SwaggerConfiguration.java</path>
-      <lastMod>1485453476916</lastMod>
+      <lastMod>1494057085199</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\security\UserDetailsService.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\security\UserDetailsService.p.vm.java</template>
+      <size>2479</size>
+      <path>src\main\generated-java\com\jaxio\demo\security\UserDetailsService.java</path>
+      <lastMod>1494063380464</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4516,7 +4606,7 @@
       <template>springboot\src\main\java\repository\EntityRepository.e.vm.java</template>
       <size>598</size>
       <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\repository\AppUserRepository.java</path>
-      <lastMod>1494005690334</lastMod>
+      <lastMod>1494063381552</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4696,7 +4786,7 @@
       <template>springboot\src\main\java\rest\EntityResource.e.vm.java</template>
       <size>10761</size>
       <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\rest\BookResource.java</path>
-      <lastMod>1494005690642</lastMod>
+      <lastMod>1494063381591</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4786,7 +4876,7 @@
       <template>angularjs\static\index.p.vm.html</template>
       <size>14153</size>
       <path>target\celerio-maven-plugin\collisions\src\main\resources\index.html</path>
-      <lastMod>1494005685834</lastMod>
+      <lastMod>1494063379788</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -5140,6 +5230,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\generated-java\com\jaxio\demo\security\exception\UserNotEnabledException.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\security\exception\UserNotEnabledException.p.vm.java</template>
+      <size>762</size>
+      <path>src\main\generated-java\com\jaxio\demo\security\exception\UserNotEnabledException.java</path>
+      <lastMod>1494063380476</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\webapp\assets\tpl\apps\vbsFlowUnitSubFnd\vbsFlowUnitSubFndEdit.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -5206,7 +5306,7 @@
       <template>angularjs\static\assets\tpl\apps\entity.e.vm.html</template>
       <size>5884</size>
       <path>target\celerio-maven-plugin\collisions\src\main\resources\static\assets\tpl\apps\book\book.html</path>
-      <lastMod>1494005688522</lastMod>
+      <lastMod>1494063380918</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -5396,7 +5496,7 @@
       <template>springboot\src\main\resources\application.p.vm.yml</template>
       <size>2211</size>
       <path>target\celerio-maven-plugin\collisions\src\main\resources\application.yml</path>
-      <lastMod>1494005687096</lastMod>
+      <lastMod>1494063380496</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -5433,10 +5533,10 @@
     <string>src\main\generated-java\com\jaxio\demo\searchrepository\AppTranslationSearchRepository.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
-      <template>springboot\src\main\java\repository\search\EntitySearchRepository.e.vm.java</template>
-      <size>699</size>
+      <template>springboot\src\main\java\searchrepository\EntitySearchRepository.e.vm.java</template>
+      <size>698</size>
       <path>src\main\generated-java\com\jaxio\demo\searchrepository\AppTranslationSearchRepository.java</path>
-      <lastMod>1494005690479</lastMod>
+      <lastMod>1494056271869</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -5673,10 +5773,10 @@
     <string>src\main\generated-java\com\jaxio\demo\searchrepository\AppParameterSearchRepository.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
-      <template>springboot\src\main\java\repository\search\EntitySearchRepository.e.vm.java</template>
-      <size>691</size>
+      <template>springboot\src\main\java\searchrepository\EntitySearchRepository.e.vm.java</template>
+      <size>690</size>
       <path>src\main\generated-java\com\jaxio\demo\searchrepository\AppParameterSearchRepository.java</path>
-      <lastMod>1494005690442</lastMod>
+      <lastMod>1494056271843</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -5776,7 +5876,7 @@
       <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
       <size>8540</size>
       <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\domain\AppUser.java</path>
-      <lastMod>1494005690001</lastMod>
+      <lastMod>1494063381425</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -6190,6 +6290,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\generated-java\com\jaxio\demo\security\RestAccessDeniedHandler.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\security\RestAccessDeniedHandler.p.vm.java</template>
+      <size>1415</size>
+      <path>src\main\generated-java\com\jaxio\demo\security\RestAccessDeniedHandler.java</path>
+      <lastMod>1494063380393</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>src\main\generated-java\com\jaxio\demo\repository\ActorRepository.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -6393,10 +6503,10 @@
     <string>src\main\generated-java\com\jaxio\demo\searchrepository\AppUserSearchRepository.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
-      <template>springboot\src\main\java\repository\search\EntitySearchRepository.e.vm.java</template>
-      <size>671</size>
+      <template>springboot\src\main\java\searchrepository\EntitySearchRepository.e.vm.java</template>
+      <size>670</size>
       <path>src\main\generated-java\com\jaxio\demo\searchrepository\AppUserSearchRepository.java</path>
-      <lastMod>1494005690502</lastMod>
+      <lastMod>1494056271892</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -6540,6 +6650,16 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>src\main\generated-java\com\jaxio\demo\security\SecurityUtils.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\security\SecurityUtils.p.vm.java</template>
+      <size>2774</size>
+      <path>src\main\generated-java\com\jaxio\demo\security\SecurityUtils.java</path>
+      <lastMod>1494063380450</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>target\celerio-maven-plugin\collisions\src\main\webapp\assets\js\applicationStates.js</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -6613,10 +6733,20 @@
     <string>src\main\generated-java\com\jaxio\demo\searchrepository\BookSearchRepository.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>angular-lab</pack>
-      <template>springboot\src\main\java\repository\search\EntitySearchRepository.e.vm.java</template>
-      <size>658</size>
+      <template>springboot\src\main\java\searchrepository\EntitySearchRepository.e.vm.java</template>
+      <size>657</size>
       <path>src\main\generated-java\com\jaxio\demo\searchrepository\BookSearchRepository.java</path>
-      <lastMod>1494005690368</lastMod>
+      <lastMod>1494056271814</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\security\exception\RememberMeServices.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\security\exception\UserNotEnabledException.p.vm.java</template>
+      <size>762</size>
+      <path>src\main\generated-java\com\jaxio\demo\security\exception\RememberMeServices.java</path>
+      <lastMod>1494058738953</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -7157,6 +7287,16 @@
       <size>159176</size>
       <path>src\main\webapp\assets\tpl\apps\test\vbsDiffusion.txt</path>
       <lastMod>1459423469717</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>src\main\generated-java\com\jaxio\demo\security\RestAuthenticationSuccessHandler.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>angular-lab</pack>
+      <template>springboot\src\main\java\security\RestAuthenticationSuccessHandler.p.vm.java</template>
+      <size>1814</size>
+      <path>src\main\generated-java\com\jaxio\demo\security\RestAuthenticationSuccessHandler.java</path>
+      <lastMod>1494063380422</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>

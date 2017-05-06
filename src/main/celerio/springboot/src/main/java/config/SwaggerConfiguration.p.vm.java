@@ -33,6 +33,4 @@ public class SwaggerConfiguration {
         log.debug("Started Swagger in {} ms", watch.getTotalTimeMillis());
         return docket;
     }
-
-
 }
