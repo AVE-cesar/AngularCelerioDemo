@@ -12,7 +12,7 @@ $output.require("${configuration.rootPackage}.config.ApplicationProperties")##
 
 @SpringBootApplication
 @EnableJpaRepositories("$Repository.packageName")
-@EnableElasticsearchRepositories("${Repository.packageName}.search")
+@EnableElasticsearchRepositories("${configuration.rootPackage}.searchrepository")
 @EnableConfigurationProperties({ ApplicationProperties.class}) 
 public class Application {
 
