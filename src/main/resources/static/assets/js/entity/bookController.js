@@ -253,6 +253,7 @@ scope.viewItem = function(b) {
 */
 
 /** Opens the CRUD aside in CREATION mode */
+/* deprecated
 scope.createItem = function() {
 	log.info("inside createItem");
 	var b = {
@@ -262,7 +263,8 @@ scope.createItem = function() {
 	scope.item = b, scope.settings.cmd = "New";
 	showForm(crudAside);
 };
-	
+*/
+
 /** Creates or updates an item */
 scope.saveItem = function() {
 	log.info("Creating or updating an item");
