@@ -38,9 +38,6 @@ public class ApplicationTests {
     @Inject
     private ApplicationProperties applicationProperties;
 
-    @Autowired
-    ScrRepository repository;
-
     final String BASE_URL = "http://localhost:8080/myApp";
 
     @Autowired

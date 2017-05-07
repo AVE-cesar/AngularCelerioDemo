@@ -63,7 +63,6 @@ public class Book implements Identifiable<String>, Serializable {
 
     @Override
     @Column(name = "ID", length = 36)
-    @GeneratedValue(generator = "strategy-uuid2")
     @GenericGenerator(name = "strategy-uuid2", strategy = "uuid2")
     @Id
     public String getId() {

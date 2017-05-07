@@ -1,55 +1,54 @@
-package com.jaxio.demo.rest;
+$output.javaTest("${configuration.rootPackage}.rest", "BookResourceUnitTest")##
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.nullValue;
-import static org.junit.Assert.fail;
-import static org.mockito.Matchers.any;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyNoMoreInteractions;
-import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+$output.require("static org.hamcrest.CoreMatchers.is")##
+$output.require("static org.hamcrest.CoreMatchers.nullValue")##
+$output.require("static org.hamcrest.Matchers.hasSize")##
+$output.require("static org.junit.Assert.fail")##
+$output.require("static org.mockito.Matchers.any")##
+$output.require("static org.mockito.Mockito.times")##
+$output.require("static org.mockito.Mockito.verify")##
+$output.require("static org.mockito.Mockito.verifyNoMoreInteractions")##
+$output.require("static org.mockito.Mockito.when")##
+$output.require("static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get")##
+$output.require("static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put")##
+$output.require("static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print")##
+$output.require("static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content")##
+$output.require("static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath")##
+$output.require("static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status")##
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+$output.require("java.util.ArrayList")##
+$output.require("java.util.List")##
 
-import javax.inject.Inject;
+$output.require("javax.inject.Inject")##
 
-import org.apache.catalina.filters.CorsFilter;
-import org.junit.Before;
-import org.junit.Ignore;
-import org.junit.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.core.convert.converter.Converter;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.web.PageableHandlerMethodArgumentResolver;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+$output.require("org.apache.catalina.filters.CorsFilter")##
+$output.require("org.junit.Before")##
+$output.require("org.junit.Ignore")##
+$output.require("org.junit.Test")##
+$output.require("org.mockito.InjectMocks")##
+$output.require("org.mockito.Mock")##
+$output.require("org.mockito.MockitoAnnotations")##
+$output.require("org.slf4j.Logger")##
+$output.require("org.slf4j.LoggerFactory")##
+$output.require("org.springframework.data.domain.Page")##
+$output.require("org.springframework.data.domain.PageImpl")##
+$output.require("org.springframework.data.domain.Pageable")##
+$output.require("org.springframework.data.web.PageableHandlerMethodArgumentResolver")##
+$output.require("org.springframework.http.MediaType")##
+$output.require("org.springframework.test.web.servlet.MockMvc")##
+$output.require("org.springframework.test.web.servlet.setup.MockMvcBuilders")##
 
-import com.jaxio.demo.domain.Book;
-import com.jaxio.demo.repository.BookRepository;
-import com.jaxio.demo.repository.search.BookSearchRepository;
-import com.jaxio.demo.utils.JsonUtils;
+$output.require("com.jaxio.demo.domain.Book")##
+$output.require("com.jaxio.demo.repository.BookRepository")##
+$output.require("com.jaxio.demo.rest.BookResource")##
+$output.require("com.jaxio.demo.rest.BookResourceUnitTest")##
+$output.require("com.jaxio.demo.searchrepository.BookSearchRepository")##
+$output.require("com.jaxio.demo.utils.JsonUtils")##
 
-import static org.hamcrest.Matchers.hasSize;
-
+/**
+ * Unit tests for class BookRepository.
+ * 
+ */
 public class BookResourceUnitTest {
 
 	private final Logger log = LoggerFactory.getLogger(BookResourceUnitTest.class);
@@ -246,3 +245,4 @@ public class BookResourceUnitTest {
         }
     }
 }
+

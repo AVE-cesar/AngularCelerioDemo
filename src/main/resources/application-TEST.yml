@@ -13,15 +13,6 @@ spring:
             hibernate:
                 globally_quoted_identifiers: true        
         show-sql: true
-        
-elasticsearch:
-    cluster-name:
-    cluster-nodes:
-    properties:
-        path:
-          logs: target/elasticsearch/log
-          data: target/elasticsearch/data
-        http:
-          enabled: true
+
 
             
