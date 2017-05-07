@@ -254,6 +254,7 @@ scope.viewItem = function(b) {
 
 /** Opens the CRUD aside in CREATION mode */
 scope.createItem = function() {
+	log.info("inside createItem");
 	var b = {
 			icon: 'todo',
 			editing: !0

@@ -66,6 +66,23 @@ app.config(function($stateProvider, $urlRouterProvider) {
 				}
 		})   
 		
+		/* to go in create mode to add a new book */
+		.state('createBook', {
+			url: "/book/create",	    			
+			views: {
+				"mainView": {
+					templateUrl: "assets/tpl/apps/book/bookEdit.html",
+					controller: "BookCreateController"
+					},
+				"footerView": {templateUrl: "assets/tpl/commons/footer.html"}
+				},
+			resolve: {
+				mode : function() {
+      				return "CREATE";
+    			}
+			}
+		})
+		
 		/* to go in read only mode on a book entity */
 		.state('viewBook', {
 			url: "/book/view/{id}",	    			
