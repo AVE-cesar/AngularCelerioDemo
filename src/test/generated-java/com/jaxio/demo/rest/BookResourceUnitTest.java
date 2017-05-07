@@ -45,7 +45,6 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import com.jaxio.demo.domain.Book;
 import com.jaxio.demo.repository.BookRepository;
-import com.jaxio.demo.repository.search.BookSearchRepository;
 import com.jaxio.demo.utils.JsonUtils;
 
 import static org.hamcrest.Matchers.hasSize;
@@ -61,9 +60,6 @@ public class BookResourceUnitTest {
 	
 	@Mock
 	private BookRepository bookRepository;
-	
-	@Mock
-	private BookSearchRepository bookSearchRepository;
 	
     @InjectMocks
     private BookResource bookResource;
