@@ -1,3 +1,4 @@
+package com.jaxio.demo;
 import javax.annotation.Resource;
 
 import org.junit.Test;
