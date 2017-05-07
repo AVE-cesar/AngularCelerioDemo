@@ -5,4 +5,4 @@ INSERT INTO "app_user" ("id", "login", "password", "email", "language", "first_n
 INSERT INTO "app_authority" ("id", "name") VALUES (-1, 'admin');
 
 -- link admin role to admin user
-INSERT INTO "app_user_authority" ("id", "app_user_id", "app_authority_id") VALUES (-1, -1, -1);
+INSERT INTO "app_user_authority" ("app_user_id", "app_authority_id") VALUES (-1, -1);
