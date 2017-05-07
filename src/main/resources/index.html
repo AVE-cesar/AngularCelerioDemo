@@ -47,16 +47,11 @@
 	<script src="./bower_components/angularjs/1.5.5/angular.min.js"></script>
 	
 	<!-- 5 librairies suivantes pour MGCREA -->
-	<!--script src="http://cdn.jsdelivr.net/angularjs/1.5.5/angular-animate.min.js" data-semver="1.5.5"></script-->
 	<script src="./bower_components/angular-animate/angular-animate.js"></script>
-    <!--script src="http://cdn.jsdelivr.net/angularjs/1.5.5/angular-sanitize.min.js" data-semver="1.5.5"></script-->
     <script src="./bower_components/angular-sanitize/angular-sanitize.js"></script>
     
-	<!--script src="http://mgcrea.github.io/angular-strap/dist/angular-strap.js" data-semver="v2.3.8"></script-->
 	<script src="./bower_components/angular-strap/dist/angular-strap.js"></script>
-    <!--script src="http://mgcrea.github.io/angular-strap/dist/angular-strap.tpl.js" data-semver="v2.3.8"></script-->
     <script src="./bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
-    <!--script src="http://mgcrea.github.io/angular-strap/docs/angular-strap.docs.tpl.js" data-semver="v2.3.8"></script-->
 	
 	<script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 	
@@ -113,16 +108,36 @@
 	<script src="assets/js/entity/bookEditController.js"></script>
 	<script src="assets/js/entity/bookCreateController.js"></script>
 	<script src="assets/js/entity/bookConfigController.js"></script>
+	<!-- for AppAuthority entity --> 	
+	<script src="assets/js/entity/appAuthorityController.js"></script>
+	<script src="assets/js/entity/appAuthorityEditController.js"></script>
+	<script src="assets/js/entity/appAuthorityCreateController.js"></script>
+	<script src="assets/js/entity/appAuthorityConfigController.js"></script>
 	<!-- for AppParameter entity --> 	
 	<script src="assets/js/entity/appParameterController.js"></script>
 	<script src="assets/js/entity/appParameterEditController.js"></script>
 	<script src="assets/js/entity/appParameterCreateController.js"></script>
 	<script src="assets/js/entity/appParameterConfigController.js"></script>
+	<!-- for AppToken entity --> 	
+	<script src="assets/js/entity/appTokenController.js"></script>
+	<script src="assets/js/entity/appTokenEditController.js"></script>
+	<script src="assets/js/entity/appTokenCreateController.js"></script>
+	<script src="assets/js/entity/appTokenConfigController.js"></script>
 	<!-- for AppTranslation entity --> 	
 	<script src="assets/js/entity/appTranslationController.js"></script>
 	<script src="assets/js/entity/appTranslationEditController.js"></script>
 	<script src="assets/js/entity/appTranslationCreateController.js"></script>
 	<script src="assets/js/entity/appTranslationConfigController.js"></script>
+	<!-- for AppUser entity --> 	
+	<script src="assets/js/entity/appUserController.js"></script>
+	<script src="assets/js/entity/appUserEditController.js"></script>
+	<script src="assets/js/entity/appUserCreateController.js"></script>
+	<script src="assets/js/entity/appUserConfigController.js"></script>
+	<!-- for AppUserAuthority entity --> 	
+	<script src="assets/js/entity/appUserAuthorityController.js"></script>
+	<script src="assets/js/entity/appUserAuthorityEditController.js"></script>
+	<script src="assets/js/entity/appUserAuthorityCreateController.js"></script>
+	<script src="assets/js/entity/appUserAuthorityConfigController.js"></script>
 	
 	
   <div id="drawerExample" class="drawer dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="drawerExample">
@@ -197,8 +212,12 @@
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Entities<span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="themes">
                 <li><a ui-sref="book">Book</a></li>
+                <li><a ui-sref="appAuthority">AppAuthority</a></li>
                 <li><a ui-sref="appParameter">AppParameter</a></li>
+                <li><a ui-sref="appToken">AppToken</a></li>
                 <li><a ui-sref="appTranslation">AppTranslation</a></li>
+                <li><a ui-sref="appUser">AppUser</a></li>
+                <li><a ui-sref="appUserAuthority">AppUserAuthority</a></li>
               </ul>
             </li>
 <!-- Menu for demonstration -->            
@@ -221,8 +240,12 @@
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="configuration">Configuration<span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="configuration">
                 <li><a ui-sref="configurationbook">Book configuration</a></li>
+                <li><a ui-sref="configurationappAuthority">AppAuthority configuration</a></li>
                 <li><a ui-sref="configurationappParameter">AppParameter configuration</a></li>
+                <li><a ui-sref="configurationappToken">AppToken configuration</a></li>
                 <li><a ui-sref="configurationappTranslation">AppTranslation configuration</a></li>
+                <li><a ui-sref="configurationappUser">AppUser configuration</a></li>
+                <li><a ui-sref="configurationappUserAuthority">AppUserAuthority configuration</a></li>
               </ul>
             </li>
 <!-- Menu for site administration -->            
