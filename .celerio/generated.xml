@@ -496,7 +496,7 @@
       <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
       <size>6205</size>
       <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\domain\Book.java</path>
-      <lastMod>1494191790990</lastMod>
+      <lastMod>1494191893696</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -2476,7 +2476,7 @@
       <template>springboot\src\main\java\rest\EntityResource.e.vm.java</template>
       <size>10761</size>
       <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\rest\BookResource.java</path>
-      <lastMod>1494191791296</lastMod>
+      <lastMod>1494191894003</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -3046,7 +3046,7 @@
       <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
       <size>8540</size>
       <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\domain\AppUser.java</path>
-      <lastMod>1494191791105</lastMod>
+      <lastMod>1494191893807</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -3996,7 +3996,7 @@
       <template>angularjs\static\assets\js\applicationStates.p.vm.js</template>
       <size>24525</size>
       <path>target\celerio-maven-plugin\collisions\src\main\resources\static\assets\js\applicationStates.js</path>
-      <lastMod>1494191789089</lastMod>
+      <lastMod>1494191891974</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -4606,7 +4606,7 @@
       <template>springboot\src\main\java\domain\Entity.e.vm.java</template>
       <size>4148</size>
       <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\domain\AppParameter.java</path>
-      <lastMod>1494191791029</lastMod>
+      <lastMod>1494191893730</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -6236,7 +6236,7 @@
       <template>springboot\src\main\java\repository\EntityRepository.e.vm.java</template>
       <size>598</size>
       <path>target\celerio-maven-plugin\collisions\src\main\generated-java\com\jaxio\demo\repository\AppUserRepository.java</path>
-      <lastMod>1494191791251</lastMod>
+      <lastMod>1494191893958</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -6596,7 +6596,7 @@
       <template>angularjs\static\assets\tpl\apps\entity.e.vm.html</template>
       <size>5884</size>
       <path>target\celerio-maven-plugin\collisions\src\main\resources\static\assets\tpl\apps\book\book.html</path>
-      <lastMod>1494191790577</lastMod>
+      <lastMod>1494191893324</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -6696,7 +6696,7 @@
       <template>springboot\src\main\resources\application.p.vm.yml</template>
       <size>2211</size>
       <path>target\celerio-maven-plugin\collisions\src\main\resources\application.yml</path>
-      <lastMod>1494191790058</lastMod>
+      <lastMod>1494191892884</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
