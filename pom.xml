@@ -269,6 +269,13 @@ such as hashCode, toString and equals. -->
 			<scope>runtime</scope>
 		</dependency>
 
+		<!-- Podam: tool to auto-fill Java POJOs with data (see http://devopsfolks.github.io/podam/)-->
+		<dependency>
+    		<groupId>uk.co.jemos.podam</groupId>
+    		<artifactId>podam</artifactId>
+    		<version>3.0.5.RELEASE</version>
+		</dependency>
+
     </dependencies>
 
 
