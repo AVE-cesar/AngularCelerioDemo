@@ -14,8 +14,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 import javax.validation.constraints.Size;
@@ -78,7 +76,7 @@ public class AppParameter implements Identifiable<Integer>, Serializable {
 
     @NotEmpty
     @Size(max = 250)
-    @Column(name = "domain", nullable = false, length = 250)
+    @Column(name = "\"DOMAIN\"", nullable = false, length = 250)
     public String getDomain() {
         return domain;
     }

@@ -7,7 +7,7 @@
  */
 package com.jaxio.demo.repository;
 
-import org.springframework.data.jpa.repository.*;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.jaxio.demo.domain.AppParameter;
 
